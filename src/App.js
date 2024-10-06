@@ -6,13 +6,12 @@ import Header from "./layouts/Header";
 function App() {
   return (
     <div className="App">
-      {/* <div className="header">
+      <div className="header">
         <Header />
-      </div> */}
-      {/* <div className="body">
+      </div>
+      <div className="body">
         <Outlet />
-      </div> */}
-
+      </div>
       <div className="footer">
         <Footer />
       </div>
