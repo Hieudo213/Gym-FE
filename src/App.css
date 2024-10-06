@@ -1,6 +1,5 @@
 .App {
-  width: 100vw;
-  overflow: hidden;
+  max-width: 100%;
 }
 
 .header {
