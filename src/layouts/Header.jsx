@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Chỉ cần import Link
 import logo from "../assets/img/logo.png";
 
 const navItems = [
@@ -31,9 +31,10 @@ const Header = () => {
             </li>
           ))}
         </ul>
+
         <div>
           <Link
-            to="/login"
+            to="/Login"
             className="bg-red text-white bg-red-600 py-2 px-4 font-bold hover:bg-red-700 mr-2"
           >
             Đăng Nhập
