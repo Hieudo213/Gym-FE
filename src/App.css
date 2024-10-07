@@ -1,18 +1,13 @@
 .App {
-  width: 100vw;
+  max-width: 100%;
 }
+
 .header {
   width: 100%;
 }
 
 .body {
-  width: 100%;
+  /* width: 100%; */
   height: 1920px;
   background-color: bisque;
-}
-
-.footer {
-  width: 100%;
-  height: 436px;
-  background-color: lightcoral;
 }

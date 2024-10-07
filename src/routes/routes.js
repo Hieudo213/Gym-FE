@@ -1,25 +1,55 @@
 import App from "../App";
-import ErrorPage from "../errors/ErrorPage";
 import HomePage from "../pages/HomePage";
+
 import Login from "../pages/Login";
 import Register from "../pages/Register"
 import {
   createBrowserRouter,
-} from "react-router-dom";
+} from "eact-router-dom";
+
+import { createBrowserRouter } from "react-router-dom";
+import Services from "../pages/Services";
+import Club from "../pages/Club";
+import Schedule from "../pages/Schedule";
+import PricingPolicy from "../pages/PricingPolicy";
+import News from "../pages/News";
+import Promotions from "../pages/Promotions";
+import Login from "../layouts/Login";
+import Logout from "../layouts/Logout";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
       {
-        path: "home",
+        path: "/",
         element: <HomePage />,
-        index: true
-      }
-    ],
-  },
-  
+      },
+      {
+        path: "/clb",
+        element: <Club />,
+      },
+      {
+        path: "/dich-vu",
+        element: <Services />,
+      },
+      {
+        path: "/lich-hoc",
+        element: <Schedule />,
+      },
+      {
+        path: "/chinh-sach-gia",
+        element: <PricingPolicy />,
+      },
+      {
+        path: "/tin-tuc",
+        element: <News />,
+      },
+      {
+        path: "/khuyen-mai",
+        element: <Promotions />,
+      },
+    ],  
   {
     path: "/login",
     element: <Login/>,
@@ -47,3 +77,4 @@ export const router = createBrowserRouter([
     ]
   }
 ]);
+
