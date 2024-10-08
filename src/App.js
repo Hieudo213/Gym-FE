@@ -12,10 +12,6 @@ function App() {
       <div className="body">
         <Outlet />
       </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 89575c456303c31cd13953f62588a53c8b78ab9c
       <div className="footer">
         <Footer />
       </div>
