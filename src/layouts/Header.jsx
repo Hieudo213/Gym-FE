@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
@@ -58,14 +57,7 @@ const Header = () => {
             >
               Đăng Nhập
             </Link>
-            <Link
-              to="/logout"
-              className="text-black font-bold py-2 px-6 hover:bg-[#f3f4f5] transition-all duration-500"
-            >
-              Đăng Ký
-            </Link>
           </div>
-
         </div>
       </nav>
     </header>
