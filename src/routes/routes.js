@@ -9,7 +9,6 @@ import News from "../pages/News";
 import Promotions from "../pages/Promotions";
 import Login from "../layouts/Login";
 import Register from "../layouts/Register";
-import Logout from "../layouts/Logout";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -52,9 +51,5 @@ export const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
-  },
-  {
-    path: "/logout",
-    element: <Logout />,
   },
 ]);
