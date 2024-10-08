@@ -1,6 +1,6 @@
 
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom"; // Chỉ cần import Link
 import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -18,10 +18,31 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-white w-full shadow-md">
-        <div className="flex justify-between items-center max-w-[1170px] m-auto py-4">
-          <Link to="/">
-            <img src={logo} alt="logo-img" className="max-w-[140px]" />
+
+      <nav className="bg-white flex py-6 justify-between items-center px-48 shadow-md">
+        <Link to="/">
+          <img src={logo} alt="logo-img" className="max-w-[140px]" />
+        </Link>
+
+        <ul className="flex gap-8">
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <Link
+                to={item.path}
+                className="text-black font-bold hover:text-[#a50000]"
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div>
+          <Link
+            to="/Login"
+            className="bg-red text-white bg-red-600 py-2 px-4 font-bold hover:bg-red-700 mr-2"
+          >
+            Đăng Nhập
           </Link>
 
           {/* Hamburger menu icon */}

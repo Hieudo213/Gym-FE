@@ -1,5 +1,12 @@
 import App from "../App";
 import HomePage from "../pages/HomePage";
+
+import Login from "../pages/Login";
+import Register from "../pages/Register"
+import {
+  createBrowserRouter,
+} from "eact-router-dom";
+
 import { createBrowserRouter } from "react-router-dom";
 import Services from "../pages/Services";
 import Club from "../pages/Club";
@@ -42,14 +49,32 @@ export const router = createBrowserRouter([
         path: "/khuyen-mai",
         element: <Promotions />,
       },
-    ],
-  },
+    ],  
   {
     path: "/login",
-    element: <Login />,
+    element: <Login/>,
+    errorElement: <ErrorPage/>,
+    children: [
+      {
+        path: "login", 
+        element: <Login />,
+        index: false
+      },
+      
+    ]
   },
   {
-    path: "/logout",
-    element: <Logout />,
-  },
+    path: "/register",
+    element: <Register/>,
+    errorElement: <ErrorPage/>,
+    children: [
+      {
+        path: "register", 
+        element: <Register />,
+        index: false
+      },
+      
+    ]
+  }
 ]);
+
