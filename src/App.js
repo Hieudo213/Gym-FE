@@ -12,7 +12,8 @@ function App() {
       </div>
       <div className="body">
         <Outlet />
-      </div>
+      </div> */}
+
       <div className="footer">
         <Footer />
       </div>
