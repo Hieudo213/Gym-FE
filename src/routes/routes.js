@@ -8,7 +8,7 @@ import PricingPolicy from "../pages/PricingPolicy";
 import News from "../pages/News";
 import Promotions from "../pages/Promotions";
 import Login from "../layouts/Login";
-import Logout from "../layouts/Logout";
+import Register from "../layouts/Register";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/logout",
-    element: <Logout />,
+    path: "/register",
+    element: <Register />,
   },
 ]);

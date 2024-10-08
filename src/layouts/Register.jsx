@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉnh
+import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉnh cho trang đăng ký
 
-function Login() {
+function Register() {
   return (
     <main className="main-container">
       <div className="login-container">
-        <section className="login-section">
+        <section className="register-section">
           <div className="form-container">
             <div className="form-wrapper">
               <div className="form-card">
                 <div className="form-card-body">
                   <div className="form-header">
-                    <h5 className="form-title">Đăng nhập</h5>
+                    <h5 className="form-title">Đăng ký</h5>
                   </div>
 
                   <form className="login-form" noValidate>
@@ -35,6 +35,24 @@ function Login() {
                     </div>
 
                     <div className="form-group">
+                      <label htmlFor="yourEmail" className="form-label">
+                        Email
+                      </label>
+                      <div className="input-wrapper">
+                        <input
+                          type="email"
+                          name="email"
+                          className="form-input"
+                          id="yourEmail"
+                          required
+                        />
+                        <div className="error-message">
+                          Vui lòng nhập email hợp lệ.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="form-group">
                       <label htmlFor="yourPassword" className="form-label">
                         Mật khẩu
                       </label>
@@ -51,30 +69,28 @@ function Login() {
                     </div>
 
                     <div className="form-group">
-                      <div className="checkbox-wrapper">
-                        <input
-                          className="checkbox-input"
-                          type="checkbox"
-                          name="remember"
-                          value="true"
-                          id="rememberMe"
-                        />
-                        <label className="checkbox-label" htmlFor="rememberMe">
-                          Ghi nhớ đăng nhập
-                        </label>
-                      </div>
+                      <label htmlFor="confirmPassword" className="form-label">
+                        Xác nhận mật khẩu
+                      </label>
+                      <input
+                        type="password"
+                        name="confirmPassword"
+                        className="form-input"
+                        id="confirmPassword"
+                        required
+                      />
+                      <div className="error-message">Mật khẩu không khớp!</div>
                     </div>
 
                     <div className="form-group">
                       <button className="submit-button" type="submit">
-                        Đăng nhập
+                        Đăng ký
                       </button>
                     </div>
 
                     <div className="form-footer">
                       <p className="form-text">
-                        Chưa có tài khoản?{" "}
-                        <Link to="/register">Tạo tài khoản</Link>
+                        Đã có tài khoản? <Link to="/login">Đăng nhập</Link>
                       </p>
                     </div>
                   </form>
@@ -88,4 +104,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
