@@ -32,9 +32,8 @@ const Header = () => {
 
           {/* Menu Items */}
           <ul
-            className={`${
-              isOpen ? "block" : "hidden"
-            } xl:flex flex-col xl:flex-row gap-8 absolute xl:static left-0 top-16 bg-white xl:bg-transparent w-full xl:w-auto px-6 xl:px-0 py-4 xl:py-0 shadow-md xl:shadow-none`}
+            className={`${isOpen ? "block" : "hidden"
+              } xl:flex flex-col xl:flex-row gap-8 absolute xl:static left-0 top-16 bg-white xl:bg-transparent w-full xl:w-auto px-6 xl:px-0 py-4 xl:py-0 shadow-md xl:shadow-none`}
           >
             {navItems.map((item, index) => (
               <li key={index}>
