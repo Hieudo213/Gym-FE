@@ -34,7 +34,7 @@ import afterImage from "../assets/img/s-after.jpg";
 function HomePage() {
   return (
     <>
-      <section className="w-full">
+      <section className="w-full mt-[72px]">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -47,18 +47,10 @@ function HomePage() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img
-              src={home1}
-              alt=""
-              className="w-full max-h-[665px] object-cover"
-            />
+            <img src={home1} alt="" className="w-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src={home2}
-              alt=""
-              className="w-full max-h-[665px] object-cover"
-            />
+            <img src={home2} alt="" className="w-full object-cover" />
           </SwiperSlide>
         </Swiper>
       </section>

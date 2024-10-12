@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-white w-full shadow-md">
+      <nav className="bg-white w-full shadow-md fixed top-0 left-0 z-50">
         <div className="flex justify-between items-center max-w-[1170px] m-auto py-4">
           <Link to="/">
             <img src={logo} alt="logo-img" className="max-w-[140px]" />
