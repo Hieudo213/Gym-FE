@@ -50,7 +50,14 @@ const Header = () => {
           </ul>
 
           {/* Login/Register Buttons */}
-         
+          <div className="hidden xl:flex">
+            <Link
+              to="/login"
+              className="bg-red-600 text-white py-2 px-4 font-bold hover:bg-red-700 transition-all duration-500 mr-2"
+            >
+              Đăng Nhập
+            </Link>
+          </div>
         </div>
       </nav>
     </header>
