@@ -28,7 +28,6 @@ import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
 
 // before after
-import beforeImage from "../assets/img/s-before.jpg";
 import afterImage from "../assets/img/s-after.jpg";
 
 // react hook
@@ -73,29 +72,31 @@ function HomePage() {
             thể.
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-8 px-8 mb-8">
+        <div className="grid grid-cols-4 gap-8 px-8 mb-8 items-center">
           <div className="relative group">
-            <img src={services1} alt="" />
+            <img src={services1} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-xl">PERSONAL TRAINER</span>
+              <span class="text-white font-bold text-3xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group">
-            <img src={services2} alt="" />
+            <img src={services2} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-xl">PERSONAL TRAINER</span>
+              <span class="text-white font-bold text-3xl">YOGA</span>
             </div>
           </div>
           <div className="relative group">
-            <img src={services3} alt="" />
+            <img src={services3} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-xl">PERSONAL TRAINER</span>
+              <span class="text-white font-bold text-3xl">GROUP X</span>
             </div>
           </div>
           <div className="relative group">
-            <img src={services4} alt="" />
+            <img src={services4} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-xl">PERSONAL TRAINER</span>
+              <span class="text-white font-bold text-3xl">XEM THÊM</span>
             </div>
           </div>
         </div>
