@@ -9,7 +9,6 @@ const navItems = [
   { title: "LỊCH HỌC", path: "/lich-hoc" },
   { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia" },
   { title: "TIN TỨC", path: "/tin-tuc" },
-  { title: "KHUYẾN MÃI", path: "/khuyen-mai" },
 ];
 
 const Header = () => {
