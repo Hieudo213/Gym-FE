@@ -27,11 +27,9 @@ import blog5 from "../assets/img/blog-5.jpg";
 import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
 
-// before after
+// before image
+import beforeImage from "../assets/img/s-before.jpg";
 
-import afterImage from "../assets/img/s-before.jpg";
-
-// react hook
 function HomePage() {
   return (
     <>
@@ -48,18 +46,12 @@ function HomePage() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img
-              src={home1}
-              alt=""
-              className="w-full max-h-[665px] object-cover"
-            />
+
+            <img src={home1} alt="" className="w-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src={home2}
-              alt=""
-              className="w-full max-h-[665px] object-cover"
-            />
+            <img src={home2} alt="" className="w-full object-cover" />
+
           </SwiperSlide>
         </Swiper>
       </section>
@@ -238,7 +230,7 @@ function HomePage() {
             thay đổi ngoạn mục chỉ trong khoảng trung bình từ 6-8 tuần.
           </p>
         </div>
-        <img src={afterImage} alt="" className="w-[555px]" />
+        <img src={beforeImage} alt="" className="w-[555px]" />
       </section>
     </>
   );
