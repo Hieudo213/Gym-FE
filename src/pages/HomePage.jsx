@@ -28,7 +28,8 @@ import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
 
 // before after
-import afterImage from "../assets/img/s-after.jpg";
+
+import afterImage from "../assets/img/s-before.jpg";
 
 // react hook
 function HomePage() {
@@ -72,6 +73,7 @@ function HomePage() {
             thể.
           </p>
         </div>
+
         <div className="grid grid-cols-4 gap-8 px-8 mb-8 items-center">
           <div className="relative group">
             <img src={services1} alt="" className="w-full" />
