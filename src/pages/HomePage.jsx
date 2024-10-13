@@ -28,13 +28,18 @@ import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
 
 // before after
-import afterImage from "../assets/img/s-after.jpg";
+
+
+import beforeImage from "../assets/img/s-before.jpg";
+
 
 // react hook
 function HomePage() {
   return (
     <>
+
       <section className="w-full mt-[72px]">
+
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -47,10 +52,12 @@ function HomePage() {
           className="mySwiper"
         >
           <SwiperSlide>
+
             <img src={home1} alt="" className="w-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={home2} alt="" className="w-full object-cover" />
+
           </SwiperSlide>
         </Swiper>
       </section>
@@ -64,6 +71,7 @@ function HomePage() {
             thể.
           </p>
         </div>
+
         <div className="grid grid-cols-4 gap-8 px-8 mb-8 items-center">
           <div className="relative group">
             <img src={services1} alt="" className="w-full" />
