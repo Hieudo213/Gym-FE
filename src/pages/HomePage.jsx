@@ -31,7 +31,7 @@ import blog7 from "../assets/img/blog-7.jpg";
 
 
 import beforeImage from "../assets/img/s-before.jpg";
-
+import afterImage from "../assets/img/s-after.jpg";
 
 // react hook
 function HomePage() {
