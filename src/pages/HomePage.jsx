@@ -27,9 +27,9 @@ import blog5 from "../assets/img/blog-5.jpg";
 import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
 
-// before after
+// before image
 
-import afterImage from "../assets/img/s-before.jpg";
+import afterImage from "../assets/img/s-after.jpg";
 
 // react hook
 function HomePage() {
