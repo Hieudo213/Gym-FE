@@ -30,6 +30,7 @@ const Services = () => {
           <div className="culunm">
             <div className="object">
               <img src="https://citigym.com.vn/storage/uploads/thumbnail-1-5.jpg" alt="" />
+              .
             </div>
           </div>
           <div className="culunm">
