@@ -109,7 +109,7 @@ function Footer() {
       </div >
       <div className="end_footer">
         <div className="text1">
-          @ Edited by group 14
+          @ Edited by group 12
         </div>
 
       </div>
