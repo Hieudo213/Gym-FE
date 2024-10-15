@@ -26,6 +26,7 @@ import blog4 from "../assets/img/blog-4.jpg";
 import blog5 from "../assets/img/blog-5.jpg";
 import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
+import afterImage from "../assets/img/s-after.jpg";
 
 // before after
 
@@ -37,9 +38,7 @@ import afterImage from "../assets/img/s-after.jpg";
 function HomePage() {
   return (
     <>
-
       <section className="w-full mt-[72px]">
-
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -52,12 +51,18 @@ function HomePage() {
           className="mySwiper"
         >
           <SwiperSlide>
-
-            <img src={home1} alt="" className="w-full object-cover" />
+            <img
+              src={home1}
+              alt=""
+              className="w-full max-h-[665px] object-cover"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={home2} alt="" className="w-full object-cover" />
-
+            <img
+              src={home2}
+              alt=""
+              className="w-full max-h-[665px] object-cover"
+            />
           </SwiperSlide>
         </Swiper>
       </section>
