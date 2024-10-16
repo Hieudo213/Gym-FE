@@ -14,15 +14,15 @@ function Footer() {
           <div className="col-lg-4">
             <div className="text_logo">GYMPRO</div>
             <div className="item1">
-              <i className="fa-solid fa-phone fix1"></i>{" "}
-              <span>037 573 4367</span>{" "}
+              <i className="fa-solid fa-phone fix1"></i>
+              <span>037 573 4367</span>
             </div>
             <div className="item1">
-              {" "}
+
               <i className="fa-solid fa-location-dot fix1"></i>
               <span>
                 Sân vận động Bách khoa , 94.Lê Thanh Nghị, Q.Hai Bà Trưng,Tp.Hà
-                Nội{" "}
+                Nội
               </span>
             </div>
             <div className="item1">
@@ -31,7 +31,7 @@ function Footer() {
               </span>
 
               <span className="text2">
-                {" "}
+
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>
                 <p>Thứ Bảy - Chủ Nhật: 8:00 đến 22:00</p>
               </span>
@@ -54,13 +54,8 @@ function Footer() {
           </div>
 
           <div className="col-lg-4">
-            {/* <div className="text_logo">MẠNG XÃ HỘI</div>
-            <div className="group_icon">
-              <i className="fa-brands fa-facebook fit2"></i>
-              <i className="fa-brands fa-google fit2"></i>
-              <i className="fa-brands fa-youtube fit2"></i>
-            </div> */}
-            <div className="text_logo">Thành viên </div>
+
+            <div className="text_logo fix6">Thành viên </div>
 
             <div className="Designed">
               <Link
