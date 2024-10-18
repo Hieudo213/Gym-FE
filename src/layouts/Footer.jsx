@@ -26,6 +26,7 @@ function Footer() {
                 <i class="fa-solid fa-clock"></i>
               </div>
               <div className="w-[90%]">
+
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>
                 <p>Thứ Bảy - Chủ nhật: 8:00 đến 22:00 </p>
               </div>
@@ -37,6 +38,7 @@ function Footer() {
             <div className="row  mt-5 justify-center">Chính sách giá </div>
             <div className="row  mt-5 justify-center">Chính sách bảo mật</div>
           </div>
+
           <div class="w-[20%]  mt-5 mx-auto pt-2  h-full">
             <div className="row  mt-5 justify-center"> Tuyển dụng </div>
             <div className="row  mt-5 justify-center">Tin tức </div>
@@ -44,6 +46,7 @@ function Footer() {
             <div className="row  mt-5 justify-center">Câu lạc bộ</div>
           </div>
           <div class="w-[30%]   h-full">
+
             <div className="text_logo fix6">Thành viên </div>
 
             <div className="Designed">
