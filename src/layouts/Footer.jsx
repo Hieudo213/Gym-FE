@@ -102,58 +102,7 @@ function Footer() {
         </div>
 
       </div>
-      {/* <div className="col-lg-4">
 
-        <div className="text_logo fix6">Thành viên </div>
-
-        <div className="Designed">
-          <Link
-            to="https://www.facebook.com/profile.php?id=100082315533736"
-            className="item_desig"
-          >
-            <div className="image_item">
-              <img src={Dat} alt="" />
-            </div>
-          </Link>
-
-          <Link
-            to="https://www.facebook.com/lam.th1042"
-            className="item_desig"
-          >
-            <div className="image_item">
-              <img src={Lam} alt="" />
-            </div>
-          </Link>
-
-          <Link
-            to="https://www.facebook.com/hieudoo213"
-            className="item_desig"
-          >
-            <div className="image_item">
-              <img src={Hieu} alt="" />
-            </div>
-          </Link>
-        </div>
-
-        <div className="Designed">
-          <Link
-            to="https://www.facebook.com/pham.congdung.351"
-            className="item_desig "
-          >
-            <div className="image_item">
-              <img src={Dung} alt="" />
-            </div>
-          </Link>
-          <Link
-            to="https://www.facebook.com/profile.php?id=100014609829736"
-            className="item_desig"
-          >
-            <div className="image_item">
-              <img src={Tanh} className="fixa" alt="" />
-            </div>
-          </Link>
-        </div>
-      </div> */}
     </>
   );
 }

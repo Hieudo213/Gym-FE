@@ -26,7 +26,6 @@ import blog4 from "../assets/img/blog-4.jpg";
 import blog5 from "../assets/img/blog-5.jpg";
 import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
-
 import afterImage from "../assets/img/s-after.jpg";
 
 function HomePage() {
