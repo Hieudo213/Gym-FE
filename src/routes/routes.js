@@ -8,10 +8,10 @@ import PricingPolicy from "../pages/PricingPolicy";
 import News from "../pages/News";
 import Promotions from "../pages/Promotions";
 import Login from "../layouts/Login";
-import Register from "../layouts/Register";
-import Logout from "../layouts/Logout";
+
 export const router = createBrowserRouter([
   {
+    errorElement: <ErrorPage/>,
     path: "/",
     element: <App />,
     children: [
@@ -54,7 +54,11 @@ export const router = createBrowserRouter([
     element: <Register />,
   },
   {
-    path: "/logout",
-    element: <Logout />,
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/error/403",
+    element: <Permission />,
   },
 ]);

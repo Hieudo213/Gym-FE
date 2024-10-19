@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
@@ -10,7 +9,6 @@ const navItems = [
   { title: "LỊCH HỌC", path: "/lich-hoc" },
   { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia" },
   { title: "TIN TỨC", path: "/tin-tuc" },
-  { title: "KHUYẾN MÃI", path: "/khuyen-mai" },
 ];
 
 const Header = () => {
@@ -18,7 +16,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-white w-full shadow-md">
+      <nav className="bg-white w-full shadow-md fixed top-0 left-0 z-50">
         <div className="flex justify-between items-center max-w-[1170px] m-auto py-4">
           <Link to="/">
             <img src={logo} alt="logo-img" className="max-w-[140px]" />
@@ -33,9 +31,8 @@ const Header = () => {
 
           {/* Menu Items */}
           <ul
-            className={`${
-              isOpen ? "block" : "hidden"
-            } xl:flex flex-col xl:flex-row gap-8 absolute xl:static left-0 top-16 bg-white xl:bg-transparent w-full xl:w-auto px-6 xl:px-0 py-4 xl:py-0 shadow-md xl:shadow-none`}
+            className={`${isOpen ? "block" : "hidden"
+              } xl:flex flex-col xl:flex-row gap-8 absolute xl:static left-0 top-16 bg-white xl:bg-transparent w-full xl:w-auto px-6 xl:px-0 py-4 xl:py-0 shadow-md xl:shadow-none`}
           >
             {navItems.map((item, index) => (
               <li key={index}>
@@ -58,14 +55,7 @@ const Header = () => {
             >
               Đăng Nhập
             </Link>
-            <Link
-              to="/logout"
-              className="text-black font-bold py-2 px-6 hover:bg-[#f3f4f5] transition-all duration-500"
-            >
-              Đăng Ký
-            </Link>
           </div>
-
         </div>
       </nav>
     </header>
