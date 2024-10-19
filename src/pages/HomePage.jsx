@@ -26,7 +26,6 @@ import blog4 from "../assets/img/blog-4.jpg";
 import blog5 from "../assets/img/blog-5.jpg";
 import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
-
 import afterImage from "../assets/img/s-after.jpg";
 
 function HomePage() {
@@ -75,7 +74,7 @@ function HomePage() {
           <div className="relative group">
             <img src={services1} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">
+              <span className="text-white font-bold text-3xl">
                 PERSONAL TRAINER
               </span>
             </div>
@@ -83,19 +82,19 @@ function HomePage() {
           <div className="relative group">
             <img src={services2} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">YOGA</span>
+              <span className="text-white font-bold text-3xl">YOGA</span>
             </div>
           </div>
           <div className="relative group">
             <img src={services3} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">GROUP X</span>
+              <span className="text-white font-bold text-3xl">GROUP X</span>
             </div>
           </div>
           <div className="relative group">
             <img src={services4} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">XEM THÊM</span>
+              <span className="text-white font-bold text-3xl">XEM THÊM</span>
             </div>
           </div>
         </div>

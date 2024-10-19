@@ -1,0 +1,36 @@
+.error-page-container {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.error-page-title {
+    font-size: 100px;
+    margin: 0;
+    color: #ff6b6b;
+}
+
+.error-page-message {
+    font-size: 20px;
+    color: #333;
+}
+
+.error-page-home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.error-page-home-link:hover {
+    background-color: #ff3b3b;
+}
