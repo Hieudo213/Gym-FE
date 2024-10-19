@@ -10,43 +10,46 @@ function Footer() {
   return (
     <>
       <div className="footer_body">
-        <div class="w-[85%] mx-auto flex">
-          <div class="w-[30%]   h-full">
+        <div className="w-[85%] mx-auto flex">
+          <div className="w-[30%]   h-full">
             <div className="text_logo font-bold text-base">GYMPRO</div>
             <div className="row mt-5">
-              <i class="fa-solid fa-phone mt-1"></i>
+              <i className="fa-solid fa-phone mt-1"></i>
               <span className="text-base ml-3">1900 633 638</span>
             </div>
             <div className="row mt-5">
-              <i class="fa-solid fa-location-dot"></i>
-              <span className="text-base ml-3">92,Lê Thanh Nghị , Hai bà Trưng , Hà Nội (Sân vân động Bách Khoa)</span>
+              <i className="fa-solid fa-location-dot"></i>
+              <span className="text-base ml-3">
+                92,Lê Thanh Nghị , Hai bà Trưng , Hà Nội (Sân vân động Bách
+                Khoa)
+              </span>
             </div>
             <div className="row mt-5 flex">
               <div className="w-[5%] flex items-center justify-center mr-2">
-                <i class="fa-solid fa-clock"></i>
+                <i className="fa-solid fa-clock"></i>
               </div>
               <div className="w-[90%]">
-
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>
                 <p>Thứ Bảy - Chủ nhật: 8:00 đến 22:00 </p>
               </div>
             </div>
           </div>
-          <div class="w-[20%]  mt-5 p-3 mx-auto pt-2 h-full">
-            <div className="row  mt-5 justify-center">Phương thức thanh toán</div>
+          <div className="w-[20%]  mt-5 p-3 mx-auto pt-2 h-full">
+            <div className="row  mt-5 justify-center">
+              Phương thức thanh toán
+            </div>
             <div className="row  mt-5 justify-center">Dịch vụ</div>
             <div className="row  mt-5 justify-center">Chính sách giá </div>
             <div className="row  mt-5 justify-center">Chính sách bảo mật</div>
           </div>
 
-          <div class="w-[20%]  mt-5 mx-auto pt-2  h-full">
+          <div className="w-[20%]  mt-5 mx-auto pt-2  h-full">
             <div className="row  mt-5 justify-center"> Tuyển dụng </div>
             <div className="row  mt-5 justify-center">Tin tức </div>
             <div className="row  mt-5 justify-center">Liên hệ</div>
             <div className="row  mt-5 justify-center">Câu lạc bộ</div>
           </div>
-          <div class="w-[30%]   h-full">
-
+          <div className="w-[30%]   h-full">
             <div className="text_logo fix6">Thành viên </div>
 
             <div className="Designed">
@@ -100,10 +103,7 @@ function Footer() {
         </div>
       </div>
       <div className="end_footer">
-        <div className="text1">
-          @ Edited by group 12
-        </div>
-
+        <div className="text1">@ Edited by group 12</div>
       </div>
       {/* <div className="col-lg-4">
 
