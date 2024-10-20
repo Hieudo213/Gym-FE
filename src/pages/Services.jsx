@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Services.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark, faClock } from '@fortawesome/free-solid-svg-icons'
 // import { Link } from 'react-router-dom';
 const Services = () => {
   return (
@@ -186,7 +187,7 @@ const Services = () => {
                   BODY COMBAT
                 </div>
                 <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
+                <FontAwesomeIcon icon={faCircleXmark} />
                   <span className="my-0  mx-5">60 Phút</span>
                 </div>
                 <p>
