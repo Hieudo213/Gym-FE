@@ -13,7 +13,8 @@ const Club = () => {
         />
       </div>
 
-      <section className="bg-[#f1f1f1] mb-[30px]">
+
+      <section className="mb-[30px]">
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-bold uppercase text-[28px] text-[#454545] mb-4">
             Tập luyện ở câu lạc bộ gần bạn
@@ -41,7 +42,8 @@ const Club = () => {
           </form>
         </div>
       </section>
-      <section className="bg-[#f1f1f1] pb-16 max-w-[1170px] m-auto">
+
+      <section className="pb-16 max-w-[1170px] m-auto">
         <div className="grid grid-cols-3 gap-8 mb-8 ">
           <div className="group cursor-pointer">
             <img
