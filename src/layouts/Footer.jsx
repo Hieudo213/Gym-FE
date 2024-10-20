@@ -15,11 +15,10 @@ function Footer() {
   return (
     <>
       <div className="footer_body">
-        <div class="w-[85%] mx-auto flex">
-          <div class="w-[30%]   h-full">
+        <div className="w-[85%] mx-auto flex">
+          <div className="w-[30%]   h-full">
             <div className="text_logo font-bold text-base">GYMPRO</div>
             <div className="row mt-5">
-
               <FontAwesomeIcon icon={faPhone} className="mt-1" />
               <span className="text-base ml-3">1900 633 638</span>
             </div>
@@ -32,6 +31,7 @@ function Footer() {
               <div className="w-[5%] flex items-center justify-center mr-2">
 
                 <FontAwesomeIcon icon={faClock} />
+
               </div>
               <div className="w-[90%]">
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>
@@ -39,13 +39,17 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div class="w-[20%]  mt-5 p-3 mx-auto pt-2 h-full">
-            <div className="row  mt-5 justify-center">Phương thức thanh toán</div>
+          <div className="w-[20%]  mt-5 p-3 mx-auto pt-2 h-full">
+            <div className="row  mt-5 justify-center">
+              Phương thức thanh toán
+            </div>
             <div className="row  mt-5 justify-center">Dịch vụ</div>
             <div className="row  mt-5 justify-center">Chính sách giá </div>
             <div className="row  mt-5 justify-center">Chính sách bảo mật</div>
           </div>
+
           <div class="w-[20%]  mt-5 mx-auto pt-2  h-full">
+
             <div className="row  mt-5 justify-center"> Tuyển dụng </div>
             <div className="row  mt-5 justify-center">Tin tức </div>
             <div className="row  mt-5 justify-center">Liên hệ</div>
@@ -53,7 +57,6 @@ function Footer() {
           </div>
           <div class="w-[30%]   h-full">
             <div className="text_logo fix6">Thành viên </div>
-
             <div className="Designed">
               <Link
                 to="https://www.facebook.com/profile.php?id=100082315533736"
@@ -105,10 +108,7 @@ function Footer() {
         </div>
       </div>
       <div className="end_footer">
-        <div className="text1">
-          @ Edited by group 12
-        </div>
-
+        <div className="text1">@ Edited by group 12</div>
       </div>
 
     </>
