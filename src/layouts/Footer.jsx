@@ -6,6 +6,11 @@ import Tanh from "../assets/img/Footer/tanh3.jpg";
 import Hieu from "../assets/img/Footer/hieu3.jpg";
 import Dung from "../assets/img/Footer/Congdung.png";
 import Lam from "../assets/img/Footer/lam3.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faClock, faLocation, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+
+
 function Footer() {
   return (
     <>
@@ -14,16 +19,19 @@ function Footer() {
           <div class="w-[30%]   h-full">
             <div className="text_logo font-bold text-base">GYMPRO</div>
             <div className="row mt-5">
-              <i class="fa-solid fa-phone mt-1"></i>
+
+              <FontAwesomeIcon icon={faPhone} className="mt-1" />
               <span className="text-base ml-3">1900 633 638</span>
             </div>
             <div className="row mt-5">
-              <i class="fa-solid fa-location-dot"></i>
+
+              <FontAwesomeIcon icon={faLocationDot} className="mt-1" />
               <span className="text-base ml-3">92,Lê Thanh Nghị , Hai bà Trưng , Hà Nội (Sân vân động Bách Khoa)</span>
             </div>
             <div className="row mt-5 flex">
               <div className="w-[5%] flex items-center justify-center mr-2">
-                <i class="fa-solid fa-clock"></i>
+
+                <FontAwesomeIcon icon={faClock} />
               </div>
               <div className="w-[90%]">
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>
