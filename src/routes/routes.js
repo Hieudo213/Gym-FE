@@ -10,7 +10,8 @@ import Promotions from "../pages/Promotions";
 import Login from "../layouts/Login";
 import Register from "../layouts/Register";
 import ErrorPage from "../errors/ErrorPage";
-import Permission from "../errors/Permission";
+import Permissions from "../errors/Permission";
+
 export const router = createBrowserRouter([
   {
     errorElement: <ErrorPage/>,
@@ -55,8 +56,9 @@ export const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
+  
   {
     path: "/error/403",
-    element: <Permission />,
+    element: <Permissions />,
   },
 ]);
