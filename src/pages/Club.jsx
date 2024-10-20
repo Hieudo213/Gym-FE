@@ -12,13 +12,12 @@ const Club = () => {
           className="w-full h-full mt-[72px] object-cover"
         />
       </div>
-
-
       <section className="mb-[30px]">
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-bold uppercase text-[28px] text-[#454545] mb-4">
             Tập luyện ở câu lạc bộ gần bạn
           </h2>
+
           <p className="mb-12 text-center text-base text-[212529]">
             Hệ thống phòng tập gym và yoga của CITIGYM có mặt khắp các quận Hà
             Nội.
@@ -42,7 +41,6 @@ const Club = () => {
           </form>
         </div>
       </section>
-
       <section className="pb-16 max-w-[1170px] m-auto">
         <div className="grid grid-cols-3 gap-8 mb-8 ">
           <div className="group cursor-pointer">

@@ -1,21 +1,22 @@
 import React from "react";
 import "../styles/Services.css";
 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Services = () => {
   return (
     <>
-      <div className="image_full">
-        <div className="content">DỊCH VỤ</div>
-        <div className="title-bg">FIND A CLASS</div>
-        <img
-          src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg"
-          alt="Description"
-          className="w-full"
-        />
+      <div className="image_full mt-[72px]">
+        <div className="content">
+          DỊCH VỤ
+        </div>
+        <div className="title-bg">
+          FIND A CLASS
+        </div>
+        <img src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg" alt="Description" className="w-full h-[30rem]" />
       </div>
-
-      <section className="bg-[#f1f1f1] py-16 ">
+      <section className=" py-16 ">
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-bold uppercase text-[28px] text-[#454545] mb-4">
             Các dịch vụ của chúng tôi
@@ -29,11 +30,7 @@ const Services = () => {
 
         <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center container ">
           <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/bums-and-tums.jpg"
-              alt=""
-              className="w-[352px] h-[352px]"
-            />
+            <img src="https://citigym.com.vn/storage/uploads/bums-and-tums.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">
                 BUMS AND TUMS
@@ -41,53 +38,32 @@ const Services = () => {
             </div>
           </div>
           <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/thumbnail-1-5.jpg"
-              alt=""
-              className="w-[352px] h-[352px]"
-            />
+            <img src="https://citigym.com.vn/storage/uploads/thumbnail-1-5.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">CYCLING</span>
             </div>
           </div>
           <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/untitled-8-3.jpg"
-              alt=""
-              className="w-[352px] h-[352px]"
-            />
+            <img src="https://citigym.com.vn/storage/uploads/untitled-8-3.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">DANCE</span>
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center container mx-auto ">
           <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/rin-1822.jpg"
-              alt=""
-              className="w-[352px] h-[352px]"
-            />
+            <img src="https://citigym.com.vn/storage/uploads/rin-1822.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">GROUP X</span>
             </div>
           </div>
           <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/thumbnail-3-2.jpg"
-              alt=""
-              className="w-[352px] h-[352px]"
-            />
+            <img src="https://citigym.com.vn/storage/uploads/thumbnail-3-2.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">YOGA</span>
             </div>
           </div>
           <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg"
-              alt=""
-              className="w-[352px] h-[352px]"
-            />
+
+            <img src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">
                 PERSONAL TRAINER
@@ -96,154 +72,124 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#f1f1f1]   py-16 ">
+      <section className="  py-16 ">
         <div className="container ">
           <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center container ">
             <div className="relative  group  cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
-                alt=""
-                className="w-full transition-opacity duration-500 group-hover:opacity-50"
-              />
-              <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  PERSONAL TRAINER
+              <Link to="/dich-vu/1">
+                <img src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
+                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                    PERSONAL TRAINER
+                  </div>
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    KICKFIT
+                  </div>
+                  <div className="my-2 mx-0">
+                    <FontAwesomeIcon icon={faClock} />
+                    <span className="my-0  mx-2">60 Phút</span>
+                  </div>
+                  <p>KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền thống với trường phái Muay Thai ...</p>
                 </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  KICKFIT
-                </div>
-                <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0  mx-5">60 Phút</span>
-                </div>
-                <p>
-                  KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
-                  thống với trường phái Muay Thai ...
-                </p>
-              </div>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
-                alt=""
-                className="w-full transition-opacity duration-500 group-hover:opacity-50"
-              />
+              </Link>
 
-              <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  PERSONAL TRAINER
-                </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  CYCLING
-                </div>
-                <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0  mx-5">60 Phút</span>
-                </div>
-                <p>
-                  Tập luyện với Huấn luyện viên cá nhân theo hình thức 1 kèm 1,
-                  được thiết kế đặc biệt phù hợp với thể trạng và mục tiêu thể
-                  hình ...
-                </p>
-              </div>
             </div>
             <div className="relative group  cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
-                alt=""
-                className="w-full transition-opacity duration-500 group-hover:opacity-50"
-              />
-              <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  Group X
-                </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  BODYPUMP
-                </div>
-                <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0  mx-5">60 Phút</span>
-                </div>
-                <p>
-                  BodyPump là 1 bộ môn tập cho toàn bộ nhóm cơ trên cơ thể kết
-                  hợp với tạ và âm nhạc. Sử dụng tạ nhẹ đến trung bình qua...
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center container ">
-            <div className="relative group  cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
-                alt=""
-                className="w-full transition-opacity duration-500 group-hover:opacity-50"
-              />
-              <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  Group X
-                </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  BODY COMBAT
-                </div>
-                <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0  mx-5">60 Phút</span>
-                </div>
-                <p>
-                  BodyCombat là phương pháp tập luyện cardio, tim mạch kết hợp
-                  với các thế võ tự do (Karate, Taekwondo, Boxing, Muay Thai,
-                  ...
-                </p>
-              </div>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
-                alt=""
-                className="w-full transition-opacity duration-500 group-hover:opacity-50"
-              />
+              <Link to="/dich-vu/2">
+                <img src="https://citigym.com.vn/storage/uploads/body-combat.jpg" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
 
-              <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  Group X
+                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                    PERSONAL TRAINER
+                  </div>
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    CYCLING
+                  </div>
+                  <div className="my-2 mx-0">
+                    <FontAwesomeIcon icon={faClock} />
+                    <span className="my-0  mx-2">60 Phút</span>
+                  </div>
+                  <p>Tập luyện với Huấn luyện viên cá nhân theo hình thức 1 kèm 1, được thiết kế đặc biệt phù hợp với thể trạng và mục tiêu thể hình ...</p>
                 </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  BODY BALANCE
-                </div>
-                <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0  mx-5">45 - 60 Phút</span>
-                </div>
-                <p>
-                  Body Balance là lớp học dựa trên nền tảng của các bộ môn Yoga,
-                  Taichi, Pilates kết hợp với âm nhạc giúp cải thiện sức khỏe
-                  v...
-                </p>
-              </div>
+              </Link>
+
             </div>
             <div className="relative group  cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
-                alt=""
-                className="w-full transition-opacity duration-500 group-hover:opacity-50"
-              />
-              <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  Group X
+              <Link to="/dich-vu/3">
+                <img src="https://citigym.com.vn/storage/uploads/body-balance.jpg" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
+                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                    Group X
+                  </div>
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    BODYPUMP
+                  </div>
+                  <div className="my-2 mx-0">
+                    <FontAwesomeIcon icon={faClock} />
+                    <span className="my-0  mx-2">60 Phút</span>
+                  </div>
+                  <p>BodyPump là 1 bộ môn tập cho toàn bộ nhóm cơ trên cơ thể kết hợp với tạ và âm nhạc. Sử dụng tạ nhẹ đến trung bình qua...</p>
                 </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  RPM
+              </Link>
+
+            </div>
+            <div className="relative group  cursor-pointer">
+              <Link to="/dich-vu/4">
+                <img src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
+                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                    Group X
+                  </div>
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    BODY COMBAT
+                  </div>
+                  <div className="my-2 mx-0">
+                    <FontAwesomeIcon icon={faClock} />
+                    <span className="my-0  mx-2">60 Phút</span>
+                  </div>
+                  <p>BodyCombat là phương pháp tập luyện cardio, tim mạch kết hợp với các thế võ tự do (Karate, Taekwondo, Boxing, Muay Thai, ...</p>
                 </div>
-                <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0  mx-5">45 - 60 Phút</span>
+              </Link>
+
+            </div>
+            <div className="relative group  cursor-pointer">
+              <Link to="/dich-vu/6">
+                <img src="https://citigym.com.vn/storage/uploads/body-combat.jpg" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
+
+                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                    Group X
+                  </div>
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    BODY BALANCE
+                  </div>
+                  <div className="my-2 mx-0">
+                    <FontAwesomeIcon icon={faClock} />
+                    <span className="my-0  mx-2">45 - 60 Phút</span>
+                  </div>
+                  <p>Body Balance là lớp học dựa trên nền tảng của các bộ môn Yoga, Taichi, Pilates kết hợp với âm nhạc giúp cải thiện sức khỏe v...</p>
                 </div>
-                <p>
-                  RPM (Revolutions per minute) là bộ môn xe đạp trong nhà kết
-                  hợp âm nhạc giả lập chạy trên đường bằng phẳng, lên xuống núi
-                  vớ...
-                </p>
-              </div>
+              </Link>
+
+            </div>
+            <div className="relative group  cursor-pointer">
+              <Link to="/dich-vu/6">
+                <img src="https://citigym.com.vn/storage/uploads/body-balance.jpg" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
+                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                    Group X
+                  </div>
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    RPM
+                  </div>
+                  <div className="my-2 mx-0">
+                    <FontAwesomeIcon icon={faClock} />
+                    <span className="my-0  mx-2">45 - 60 Phút</span>
+                  </div>
+                  <p>RPM (Revolutions per minute) là bộ môn xe đạp trong nhà kết hợp âm nhạc giả lập chạy trên đường bằng phẳng, lên xuống núi vớ...</p>
+                </div>
+              </Link>
+
             </div>
           </div>
         </div>
