@@ -15,7 +15,7 @@ const Services = () => {
         <div className="title-bg">
           FIND A CLASS
         </div>
-        <img src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg" alt="Description" className="w-full h-[30rem]" />
+        <img src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg" alt="Description" className="w-full " />
       </div>
 
       <section className=" py-16 ">
