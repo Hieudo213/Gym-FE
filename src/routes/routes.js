@@ -2,6 +2,7 @@ import App from "../App";
 import HomePage from "../pages/HomePage";
 import { createBrowserRouter } from "react-router-dom";
 import Services from "../pages/Services";
+import ServicesDetail from "../pages/ServicesDetail";
 import Club from "../pages/Club";
 import Schedule from "../pages/Schedule";
 import PricingPolicy from "../pages/PricingPolicy";
@@ -14,7 +15,7 @@ import Permissions from "../errors/Permission";
 
 export const router = createBrowserRouter([
   {
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
     path: "/",
     element: <App />,
     children: [
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/dich-vu",
         element: <Services />,
+      },
+      {
+        path: "/dich-vu/:id",
+        element: <ServicesDetail />,
       },
       {
         path: "/lich-hoc",

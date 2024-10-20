@@ -1,7 +1,7 @@
 .image_full {
     width: 100%;
 
-    margin-bottom: 4rem;
+
     position: relative;
 }
 
@@ -53,13 +53,25 @@
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 85%;
 
     margin: 20px auto;
 }
 
+.img_bg {
+    background-image: url('https://citigym.com.vn/themes/citigym/images/banners/banner-3.jpg');
+    background-size: cover;
+    /* Đảm bảo hình ảnh bao phủ toàn bộ phần tử */
+    background-position: center;
+    /* Căn giữa hình ảnh */
+    height: 30rem;
+    /* Chiều cao 30rem */
+    width: 100%;
+
+}
+
 .body {
-    background-color: #faf3f3;
+    background-color: #ffffff;
 }
 
 .row {
@@ -86,6 +98,10 @@
 .fix7 {
     height: 16rem;
 
+}
+
+.fix9 {
+    height: 13rem;
 }
 
 .fix8 {
