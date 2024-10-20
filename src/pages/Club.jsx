@@ -13,6 +13,7 @@ const Club = () => {
         />
       </div>
 
+
       <section className="mb-[30px]">
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-bold uppercase text-[28px] text-[#454545] mb-4">
@@ -41,6 +42,7 @@ const Club = () => {
           </form>
         </div>
       </section>
+
       <section className="pb-16 max-w-[1170px] m-auto">
         <div className="grid grid-cols-3 gap-8 mb-8 ">
           <div className="group cursor-pointer">
