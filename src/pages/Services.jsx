@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Services.css";
 import { Link } from 'react-router-dom';
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Services = () => {
   return (
@@ -13,7 +13,8 @@ const Services = () => {
         <div className="title-bg">
           FIND A CLASS
         </div>
-        <img src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg" alt="Description" className="w-full h-[30rem]" />
+
+        <img src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg" alt="Description" className="w-full " />
       </div>
       <section className=" py-16 ">
         <div className="flex flex-col justify-center items-center">

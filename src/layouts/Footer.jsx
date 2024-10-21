@@ -31,7 +31,6 @@ function Footer() {
               <div className="w-[5%] flex items-center justify-center mr-2">
 
                 <FontAwesomeIcon icon={faClock} />
-
               </div>
               <div className="w-[90%]">
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>
@@ -47,7 +46,6 @@ function Footer() {
             <div className="row  mt-5 justify-center">Chính sách giá </div>
             <div className="row  mt-5 justify-center">Chính sách bảo mật</div>
           </div>
-
           <div class="w-[20%]  mt-5 mx-auto pt-2  h-full">
 
             <div className="row  mt-5 justify-center"> Tuyển dụng </div>
