@@ -1,9 +1,8 @@
 import React from "react";
-import '../styles/Services.css'
-
+import "../styles/Services.css";
 
 import { Link } from 'react-router-dom';
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Services = () => {
   return (
@@ -15,16 +14,18 @@ const Services = () => {
         <div className="title-bg">
           FIND A CLASS
         </div>
+
         <img src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg" alt="Description" className="w-full " />
       </div>
-
       <section className=" py-16 ">
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-bold uppercase text-[28px] text-[#454545] mb-4">
             Các dịch vụ của chúng tôi
           </h2>
           <p className="max-w-[420px] mb-12 text-center text-base text-[212529]">
-            Chương trình luyện tập yoga, gym, group X được thiết kế khoa học và phù hợp từ chuyên gia sẽ giúp bạn đạt được mục tiêu sức khỏe và hình thể.
+            Chương trình luyện tập yoga, gym, group X được thiết kế khoa học và
+            phù hợp từ chuyên gia sẽ giúp bạn đạt được mục tiêu sức khỏe và hình
+            thể.
           </p>
         </div>
 
@@ -32,7 +33,7 @@ const Services = () => {
           <div className="relative group cursor-pointer">
             <img src="https://citigym.com.vn/storage/uploads/bums-and-tums.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">
+              <span className="text-white font-bold text-3xl">
                 BUMS AND TUMS
               </span>
             </div>
@@ -40,38 +41,37 @@ const Services = () => {
           <div className="relative group cursor-pointer">
             <img src="https://citigym.com.vn/storage/uploads/thumbnail-1-5.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">CYCLING</span>
+              <span className="text-white font-bold text-3xl">CYCLING</span>
             </div>
           </div>
           <div className="relative group cursor-pointer">
             <img src="https://citigym.com.vn/storage/uploads/untitled-8-3.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">DANCE</span>
+              <span className="text-white font-bold text-3xl">DANCE</span>
             </div>
           </div>
           <div className="relative group cursor-pointer">
             <img src="https://citigym.com.vn/storage/uploads/rin-1822.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">
-                GROUP X
-              </span>
+              <span className="text-white font-bold text-3xl">GROUP X</span>
             </div>
           </div>
           <div className="relative group cursor-pointer">
             <img src="https://citigym.com.vn/storage/uploads/thumbnail-3-2.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">YOGA</span>
+              <span className="text-white font-bold text-3xl">YOGA</span>
             </div>
           </div>
           <div className="relative group cursor-pointer">
+
             <img src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg" alt="" className="w-full h-[352px]" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span class="text-white font-bold text-3xl">PERSONAL TRAINER</span>
+              <span className="text-white font-bold text-3xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
         </div>
-
-
       </section>
       <section className="  py-16 ">
         <div className="container ">
@@ -193,14 +193,10 @@ const Services = () => {
 
             </div>
           </div>
-
         </div>
-
       </section>
-
     </>
-
-  )
+  );
 };
 
 export default Services;
