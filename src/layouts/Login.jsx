@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉnh
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Login() {
   return (
@@ -10,9 +12,21 @@ function Login() {
           <div className="form-container">
             <div className="form-wrapper">
               <div className="form-card">
-                <div className="form-card-body">
+                <div className="form-card-body ">
+
                   <div className="form-header">
-                    <h5 className="form-title">Đăng nhập</h5>
+
+                    <div className="form-title   ">
+                      <span className="icon float-left mt-1  w-5 h-5 text-xl hover:text-green-300  transition duration-200 cursor-pointer" >
+                        <Link to="/">
+                          <FontAwesomeIcon icon={faCircleArrowLeft} />
+                        </Link>
+
+                      </span>
+                      <span>  Đăng nhập</span>
+
+
+                    </div>
                   </div>
 
                   <form className="login-form" noValidate>
