@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Services.css";
+import "../styles/Services.css";``
 import { Link } from 'react-router-dom';
 import { faClock, faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
