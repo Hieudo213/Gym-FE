@@ -74,7 +74,7 @@ function HomePage() {
           <div className="relative group">
             <img src={services1} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">
+              <span className="text-white font-bold text-2xl">
                 PERSONAL TRAINER
               </span>
             </div>
@@ -82,19 +82,19 @@ function HomePage() {
           <div className="relative group">
             <img src={services2} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">YOGA</span>
+              <span className="text-white font-bold text-2xl">YOGA</span>
             </div>
           </div>
           <div className="relative group">
             <img src={services3} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">GROUP X</span>
+              <span className="text-white font-bold text-2xl">GROUP X</span>
             </div>
           </div>
           <div className="relative group">
             <img src={services4} alt="" className="w-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">XEM THÊM</span>
+              <span className="text-white font-bold text-2xl">XEM THÊM</span>
             </div>
           </div>
         </div>
