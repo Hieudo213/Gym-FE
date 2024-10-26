@@ -18,7 +18,6 @@ function Register() {
                                             <Link to="/">
                                                 <FontAwesomeIcon icon={faCircleArrowLeft} />
                                             </Link>
-
                                         </span>
                                         <span className="form-title">Đăng ký</span>
                                     </div>
