@@ -6,10 +6,6 @@ import Tanh from "../assets/img/Footer/tanh3.jpg";
 import Hieu from "../assets/img/Footer/hieu3.jpg";
 import Dung from "../assets/img/Footer/Congdung.png";
 import Lam from "../assets/img/Footer/lam3.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faClock, faLocation, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-
 
 function Footer() {
   return (
@@ -19,13 +15,15 @@ function Footer() {
           <div className="w-[30%]   h-full">
             <div className="text_logo font-bold text-base">GYMPRO</div>
             <div className="row mt-5">
-              <FontAwesomeIcon icon={faPhone} className="mt-1" />
+              <i className="fa-solid fa-phone"></i>
               <span className="text-base ml-3">1900 633 638</span>
             </div>
             <div className="row mt-5">
-
-              <FontAwesomeIcon icon={faLocationDot} className="mt-1" />
-              <span className="text-base ml-3">92,Lê Thanh Nghị , Hai bà Trưng , Hà Nội (Sân vân động Bách Khoa)</span>
+              <i className="fa-solid fa-location-dot"></i>
+              <span className="text-base ml-3">
+                92,Lê Thanh Nghị , Hai bà Trưng , Hà Nội (Sân vân động Bách
+                Khoa)
+              </span>
             </div>
             <div className="row mt-5 flex">
               <div className="w-[5%] flex items-center justify-center mr-2">
@@ -47,7 +45,6 @@ function Footer() {
             <div className="row  mt-5 justify-center">Chính sách bảo mật</div>
           </div>
           <div class="w-[20%]  mt-5 mx-auto pt-2  h-full">
-
             <div className="row  mt-5 justify-center"> Tuyển dụng </div>
             <div className="row  mt-5 justify-center">Tin tức </div>
             <div className="row  mt-5 justify-center">Liên hệ</div>
@@ -108,7 +105,6 @@ function Footer() {
       <div className="end_footer">
         <div className="text1">@ Edited by group 12</div>
       </div>
-
     </>
   );
 }
