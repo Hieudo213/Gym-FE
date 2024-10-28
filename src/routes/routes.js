@@ -61,9 +61,9 @@ export const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-  
+
   {
     path: "/error/403",
     element: <Permissions />,
-  },
+  }
 ]);
