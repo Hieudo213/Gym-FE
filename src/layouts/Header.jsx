@@ -2,17 +2,20 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleRight, faArrowRight, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
   { title: "CLB", path: "/clb" },
   { title: "DỊCH VỤ", path: "/dich-vu" },
-  { title: "LỊCH HỌC", path: "/lich-hoc" },
+  { title: "LỊCH TẬP", path: "/lich-hoc" },
   { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia" },
   { title: "TIN TỨC", path: "/tin-tuc" },
 ];
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); // Quản lý trạng thái của menu
+  const [isOpen, setIsOpen] = useState(false); // Khai báo cấu trúc   [tên , Set+ tên cấu trúc ] =  reacthook(trạng thái) 
+
 
   return (
     <header>
@@ -24,8 +27,10 @@ const Header = () => {
 
           {/* Hamburger menu icon */}
           <div className="xl:hidden">
+            {/* click thay đổi cái gì  */}
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+              {/* Thay đổi icon X -> /// */}
             </button>
           </div>
 
@@ -48,13 +53,27 @@ const Header = () => {
           </ul>
 
           {/* Login/Register Buttons */}
-          <div className="hidden xl:flex">
+          <div className="hidden xl:flex  h-full">
             <Link
               to="/login"
               className="bg-red-600 text-white py-2 px-4 font-bold hover:bg-red-700 transition-all duration-500 mr-2"
             >
               Đăng Nhập
             </Link>
+            {/* <div className="p-2  cursor-pointer flex items-center justify-center  hover:bg-gray-200  z-[0] group h-full w-[15rem] ">
+
+              <div className="px-2 text-[rgb(111 111 111)] text-sm">Nguyễn Thị Thanh Lâm</div>
+              <img src="" alt="" className="aspect-square w-9 rounded-full  border border-blue border-solid" />
+              <nav className="absolute bottom-0 right-0 w-[8rem] hidden    group-hover:block">
+                <ul className="bg-white p-0 border border-gray-100   rounded-[2px]">
+                  <li className=" px-3 text-xs py-3 hover:bg-gray-100   transition duration-200"> <FontAwesomeIcon icon={faUser} /> <span className="px-2">Tài khoản </span> </li>
+                  <li className=""><hr /></li>
+
+                  <li className="px-3  text-xs py-3 hover:bg-gray-100  transition duration-200"><FontAwesomeIcon icon={faArrowRight} /> <span className="px-2">Đăng xuất</span></li>
+                </ul>
+
+              </nav>
+            </div> */}
           </div>
         </div>
       </nav>
