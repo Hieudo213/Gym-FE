@@ -4,8 +4,7 @@ import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉ
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 
 
 function Login() {

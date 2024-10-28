@@ -1,8 +1,9 @@
 import React from "react";
 import "../styles/Services.css";
 import { Link } from 'react-router-dom';
-import { faClock, faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+import { FaClock } from "react-icons/fa6";
 const Services = () => {
   return (
     <>
@@ -27,12 +28,12 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center container ">
-          <div className="relative group cursor-pointer">
+        <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center w-3/4 mx-auto">
+          <div className="relative group cursor-pointer aspect-square ">
             <img
               src="https://citigym.com.vn/storage/uploads/bums-and-tums.jpg"
               alt=""
-              className="w-full h-[352px]"
+              className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">
@@ -40,63 +41,57 @@ const Services = () => {
               </span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
+          <div className="relative group cursor-pointer aspect-square">
             <img
               src="https://citigym.com.vn/storage/uploads/thumbnail-1-5.jpg"
               alt=""
-              className="w-full h-[352px]"
+              className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">CYCLING</span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
+          <div className="relative group cursor-pointer aspect-square">
             <img
               src="https://citigym.com.vn/storage/uploads/untitled-8-3.jpg"
               alt=""
-              className="w-full h-[352px]"
+              className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">DANCE</span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
+          <div className="relative group cursor-pointer aspect-square">
             <img
               src="https://citigym.com.vn/storage/uploads/rin-1822.jpg"
               alt=""
-              className="w-full h-[352px]"
+              className="w-full h-full "
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">GROUP X</span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
+          <div className="relative group cursor-pointer aspect-square">
             <img
               src="https://citigym.com.vn/storage/uploads/thumbnail-3-2.jpg"
               alt=""
-              className="w-full h-[352px]"
+              className="w-full h-full "
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">YOGA</span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg"
-              alt=""
-              className="w-full h-[352px]"
-            />
+          <div className="relative group cursor-pointer aspect-square">
+            <img src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg" className="w-full h-full" alt="" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">
-                PERSONAL TRAINER
-              </span>
+              <span className="text-white font-bold text-2xl">Personal Trainer  </span>
             </div>
           </div>
         </div>
       </section>
       <section className="  py-16 ">
-        <div className="container ">
-          <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center container ">
+        <div className="w-3/4 mx-auto">
+          <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center  ">
             <div className="relative  group  cursor-pointer">
               <Link to="/dich-vu/1">
                 <img
@@ -112,7 +107,8 @@ const Services = () => {
                     KICKFIT
                   </div>
                   <div className="my-2 mx-0">
-                    <i className="fa-solid fa-clock"></i>
+                    <FaClock className="float-left mt-[4px]" />
+
                     <span className="my-0  mx-2">60 Phút</span>
                   </div>
                   <p>
@@ -138,7 +134,8 @@ const Services = () => {
                     CYCLING
                   </div>
                   <div className="my-2 mx-0">
-                    <i className="fa-solid fa-clock"></i>
+                    <FaClock className="float-left mt-[4px]" />
+
                     <span className="my-0  mx-2">60 Phút</span>
                   </div>
                   <p>
@@ -163,8 +160,9 @@ const Services = () => {
                   <div className="text-red-700 font-bold text-xl  my-2 mx-0">
                     BODYPUMP
                   </div>
-                  <div className="my-2 mx-0">
-                    <i className="fa-solid fa-clock"></i>
+                  <div className="my-2 mx-0 ">
+                    <FaClock className="float-left mt-[4px]" />
+
                     <span className="my-0  mx-2">60 Phút</span>
                   </div>
                   <p>
@@ -189,7 +187,8 @@ const Services = () => {
                     BODY COMBAT
                   </div>
                   <div className="my-2 mx-0">
-                    <i className="fa-solid fa-clock"></i>
+                    <FaClock className="float-left mt-[4px]" />
+
                     <span className="my-0  mx-2">60 Phút</span>
                   </div>
                   <p>
@@ -216,7 +215,8 @@ const Services = () => {
                     BODY BALANCE
                   </div>
                   <div className="my-2 mx-0">
-                    <i className="fa-solid fa-clock"></i>
+                    <FaClock className="float-left mt-[4px]" />
+
                     <span className="my-0  mx-2">45 - 60 Phút</span>
                   </div>
                   <p>
@@ -242,7 +242,8 @@ const Services = () => {
                     RPM
                   </div>
                   <div className="my-2 mx-0">
-                    <i className="fa-solid fa-clock"></i>
+                    <FaClock className="float-left mt-[4px]" />
+
                     <span className="my-0  mx-2">45 - 60 Phút</span>
                   </div>
                   <p>
