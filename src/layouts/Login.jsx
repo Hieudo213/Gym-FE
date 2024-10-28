@@ -16,7 +16,6 @@ function Login() {
             <div className="form-wrapper">
               <div className="form-card">
                 <div className="form-card-body ">
-
                   <div className="form-header">
 
                     <div className="form-title  flex items-center  ">
@@ -24,7 +23,6 @@ function Login() {
                         <Link to="/">
                           <IoArrowBackCircleSharp size={25} />
                         </Link>
-
                       </span>
                       <span className="mx-auto">  Đăng nhập</span>
 
