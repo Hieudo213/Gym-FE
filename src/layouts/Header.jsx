@@ -40,7 +40,7 @@ const Header = () => {
               <li key={index}>
                 <Link
                   to={item.path}
-                  className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block py-2"
+                  className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block"
                   onClick={() => setIsOpen(false)} // Đóng menu sau khi nhấp vào link
                 >
                   {item.title}

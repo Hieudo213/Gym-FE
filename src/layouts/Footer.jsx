@@ -9,6 +9,9 @@ import Lam from "../assets/img/Footer/lam3.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 
+import { FaClock } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 function Footer() {
   return (
     <>
@@ -17,11 +20,11 @@ function Footer() {
           <div className="w-[30%]   h-full">
             <div className="text_logo font-bold text-base">GYMPRO</div>
             <div className="row mt-5">
-              <i className="fa-solid fa-phone"></i>
+              <FaPhone />
               <span className="text-base ml-3">1900 633 638</span>
             </div>
             <div className="row mt-5">
-              <i className="fa-solid fa-location-dot"></i>
+              <FaLocationDot className=" mt-3 text-xl" />
               <span className="text-base ml-3">
                 92,Lê Thanh Nghị , Hai bà Trưng , Hà Nội (Sân vân động Bách
                 Khoa)
@@ -29,8 +32,7 @@ function Footer() {
             </div>
             <div className="row mt-5 flex">
               <div className="w-[5%] flex items-center justify-center mr-2">
-
-                <FontAwesomeIcon icon={faClock} />
+                <FaClock />
               </div>
               <div className="w-[90%]">
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>

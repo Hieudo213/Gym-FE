@@ -1,11 +1,11 @@
-import { faBone, faClockRotateLeft, faDumbbell, faFile, faFire, faHandFist, faHeart, faPerson } from "@fortawesome/free-solid-svg-icons";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-
-
-
-
+import { FaClockRotateLeft } from "react-icons/fa6";
+import { FaFire } from "react-icons/fa";
+import { FaDumbbell } from "react-icons/fa";
+import { FaHandFist } from "react-icons/fa6";
+import { LuBone } from "react-icons/lu";
+import { FaHeartPulse } from "react-icons/fa6";
+import { GiBodyBalance } from "react-icons/gi";
 const ServicesDetail = () => {
   return (
     <>
@@ -33,7 +33,7 @@ const ServicesDetail = () => {
           </div>
 
         </div>
-        <div className="relative  group  cursor-pointer">
+        <div className="relative  group  cursor-pointer ">
           <img src="https://citigym.com.vn/storage/uploads/af1i9380-removebg.jpg" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
 
         </div>
@@ -45,8 +45,8 @@ const ServicesDetail = () => {
           <div className="relative w-full  group  cursor-pointer">
             <img src="https://citigym.com.vn/themes/citigym/images/features/feature-2.jpg" alt="" className="w-full h-20rem transition-opacity duration-500 group-hover:opacity-50" />
             <div className="  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+              <FaClockRotateLeft className=" text-7xl text-white w-full text-center" />
 
-              <FontAwesomeIcon icon={faClockRotateLeft} className=" text-7xl text-white w-full text-center" />
               <div className="text-white font-bold mt-5 text-center ">
                 <p className="mb-2 text-1xl"> Thời lượng</p>
                 <p className="text-2xl">60 Phút</p>
@@ -59,8 +59,8 @@ const ServicesDetail = () => {
           <div className="relative w-full   group  cursor-pointer">
             <img src="https://citigym.com.vn/themes/citigym/images/features/feature-1.jpg" alt="" className="w-full h-20rem transition-opacity duration-500 group-hover:opacity-50" />
             <div className="  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+              <FaFire className="text-7xl text-white w-full text-center" />
 
-              <FontAwesomeIcon icon={faFire} className="text-7xl text-white w-full text-center" />
 
               <div className="text-white font-bold mt-5 text-center ">
                 <p className="mb-2 text-1xl"> Calories</p>
@@ -72,8 +72,8 @@ const ServicesDetail = () => {
           <div className="relative w-full   group  cursor-pointer">
             <img src="https://citigym.com.vn/themes/citigym/images/features/feature-3.jpg" alt="" className="w-full h-20rem transition-opacity duration-500 group-hover:opacity-50" />
             <div className="  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+              <FaDumbbell className="text-7xl text-white w-full text-center" />
 
-              <FontAwesomeIcon icon={faDumbbell} className="text-7xl text-white w-full text-center" />
               <div className="text-white font-bold mt-5 text-center ">
                 <p className="mb-2 text-1xl"> Đề xuất</p>
                 <p className="text-3xl">gym pro  </p>
@@ -84,7 +84,8 @@ const ServicesDetail = () => {
           <div className="relative w-full   group  cursor-pointer">
             <img src="https://citigym.com.vn/themes/citigym/images/features/feature-4.jpg" alt="" className="w-full h-20rem transition-opacity duration-500 group-hover:opacity-50" />
             <div className="  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-              <FontAwesomeIcon icon={faHandFist} className="text-7xl text-white w-full text-center" />
+
+              <FaHandFist className="text-7xl text-white w-full text-center" />
               <div className="text-white font-bold mt-5 text-center ">
                 <p className="mb-2 text-1xl"> Kĩ năng</p>
                 <p className="text-3xl">Dành cho mọi trình độ</p>
@@ -103,29 +104,30 @@ const ServicesDetail = () => {
         <div className="grid grid-cols-4 gap-8 px-8  mb-8 items-center container ">
           <div className="relative group  cursor-pointer">
             <div className="w-full">
+              <FaDumbbell className="text-7xl text-balck w-full text-center" />
 
-              <FontAwesomeIcon icon={faDumbbell} className="text-7xl text-balck w-full text-center" />
             </div>
             <p className="text-center mt-3 font-bold">Tăng cường sức mạnh</p>
           </div>
           <div className="relative group  cursor-pointer">
             <div className="w-full">
+              <LuBone className="text-7xl text-balck w-full text-center" />
 
-              <FontAwesomeIcon icon={faPerson} className="text-7xl text-balck w-full text-center" />
             </div>
             <p className="text-center mt-3 font-bold">Cơ bắp dẻo dai</p>
           </div>
           <div className="relative group  cursor-pointer">
             <div className="w-full">
+              <GiBodyBalance className="text-7xl text-balck w-full text-center" />
 
-              <FontAwesomeIcon icon={faBone} className="text-7xl text-balck w-full text-center" />
+
+
             </div>
             <p className="text-center mt-3 font-bold">Cơ thể vững chãi </p>
           </div>
           <div className="relative group  cursor-pointer">
             <div className="w-full">
-
-              <FontAwesomeIcon icon={faHeart} className="text-7xl text-balck w-full text-center" />
+              <FaHeartPulse className="text-7xl text-balck w-full text-center" />
 
             </div>
             <p className="text-center mt-3 font-bold">Trái tim khỏe mạnh </p>
