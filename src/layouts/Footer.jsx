@@ -43,7 +43,6 @@ function Footer() {
             <div className="row  mt-5 justify-center">Chính sách giá </div>
             <div className="row  mt-5 justify-center">Chính sách bảo mật</div>
           </div>
-
           <div class="w-[20%]  mt-5 mx-auto pt-2  h-full">
             <div className="row  mt-5 justify-center"> Tuyển dụng </div>
             <div className="row  mt-5 justify-center">Tin tức </div>
