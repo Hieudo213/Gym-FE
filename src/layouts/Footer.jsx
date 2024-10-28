@@ -6,6 +6,8 @@ import Tanh from "../assets/img/Footer/tanh3.jpg";
 import Hieu from "../assets/img/Footer/hieu3.jpg";
 import Dung from "../assets/img/Footer/Congdung.png";
 import Lam from "../assets/img/Footer/lam3.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (

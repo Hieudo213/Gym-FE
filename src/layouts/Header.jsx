@@ -12,8 +12,10 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); // Quản lý trạng thái của menu
-
+  const text = "dasdsad";
+  const [isOpen, setIsOpen] = useState(text); // Quản lý trạng thái của menu
+  console.log(isOpen);
+  
   return (
     <header>
       <nav className="bg-white w-full shadow-md fixed top-0 left-0 z-50">

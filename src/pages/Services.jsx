@@ -3,6 +3,10 @@ import "../styles/Services.css";
 import { Link } from 'react-router-dom';
 import { faClock, faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import services1 from "../assets/img/1.jpg";
+import services2 from "../assets/img/2.jpg";
+import services3 from "../assets/img/3.jpg";
+import services4 from "../assets/img/4.jpg";
 const Services = () => {
   return (
     <>
@@ -27,67 +31,51 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center container ">
-          <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/bums-and-tums.jpg"
-              alt=""
-              className="w-full h-[352px]"
-            />
+        <div className="grid grid-cols-3 gap-8 px-8 mb-8 items-center w-2/3 mx-auto">
+          <div className="relative group aspect-square  w-full">
+            <img src={services1} alt="" className="w-full h-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">
-                BUMS AND TUMS
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
               </span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/thumbnail-1-5.jpg"
-              alt=""
-              className="w-full h-[352px]"
-            />
+          <div className="relative group aspect-square  w-full">
+            <img src={services2} alt="" className="w-full h-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">CYCLING</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/untitled-8-3.jpg"
-              alt=""
-              className="w-full h-[352px]"
-            />
+          <div className="relative group aspect-square  w-full">
+            <img src={services3} alt="" className="w-full h-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">DANCE</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/rin-1822.jpg"
-              alt=""
-              className="w-full h-[352px]"
-            />
+          <div className="relative group aspect-square  w-full">
+            <img src={services4} alt="" className="w-full h-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">GROUP X</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/thumbnail-3-2.jpg"
-              alt=""
-              className="w-full h-[352px]"
-            />
+          <div className="relative group aspect-square w-full">
+            <img src={services1} alt="" className="w-full h-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">YOGA</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
-          <div className="relative group cursor-pointer">
-            <img
-              src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg"
-              alt=""
-              className="w-full h-[352px]"
-            />
+          <div className="relative group aspect-square w-full">
+            <img src={services2} alt="" className="w-full h-full" />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">
+              <span className="text-white font-bold text-2xl">
                 PERSONAL TRAINER
               </span>
             </div>
