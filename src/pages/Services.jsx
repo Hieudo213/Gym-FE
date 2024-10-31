@@ -12,7 +12,7 @@ const Services = () => {
         <img
           src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg"
           alt="Description"
-          className="w-full h-[30rem] object-cover"
+          className="w-full h-[30rem]"
         />
       </div>
       <section className=" py-16 ">
@@ -35,8 +35,8 @@ const Services = () => {
               className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">
-                BUMS AND TUMS
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
               </span>
             </div>
           </div>
@@ -47,7 +47,9 @@ const Services = () => {
               className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">CYCLING</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
@@ -57,7 +59,9 @@ const Services = () => {
               className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">DANCE</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
@@ -67,7 +71,9 @@ const Services = () => {
               className="w-full h-full "
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">GROUP X</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
@@ -76,8 +82,10 @@ const Services = () => {
               alt=""
               className="w-full h-full "
             />
-            <div className="absolute inset-0 bg-red-600  opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">YOGA</span>
+            <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
@@ -97,14 +105,14 @@ const Services = () => {
       <section className="  py-16 ">
         <div className="w-3/4 mx-auto">
           <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center  ">
-            <div className="relative cursor-pointer">
-              <Link to="/dich-vu/1">
+            <div className="relative  group  cursor-pointer">
+              <Link to="/dich-vu/1" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
                   alt=""
-                  className="w-full transition-opacity duration-500"
+                  className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
-                <div className="bg-opacity-60 border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     PERSONAL TRAINER
                   </div>
@@ -114,7 +122,7 @@ const Services = () => {
                   <div className="my-2 mx-0">
                     <FaClock className="float-left mt-[4px]" />
 
-                    <span className="my-0 mx-2">60 Phút</span>
+                    <span className="my-0  mx-2">60 Phút</span>
                   </div>
                   <p>
                     KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
