@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/PricingPolicy.css'
+import "../styles/PricingPolicy.css";
 
 const PricingPolicy = () => {
   return (
@@ -117,7 +117,9 @@ const PricingPolicy = () => {
               <td className="checkmark"></td>
             </tr>
             <tr className="highlight-row">
-              <td>Tham gia tất cả các lớp Yoga và Group X tại tất cả các CLB</td>
+              <td>
+                Tham gia tất cả các lớp Yoga và Group X tại tất cả các CLB
+              </td>
               <td></td>
               <td className="checkmark"></td>
               <td className="checkmark"></td>
@@ -125,7 +127,9 @@ const PricingPolicy = () => {
               <td className="checkmark"></td>
             </tr>
             <tr>
-              <td>1 buổi định hướng luyện tập riêng biệt với huấn luyện viên</td>
+              <td>
+                1 buổi định hướng luyện tập riêng biệt với huấn luyện viên
+              </td>
               <td className="checkmark"></td>
               <td className="checkmark"></td>
               <td className="checkmark"></td>
