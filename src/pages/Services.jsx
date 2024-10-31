@@ -76,7 +76,7 @@ const Services = () => {
               alt=""
               className="w-full h-full "
             />
-            <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
+            <div className="absolute inset-0 bg-red-600  opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
               <span className="text-white font-bold text-3xl">YOGA</span>
             </div>
           </div>
@@ -92,13 +92,13 @@ const Services = () => {
         <div className="w-3/4 mx-auto">
           <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center  ">
             <div className="relative  group  cursor-pointer">
-              <Link to="/dich-vu/1">
+              <Link to="/dich-vu/1" style={{ color: '#333' }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     PERSONAL TRAINER
                   </div>
@@ -117,15 +117,15 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/2">
+            <div className="relative  group  cursor-pointer">
+              <Link to="/dich-vu/2" style={{ color: '#333' }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
 
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0      border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     PERSONAL TRAINER
                   </div>
@@ -146,13 +146,13 @@ const Services = () => {
               </Link>
             </div>
             <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/3">
+              <Link to="/dich-vu/3" style={{ color: '#333' }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     Group X
                   </div>
@@ -171,14 +171,14 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/4">
+            <div className="relative group cursor-pointer">
+              <Link to="/dich-vu/4" style={{ color: '#333' }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     Group X
                   </div>
@@ -198,15 +198,15 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/6">
+            <div className="relative group   cursor-pointer">
+              <Link to="/dich-vu/6" style={{ color: '#333' }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
 
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     Group X
                   </div>
@@ -226,8 +226,8 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/6">
+            <div className="relative  group  cursor-pointer">
+              <Link to="/dich-vu/6" style={{ color: '#333' }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
                   alt=""
