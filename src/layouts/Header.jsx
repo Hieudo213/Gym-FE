@@ -1,18 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleRight, faArrowRight, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
   { title: "CLB", path: "/clb" },
   { title: "DỊCH VỤ", path: "/dich-vu" },
-  { title: "LỊCH HỌC", path: "/lich-hoc" },
+  { title: "LỊCH TẬP", path: "/lich-hoc" },
   { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia" },
   { title: "TIN TỨC", path: "/tin-tuc" },
 ];
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); // Quản lý trạng thái của menu
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const userName = "Nguyễn Văn A";
+  const dropdownRef = useRef(null); // Ref for the dropdown
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header>
@@ -24,8 +41,10 @@ const Header = () => {
 
           {/* Hamburger menu icon */}
           <div className="xl:hidden">
+            {/* click thay đổi cái gì  */}
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+              {/* Thay đổi icon X -> /// */}
             </button>
           </div>
 
@@ -39,7 +58,7 @@ const Header = () => {
                 <Link
                   to={item.path}
                   className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block py-2"
-                  onClick={() => setIsOpen(false)} // Đóng menu sau khi nhấp vào link
+                  onClick={() => setIsOpen(false)} // Close menu after clicking link
                 >
                   {item.title}
                 </Link>
@@ -48,18 +67,52 @@ const Header = () => {
           </ul>
 
           {/* Login/Register Buttons */}
-          <div className="hidden xl:flex">
-            <Link
-              to="/login"
-              className="bg-red-600 text-white py-2 px-4 font-bold hover:bg-red-700 transition-all duration-500 mr-2"
+          <div className="hidden xl:flex relative">
+            <button
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              className="flex items-center space-x-2 text-black py-2 px-4 font-bold hover:text-[#a50000] transition-all duration-500 rounded"
             >
-              Đăng Nhập
-            </Link>
-          </div>
+              <img
+              src="https://png.pngtree.com/png-clipart/20190904/original/pngtree-user-cartoon-avatar-pattern-flat-avatar-png-image_4492883.jpg"
+              alt="User Icon"
+              className="w-8 h-8 rounded-full"
+            />
+            <span>{userName}</span>
+          </button>
+
+          {/* Dropdown Menu */}
+          {isDropdownOpen && (
+            <div
+              ref={dropdownRef}
+              className="absolute top-10 right-[-30px] mt-2 w-48 bg-white rounded-md shadow-lg"
+            >
+              <Link
+                to="/my-account"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >
+                Tài khoản của tôi
+              </Link>
+              <Link
+                to="/my-orders"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >
+                Gói tập
+              </Link>
+              <button
+                onClick={() => {
+                  /* Add logout function here */
+                }}
+                className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >
+                Đăng xuất
+              </button>
+            </div>
+          )}
         </div>
-      </nav>
-    </header>
-  );
+      </div>
+    </nav>
+  </header>
+);
 };
 
 export default Header;

@@ -2,6 +2,7 @@ import App from "../App";
 import HomePage from "../pages/HomePage";
 import { createBrowserRouter } from "react-router-dom";
 import Services from "../pages/Services";
+import ServicesDetail from "../pages/ServicesDetail";
 import Club from "../pages/Club";
 import Schedule from "../pages/Schedule";
 import PricingPolicy from "../pages/PricingPolicy";
@@ -11,10 +12,11 @@ import Login from "../layouts/Login";
 import Register from "../layouts/Register";
 import ErrorPage from "../errors/ErrorPage";
 import Permissions from "../errors/Permission";
+import ComingSoon from "../pages/ComingSoon";
 
 export const router = createBrowserRouter([
   {
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
     path: "/",
     element: <App />,
     children: [
@@ -29,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/dich-vu",
         element: <Services />,
+      },
+      {
+        path: "/dich-vu/:id",
+        element: <ServicesDetail />,
       },
       {
         path: "/lich-hoc",
@@ -46,6 +52,10 @@ export const router = createBrowserRouter([
         path: "/khuyen-mai",
         element: <Promotions />,
       },
+      {
+        path: "/chung-toi-dang-hoan-thien",
+        element: <ComingSoon />,
+      },
     ],
   },
   {
@@ -56,9 +66,9 @@ export const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-  
+
   {
     path: "/error/403",
     element: <Permissions />,
-  },
+  }
 ]);

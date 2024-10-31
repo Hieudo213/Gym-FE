@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./layouts/Footer";
 import { Outlet } from "react-router-dom";
 import Header from "./layouts/Header";
+import { Modal } from "antd";
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
       <div className="footer">
         <Footer /> 
       </div>
+      <Modal title="Basic Modal" open={false} >
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Modal>
     </div>
   );
 }
