@@ -12,6 +12,7 @@ import Login from "../layouts/Login";
 import Register from "../layouts/Register";
 import ErrorPage from "../errors/ErrorPage";
 import Permissions from "../errors/Permission";
+import ComingSoon from "../pages/ComingSoon";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: "/khuyen-mai",
         element: <Promotions />,
+      },
+      {
+        path: "/chung-toi-dang-hoan-thien",
+        element: <ComingSoon />,
       },
     ],
   },

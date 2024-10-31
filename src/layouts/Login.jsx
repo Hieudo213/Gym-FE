@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉnh
-import { IoArrowBackCircleSharp } from "react-icons/io5";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -17,16 +17,13 @@ function Login() {
               <div className="form-card">
                 <div className="form-card-body ">
                   <div className="form-header">
-
-                    <div className="form-title  flex items-center  ">
-                      <span className="icon  float-left  w-5 h-5 text-xl hover:text-green-500  transition duration-200 cursor-pointer" >
+                    <div className="form-title   ">
+                      <span className="icon float-left mt-1  w-5 h-5 text-xl hover:text-green-300  transition duration-200 cursor-pointer" >
                         <Link to="/">
-                          <IoArrowBackCircleSharp size={25} />
+                          <FontAwesomeIcon icon={faCircleArrowLeft} />
                         </Link>
                       </span>
-                      <span className="mx-auto">  Đăng nhập</span>
-
-
+                      <span>  Đăng nhập</span>
                     </div>
                   </div>
                   <form className="login-form" noValidate>
