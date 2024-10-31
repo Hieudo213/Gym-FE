@@ -1,6 +1,6 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
-
+import { FaClock } from "react-icons/fa6";
 const Club = () => {
   return (
     <>
@@ -56,8 +56,8 @@ const Club = () => {
                   KICKFIT
                 </div>
                 <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0 mx-5">60 Phút</span>
+                  <FaClock className="float-left mt-[4px]" />
+                  <span className="my-0 mx-2">60 Phút</span>
                 </div>
                 <p>
                   KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
@@ -79,8 +79,8 @@ const Club = () => {
                   KICKFIT
                 </div>
                 <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0 mx-5">60 Phút</span>
+                  <FaClock className="float-left mt-[4px]" />
+                  <span className="my-0 mx-2">60 Phút</span>
                 </div>
                 <p>
                   KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
@@ -102,8 +102,8 @@ const Club = () => {
                   KICKFIT
                 </div>
                 <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0 mx-5">60 Phút</span>
+                  <FaClock className="float-left mt-[4px]" />
+                  <span className="my-0 mx-2">60 Phút</span>
                 </div>
                 <p>
                   KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
@@ -125,8 +125,8 @@ const Club = () => {
                   KICKFIT
                 </div>
                 <div className="my-2 mx-0">
-                  <i className="fa-solid fa-clock"></i>
-                  <span className="my-0 mx-5">60 Phút</span>
+                  <FaClock className="float-left mt-[4px]" />
+                  <span className="my-0 mx-2">60 Phút</span>
                 </div>
                 <p>
                   KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền

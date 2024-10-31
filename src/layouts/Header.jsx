@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleRight, faArrowRight, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
   { title: "CLB", path: "/clb" },
   { title: "DỊCH VỤ", path: "/dich-vu" },
-  { title: "LỊCH HỌC", path: "/lich-hoc" },
+  { title: "LỊCH TẬP", path: "/lich-hoc" },
   { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia" },
   { title: "TIN TỨC", path: "/tin-tuc" },
 ];
@@ -39,8 +41,10 @@ const Header = () => {
 
           {/* Hamburger menu icon */}
           <div className="xl:hidden">
+            {/* click thay đổi cái gì  */}
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+              {/* Thay đổi icon X -> /// */}
             </button>
           </div>
 
