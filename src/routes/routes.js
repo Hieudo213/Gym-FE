@@ -70,5 +70,5 @@ export const router = createBrowserRouter([
   {
     path: "/error/403",
     element: <Permissions />,
-  },
+  }
 ]);

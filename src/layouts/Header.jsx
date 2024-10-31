@@ -16,11 +16,25 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const userName = "Nguyễn Văn A";
   const dropdownRef = useRef(null); // Ref for the dropdown
+<<<<<<< HEAD
 
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+=======
+  const buttonRef = useRef(null); // Ref for the button
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Close the dropdown if clicked outside the button and dropdown elements
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+>>>>>>> main
         setIsDropdownOpen(false);
       }
     };
@@ -63,10 +77,18 @@ const Header = () => {
             ))}
           </ul>
 
+<<<<<<< HEAD
           {/* Login/Register Buttons */}
           <div className="hidden xl:flex relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+=======
+          {/* User Menu Toggle Button */}
+          <div className="hidden xl:flex relative">
+            <button
+              ref={buttonRef}
+              onClick={() => setIsDropdownOpen((prev) => !prev)} // Toggle dropdown visibility
+>>>>>>> main
               className="flex items-center space-x-2 text-black py-2 px-4 font-bold hover:text-[#a50000] transition-all duration-500 rounded"
             >
               <img

@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉnh cho trang đăng ký
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
+import { IoArrowBackCircleSharp } from "react-icons/io5";
 function Register() {
+<<<<<<< HEAD
   return (
     <main className="main-container">
       <div className="login-container">
@@ -22,6 +21,24 @@ function Register() {
                     <span className="form-title">Đăng ký</span>
                   </div>
 
+=======
+    return (
+        <main className="main-container">
+            <div className="login-container">
+                <section className="register-section">
+                    <div className="form-container">
+                        <div className="form-wrapper">
+                            <div className="form-card">
+                                <div className="form-card-body">
+                                    <div className="form-header my-3 ">
+                                        <span className="icon float-left mt-1  w-5 h-5 text-xl hover:text-green-300  transition duration-200 cursor-pointer" >
+                                            <Link to="/">
+                                                <IoArrowBackCircleSharp size={25} />
+                                            </Link>
+                                        </span>
+                                        <span className="form-title">Đăng ký</span>
+                                    </div>
+>>>>>>> main
                   <form className="login-form" noValidate>
                     <div className="form-group">
                       <label htmlFor="yourUsername" className="form-label">
