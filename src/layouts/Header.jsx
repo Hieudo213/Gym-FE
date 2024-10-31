@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -14,8 +14,22 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); // Khai báo cấu trúc   [tên , Set+ tên cấu trúc ] =  reacthook(trạng thái) 
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const userName = "Nguyễn Văn A";
+  const dropdownRef = useRef(null); // Ref for the dropdown
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header>
@@ -36,15 +50,16 @@ const Header = () => {
 
           {/* Menu Items */}
           <ul
-            className={`${isOpen ? "block" : "hidden"
-              } xl:flex flex-col xl:flex-row gap-8 absolute xl:static left-0 top-16 bg-white xl:bg-transparent w-full xl:w-auto px-6 xl:px-0 py-4 xl:py-0 shadow-md xl:shadow-none`}
+            className={`${
+              isOpen ? "block" : "hidden"
+            } xl:flex flex-col xl:flex-row gap-8 absolute xl:static left-0 top-16 bg-white xl:bg-transparent w-full xl:w-auto px-6 xl:px-0 py-4 xl:py-0 shadow-md xl:shadow-none`}
           >
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
                   to={item.path}
                   className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block py-2"
-                  onClick={() => setIsOpen(false)} // Đóng menu sau khi nhấp vào link
+                  onClick={() => setIsOpen(false)} // Close menu after clicking link
                 >
                   {item.title}
                 </Link>
@@ -53,27 +68,47 @@ const Header = () => {
           </ul>
 
           {/* Login/Register Buttons */}
-          <div className="hidden xl:flex  h-full">
-            <Link
-              to="/login"
-              className="bg-red-600 text-white py-2 px-4 font-bold hover:bg-red-700 transition-all duration-500 mr-2"
+          <div className="hidden xl:flex relative">
+            <button
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              className="flex items-center space-x-2 text-black py-2 px-4 font-bold hover:text-[#a50000] transition-all duration-500 rounded"
             >
-              Đăng Nhập
-            </Link>
-            {/* <div className="p-2  cursor-pointer flex items-center justify-center  hover:bg-gray-200  z-[0] group h-full w-[15rem] ">
+              <img
+                src="https://png.pngtree.com/png-clipart/20190904/original/pngtree-user-cartoon-avatar-pattern-flat-avatar-png-image_4492883.jpg"
+                alt="User Icon"
+                className="w-8 h-8 rounded-full"
+              />
+              <span>{userName}</span>
+            </button>
 
-              <div className="px-2 text-[rgb(111 111 111)] text-sm">Nguyễn Thị Thanh Lâm</div>
-              <img src="" alt="" className="aspect-square w-9 rounded-full  border border-blue border-solid" />
-              <nav className="absolute bottom-0 right-0 w-[8rem] hidden    group-hover:block">
-                <ul className="bg-white p-0 border border-gray-100   rounded-[2px]">
-                  <li className=" px-3 text-xs py-3 hover:bg-gray-100   transition duration-200"> <FontAwesomeIcon icon={faUser} /> <span className="px-2">Tài khoản </span> </li>
-                  <li className=""><hr /></li>
-
-                  <li className="px-3  text-xs py-3 hover:bg-gray-100  transition duration-200"><FontAwesomeIcon icon={faArrowRight} /> <span className="px-2">Đăng xuất</span></li>
-                </ul>
-
-              </nav>
-            </div> */}
+            {/* Dropdown Menu */}
+            {isDropdownOpen && (
+              <div
+                ref={dropdownRef}
+                className="absolute top-10 right-[-30px] mt-2 w-48 bg-white rounded-md shadow-lg"
+              >
+                <Link
+                  to="/my-account"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Tài khoản của tôi
+                </Link>
+                <Link
+                  to="/my-orders"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Gói tập
+                </Link>
+                <button
+                  onClick={() => {
+                    /* Add logout function here */
+                  }}
+                  className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Đăng xuất
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </nav>

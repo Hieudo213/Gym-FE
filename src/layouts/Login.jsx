@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉnh
 import { IoArrowBackCircleSharp } from "react-icons/io5";
 
-
-
-
-
 function Login() {
   return (
     <main className="main-container">
@@ -15,9 +11,8 @@ function Login() {
           <div className="form-container">
             <div className="form-wrapper">
               <div className="form-card">
-                <div className="form-card-body ">
-                  <div className="form-header">
-
+                <div className="form-card-body">
+                  <div className="form-header"
                     <div className="form-title  flex items-center  ">
                       <span className="icon  float-left  w-5 h-5 text-xl hover:text-green-500  transition duration-200 cursor-pointer" >
                         <Link to="/">
@@ -26,9 +21,9 @@ function Login() {
                       </span>
                       <span className="mx-auto">  Đăng nhập</span>
 
-
                     </div>
                   </div>
+
                   <form className="login-form" noValidate>
                     <div className="form-group">
                       <label htmlFor="yourUsername" className="form-label">
