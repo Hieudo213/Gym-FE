@@ -1,20 +1,19 @@
 import React from "react";
 import "../styles/Services.css";
 import { Link } from 'react-router-dom';
-
-
 import { FaClock } from "react-icons/fa6";
+
 const Services = () => {
   return (
     <>
       <div className="image_full mt-[72px]">
-        <div className="content">
-          DỊCH VỤ
-        </div>
-        <div className="title-bg">
-          FIND A CLASS
-        </div>
-        <img src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg" alt="Description" className="w-full " />
+        <div className="content">DỊCH VỤ</div>
+        <div className="title-bg">FIND A CLASS</div>
+        <img
+          src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg"
+          alt="Description"
+          className="w-full h-[30rem]"
+        />
       </div>
       <section className=" py-16 ">
         <div className="flex flex-col justify-center items-center">

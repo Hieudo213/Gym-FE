@@ -35,7 +35,6 @@ const ServicesDetail = () => {
         </div>
         <div className="relative  group  cursor-pointer ">
           <img src="https://citigym.com.vn/storage/uploads/af1i9380-removebg.jpg" alt="" className="w-full transition-opacity duration-500 group-hover:opacity-50" />
-
         </div>
       </section>
       <div className="mt-[15rem]">
@@ -84,13 +83,11 @@ const ServicesDetail = () => {
           <div className="relative w-full   group  cursor-pointer">
             <img src="https://citigym.com.vn/themes/citigym/images/features/feature-4.jpg" alt="" className="w-full h-20rem transition-opacity duration-500 group-hover:opacity-50" />
             <div className="  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-
               <FaHandFist className="text-7xl text-white w-full text-center" />
               <div className="text-white font-bold mt-5 text-center ">
                 <p className="mb-2 text-1xl"> Kĩ năng</p>
                 <p className="text-3xl">Dành cho mọi trình độ</p>
               </div>
-
             </div>
           </div>
         </section>
@@ -105,36 +102,28 @@ const ServicesDetail = () => {
           <div className="relative group  cursor-pointer">
             <div className="w-full">
               <FaDumbbell className="text-7xl text-balck w-full text-center" />
-
             </div>
             <p className="text-center mt-3 font-bold">Tăng cường sức mạnh</p>
           </div>
           <div className="relative group  cursor-pointer">
             <div className="w-full">
               <LuBone className="text-7xl text-balck w-full text-center" />
-
             </div>
             <p className="text-center mt-3 font-bold">Cơ bắp dẻo dai</p>
           </div>
           <div className="relative group  cursor-pointer">
             <div className="w-full">
               <GiBodyBalance className="text-7xl text-balck w-full text-center" />
-
-
-
             </div>
             <p className="text-center mt-3 font-bold">Cơ thể vững chãi </p>
           </div>
           <div className="relative group  cursor-pointer">
             <div className="w-full">
               <FaHeartPulse className="text-7xl text-balck w-full text-center" />
-
             </div>
             <p className="text-center mt-3 font-bold">Trái tim khỏe mạnh </p>
           </div>
         </div>
-
-
       </section>
     </>
 
