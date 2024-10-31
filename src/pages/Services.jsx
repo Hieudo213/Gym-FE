@@ -97,23 +97,14 @@ const Services = () => {
       <section className="  py-16 ">
         <div className="w-3/4 mx-auto">
           <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center  ">
-<<<<<<< HEAD
             <div className="relative cursor-pointer">
               <Link to="/dich-vu/1">
-=======
-            <div className="relative  group  cursor-pointer">
-              <Link to="/dich-vu/1" style={{ color: '#333' }}>
->>>>>>> 15ac4507e1054822918903eb38cb9902f3f981b4
                 <img
                   src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
                   alt=""
                   className="w-full transition-opacity duration-500"
                 />
-<<<<<<< HEAD
                 <div className="bg-opacity-60 border border-gray bg-white rounded p-5 fix7">
-=======
-                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
->>>>>>> 15ac4507e1054822918903eb38cb9902f3f981b4
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     PERSONAL TRAINER
                   </div>
@@ -133,7 +124,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="relative  group  cursor-pointer">
-              <Link to="/dich-vu/2" style={{ color: '#333' }}>
+              <Link to="/dich-vu/2" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
                   alt=""
@@ -161,7 +152,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/3" style={{ color: '#333' }}>
+              <Link to="/dich-vu/3" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
                   alt=""
@@ -187,7 +178,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="relative group cursor-pointer">
-              <Link to="/dich-vu/4" style={{ color: '#333' }}>
+              <Link to="/dich-vu/4" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
                   alt=""
@@ -214,7 +205,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="relative group   cursor-pointer">
-              <Link to="/dich-vu/6" style={{ color: '#333' }}>
+              <Link to="/dich-vu/6" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
                   alt=""
@@ -242,7 +233,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="relative  group  cursor-pointer">
-              <Link to="/dich-vu/6" style={{ color: '#333' }}>
+              <Link to="/dich-vu/6" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
                   alt=""
