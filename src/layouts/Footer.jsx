@@ -6,6 +6,8 @@ import Tanh from "../assets/img/Footer/tanh3.jpg";
 import Hieu from "../assets/img/Footer/hieu3.jpg";
 import Dung from "../assets/img/Footer/Congdung.png";
 import Lam from "../assets/img/Footer/lam3.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 import { FaClock } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
@@ -30,11 +32,7 @@ function Footer() {
             </div>
             <div className="row mt-5 flex">
               <div className="w-[5%] flex items-center justify-center mr-2">
-<<<<<<< HEAD
-                <i className="fa-solid fa-clock"></i>
-=======
                 <FaClock />
->>>>>>> main
               </div>
               <div className="w-[90%]">
                 <p>Thứ Hai - Thứ Sáu: 6:00 đến 23:00 </p>
