@@ -2,13 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleRight, faArrowRight, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
   { title: "CLB", path: "/clb" },
   { title: "DỊCH VỤ", path: "/dich-vu" },
-  { title: "LỊCH TẬP", path: "/lich-hoc" },
+  { title: "LỊCH HỌC", path: "/lich-hoc" },
   { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia" },
   { title: "TIN TỨC", path: "/tin-tuc" },
 ];
@@ -18,11 +16,17 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const userName = "Nguyễn Văn A";
   const dropdownRef = useRef(null); // Ref for the dropdown
+  const buttonRef = useRef(null); // Ref for the button
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      // Close the dropdown if clicked outside the button and dropdown elements
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
         setIsDropdownOpen(false);
       }
     };
@@ -41,10 +45,8 @@ const Header = () => {
 
           {/* Hamburger menu icon */}
           <div className="xl:hidden">
-            {/* click thay đổi cái gì  */}
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
-              {/* Thay đổi icon X -> /// */}
             </button>
           </div>
 
@@ -66,10 +68,11 @@ const Header = () => {
             ))}
           </ul>
 
-          {/* Login/Register Buttons */}
+          {/* User Menu Toggle Button */}
           <div className="hidden xl:flex relative">
             <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              ref={buttonRef}
+              onClick={() => setIsDropdownOpen((prev) => !prev)} // Toggle dropdown visibility
               className="flex items-center space-x-2 text-black py-2 px-4 font-bold hover:text-[#a50000] transition-all duration-500 rounded"
             >
               <img
