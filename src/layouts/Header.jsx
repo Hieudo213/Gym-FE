@@ -12,10 +12,8 @@ const navItems = [
 ];
 
 const Header = () => {
-  const text = "dasdsad";
-  const [isOpen, setIsOpen] = useState(text); // Quản lý trạng thái của menu
-  console.log(isOpen);
-  
+  const [isOpen, setIsOpen] = useState(false); // Quản lý trạng thái của menu
+
   return (
     <header>
       <nav className="bg-white w-full shadow-md fixed top-0 left-0 z-50">
@@ -40,7 +38,7 @@ const Header = () => {
               <li key={index}>
                 <Link
                   to={item.path}
-                  className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block"
+                  className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block py-2"
                   onClick={() => setIsOpen(false)} // Đóng menu sau khi nhấp vào link
                 >
                   {item.title}
