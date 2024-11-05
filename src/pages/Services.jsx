@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Services.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { FaClock } from "react-icons/fa6";
 
 const Services = () => {
@@ -35,8 +35,8 @@ const Services = () => {
               className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">
-                BUMS AND TUMS
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
               </span>
             </div>
           </div>
@@ -47,7 +47,9 @@ const Services = () => {
               className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">CYCLING</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
@@ -57,7 +59,9 @@ const Services = () => {
               className="w-full h-full"
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">DANCE</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
@@ -67,7 +71,9 @@ const Services = () => {
               className="w-full h-full "
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">GROUP X</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
@@ -77,13 +83,21 @@ const Services = () => {
               className="w-full h-full "
             />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-3xl">YOGA</span>
+              <span className="text-white font-bold text-2xl">
+                PERSONAL TRAINER
+              </span>
             </div>
           </div>
           <div className="relative group cursor-pointer aspect-square">
-            <img src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg" className="w-full h-full" alt="" />
+            <img
+              src="https://citigym.com.vn/storage/uploads/vietdh/pt-thuy1.jpg"
+              className="w-full h-full"
+              alt=""
+            />
             <div className="absolute inset-0 bg-red-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center ">
-              <span className="text-white font-bold text-2xl">Personal Trainer  </span>
+              <span className="text-white font-bold text-2xl">
+                Personal Trainer{" "}
+              </span>
             </div>
           </div>
         </div>
@@ -92,13 +106,13 @@ const Services = () => {
         <div className="w-3/4 mx-auto">
           <div className="grid grid-cols-3 gap-8 px-8  mb-8 items-center  ">
             <div className="relative  group  cursor-pointer">
-              <Link to="/dich-vu/1">
+              <Link to="/dich-vu/1" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     PERSONAL TRAINER
                   </div>
@@ -117,15 +131,15 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/2">
+            <div className="relative  group  cursor-pointer">
+              <Link to="/dich-vu/2" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
 
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0      border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     PERSONAL TRAINER
                   </div>
@@ -146,13 +160,13 @@ const Services = () => {
               </Link>
             </div>
             <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/3">
+              <Link to="/dich-vu/3" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     Group X
                   </div>
@@ -171,14 +185,14 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/4">
+            <div className="relative group cursor-pointer">
+              <Link to="/dich-vu/4" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     Group X
                   </div>
@@ -198,15 +212,15 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/6">
+            <div className="relative group   cursor-pointer">
+              <Link to="/dich-vu/6" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-combat.jpg"
                   alt=""
                   className="w-full transition-opacity duration-500 group-hover:opacity-50"
                 />
 
-                <div className=" inset-0  bg-opacity-60     border border-gray bg-white rounded p-5 fix7">
+                <div className=" inset-0       border border-gray bg-white rounded p-5 fix7">
                   <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
                     Group X
                   </div>
@@ -226,8 +240,8 @@ const Services = () => {
                 </div>
               </Link>
             </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/6">
+            <div className="relative  group  cursor-pointer">
+              <Link to="/dich-vu/6" style={{ color: "#333" }}>
                 <img
                   src="https://citigym.com.vn/storage/uploads/body-balance.jpg"
                   alt=""
