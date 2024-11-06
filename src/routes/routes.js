@@ -18,6 +18,8 @@ import EditProfile from "../components/EditProfile";
 import Profile from "../components/Profile";
 import Subcription from "../components/Subcription";
 import ChangePassword from "../components/ChangePassword";
+import Admin from "../admin/Admin";
+import Home from "../admin/Home";
 
 export const router = createBrowserRouter([
   {
@@ -93,9 +95,18 @@ export const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-
   {
     path: "/error/403",
     element: <Permissions />,
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+    ]
   },
 ]);
