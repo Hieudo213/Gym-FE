@@ -14,6 +14,10 @@ import ErrorPage from "../errors/ErrorPage";
 import Permissions from "../errors/Permission";
 import ComingSoon from "../pages/ComingSoon";
 import My_account from "../pages/My_account";
+import EditProfile from "../components/EditProfile";
+import Profile from "../components/Profile";
+import Subcription from "../components/Subcription";
+import ChangePassword from "../components/ChangePassword";
 
 export const router = createBrowserRouter([
   {
@@ -60,6 +64,24 @@ export const router = createBrowserRouter([
       {
         path: "/my-account",
         element: <My_account />,
+        children: [
+          {
+            index: true,
+            element: <Profile />,
+          },
+          {
+            path: "change-info",
+            element: <EditProfile />,
+          },
+          {
+            path: "subcription",
+            element: <Subcription />,
+          },
+          {
+            path: "change-password",
+            element: <ChangePassword />,
+          },
+        ],
       },
     ],
   },
@@ -75,5 +97,5 @@ export const router = createBrowserRouter([
   {
     path: "/error/403",
     element: <Permissions />,
-  }
+  },
 ]);
