@@ -13,6 +13,7 @@ import Register from "../layouts/Register";
 import ErrorPage from "../errors/ErrorPage";
 import Permissions from "../errors/Permission";
 import ComingSoon from "../pages/ComingSoon";
+import My_account from "../pages/My_account";
 
 export const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ export const router = createBrowserRouter([
       {
         path: "/chung-toi-dang-hoan-thien",
         element: <ComingSoon />,
+      },
+      {
+        path: "/my-account",
+        element: <My_account />,
       },
     ],
   },
