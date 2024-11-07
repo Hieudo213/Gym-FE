@@ -88,17 +88,17 @@ const Header = () => {
                 </div>
                 <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownAvatarButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Quản lý hệ thống</a>
+                    <Link onClick={() => setIsDropdown(false)} to='/admin' href="#" className="block px-4 py-2 hover:bg-gray-100">Quản lý hệ thống</Link>
                   </li>
                   <li>
                     <Link onClick={() => setIsDropdown(false)} to="/my-account" href="#" className="block px-4 py-2 hover:bg-gray-100">Thông tin cá nhân</Link>
                   </li>
                   <li>
-                    <Link to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 hover:bg-gray-100">Gói Tập</Link>
+                    <Link onClick={() => setIsDropdown(false)} to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 hover:bg-gray-100">Gói Tập</Link>
                   </li>
                 </ul>
                 <div class="py-2">
-                  <Link to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đăng xuất</Link>
+                  <Link onClick={() => setIsDropdown(false)} to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đăng xuất</Link>
                 </div>
               </div>
             )}
