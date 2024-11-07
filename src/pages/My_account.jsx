@@ -1,11 +1,12 @@
-import { Modal } from "antd";
+import { Button, Modal, Image } from "antd";
 import React, { useState } from "react";
 import { CiCamera } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa";
 import { IoIosKey } from "react-icons/io";
 import { MdOutlineWorkHistory } from "react-icons/md";
 import { Link, Outlet } from "react-router-dom";
-
+import { MdFileUpload } from "react-icons/md";
+import { FaRegTrashCan } from "react-icons/fa6";
 
 const My_account = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -42,14 +43,47 @@ const My_account = () => {
                 </div>
                 <div className=" w-2/3 h-full  px-10">
                     <div className="w-full h-full border border-gray-400 p-4  rounded-[0.5rem] fix10">
-                        <Outlet/>
+                        <Outlet />
                     </div>
                 </div>
             </div>
-            <Modal title="Basic Modal" open={isOpen} onCancel={() => setIsOpen(false)}>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
+            <Modal
+                centered
+                title="Thay đổi ảnh đại diện"
+                open={isOpen} onCancel={() => setIsOpen(false)}
+                okText="My Custom OK"
+                cancelText="My Custom Cancel"
+                width={600}
+                footer={
+                    <div className="text-center">
+                        <Button onClick={() => setIsOpen(false)} className="w-[200px] mr-2">
+                            Huỷ bỏ
+                        </Button>
+                        <Button type="primary" danger className="w-[200px]">
+                            Cập nhật
+                        </Button>
+                    </div>
+                }>
+                <div className="h-[350px] flex justify-center items-center gap-2">
+                    <div className="w-[50%] flex justify-end">
+                        <Image
+                            className="rounded-full"
+                            width={200}
+                            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+                            preview={false}
+
+                        />
+                    </div>
+                    <div className="flex-col flex w-[50%] items-center">
+                        <Button className="w-[150px]" type="text" icon={<MdFileUpload />}>
+                            Tải hình ảnh lên
+                        </Button>
+                        <Button className="w-[150px]" type="text" icon={<FaRegTrashCan />}>
+                            Xoá ảnh đại diện
+                        </Button>
+                    </div>
+
+                </div>
             </Modal>
         </div>
     );

@@ -3,7 +3,7 @@ import React from 'react'
 function EditProfile() {
     return (
         <form action="">
-            <h1 className="text-xl mb-2 font-bold text-blue-500">Thông tin cá nhân</h1>
+            <h1 className="text-xl mb-2 font-bold text-[#b30c0d]">Thông tin cá nhân</h1>
             <hr />
             <div class="grid gap-6 mb-6 md:grid-cols-2 mt-5">
                 <div>

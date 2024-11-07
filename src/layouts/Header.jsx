@@ -4,6 +4,8 @@ import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight, faArrowRight, faUser } from "@fortawesome/free-solid-svg-icons";
+import { Avatar, Popconfirm, Popover } from "antd";
+import { CiUser } from "react-icons/ci";
 
 const navItems = [
   { title: "CLB", path: "/clb" },
@@ -15,25 +17,29 @@ const navItems = [
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdown, setIsDropdown] = useState(false);
+  const dropdownRef = useRef(null);
   const userName = "Nguyễn Văn A";
-  const dropdownRef = useRef(null); // Ref for the dropdown
+  const handleOutsideClick = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdown(false);
+    }
+  };
 
-  // Close dropdown when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsDropdownOpen(false);
-      }
+    if (isDropdown) {
+      document.addEventListener('click', handleOutsideClick);
+    } else {
+      document.removeEventListener('click', handleOutsideClick);
+    }
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
     };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [isDropdown]);
 
   return (
     <header>
-      <nav className="bg-white w-full shadow-md fixed top-0 left-0 z-50">
+      <nav className="bg-white w-full shadow-md fixed top-0 left-0 z-50" >
         <div className="flex justify-between items-center max-w-[1170px] m-auto py-4">
           <Link to="/">
             <img src={logo} alt="logo-img" className="max-w-[140px]" />
@@ -66,49 +72,38 @@ const Header = () => {
             ))}
           </ul>
 
-          {/* Login/Register Buttons */}
-          <div className="hidden xl:flex relative">
+          <div className="hidden xl:flex relative" ref={dropdownRef}>
             <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              onClick={() => setIsDropdown(!isDropdown)}
               className="flex items-center space-x-2 text-black py-2 px-4 font-bold hover:text-[#a50000] transition-all duration-500 rounded"
             >
-              <img
-                src="https://png.pngtree.com/png-clipart/20190904/original/pngtree-user-cartoon-avatar-pattern-flat-avatar-png-image_4492883.jpg"
-                alt="User Icon"
-                className="w-8 h-8 rounded-full"
-              />
+              <Avatar icon={<CiUser />}></Avatar>
               <span>{userName}</span>
             </button>
-
-            {/* Dropdown Menu */}
-            {isDropdownOpen && (
-              <div
-                ref={dropdownRef}
-                className="absolute top-10 right-[-30px] mt-2 w-48 bg-white rounded-md shadow-lg"
-              >
-                <Link
-                  to="/my-account"
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Tài khoản của tôi
-                </Link>
-                <Link
-                  to="/my-orders"
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Gói tập
-                </Link>
-                <button
-                  onClick={() => {
-                    /* Add logout function here */
-                  }}
-                  className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Đăng xuất
-                </button>
+            {isDropdown && (
+              <div className="w-[180px] absolute top-[63px] left-3 z-10 bg-white divide-y divide-gray-100 shadow">
+                <div class="px-4 py-3 text-sm ">
+                  <div className="font-medium ">Nguyễn Văn A</div>
+                  <div className="truncate">A@flowbite.com</div>
+                </div>
+                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownAvatarButton">
+                  <li>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Quản lý hệ thống</a>
+                  </li>
+                  <li>
+                    <Link onClick={() => setIsDropdown(false)} to="/my-account" href="#" className="block px-4 py-2 hover:bg-gray-100">Thông tin cá nhân</Link>
+                  </li>
+                  <li>
+                    <Link to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 hover:bg-gray-100">Gói Tập</Link>
+                  </li>
+                </ul>
+                <div class="py-2">
+                  <Link to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đăng xuất</Link>
+                </div>
               </div>
             )}
           </div>
+
         </div>
       </nav>
     </header>
