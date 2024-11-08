@@ -24,9 +24,9 @@ function HeaderAdmin() {
 
       <div className="group">
         <ul className='flex justify-between'>
-          <li className='mx-2 relative w-full h-full  rounded-[50%]  bg-gray-200 p-2'><CiBellOn size={20} /><div className='w-[18px] h-[18px] absolute top-0 right-0 bg-blue-500  rounded-[50%] flex justify-center items-center '>1</div></li>
-          <li className='mx-2 relative w-full h-full  rounded-[50%]  bg-gray-200 '>
-            <img src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" className='w-[35px] h-[35px] rounded-[50%]' alt="" />
+          <li className='mx-2 relative w-full  aspect-square  rounded-[50%]  bg-gray-200   flex justify-center items-center'><CiBellOn size={20} /><div className='w-[15px] h-[15px] absolute top-[-3px] right-[-3px] bg-blue-500  rounded-[50%] flex justify-center items-center font-light text-sm '>1</div></li>
+          <li className='mx-2 relative w-full  aspect-square  rounded-[50%]  bg-gray-200 '>
+            <img src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" className='w-[35px]  aspect-square rounded-[50%]' alt="" />
             <div className='w-[10px] h-[10px] absolute bottom-0 right-0 bg-green-500 border border-white  rounded-[50%] flex justify-center items-center '></div>
           </li>
         </ul>
