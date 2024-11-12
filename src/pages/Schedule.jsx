@@ -102,7 +102,7 @@ const columns = [
 const Schedule = () => {
   return (
 
-    <div className="max-w-[1180px] mt-[7rem]  mx-auto h-[25rem]  my-[3rem]    flex p-2">
+    <div className="max-w-[1180px] my-[20vh]  mx-auto h-[25rem]    flex p-2">
       <div className=" w-1/3 max-w-[40%]   border border-gray-400 p-4  rounded-[0.5rem]">
         <CalendarComponent />
       </div>
