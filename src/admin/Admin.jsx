@@ -14,7 +14,7 @@ function Admin() {
         <div className='w-full h-[60px] bg-slate-100'>
           <HeaderAdmin />
         </div>
-        <div className='w-full h-[calc(100%-60px)] p-5'>
+        <div className='w-full h-[calc(100%-60px)] '>
           <Outlet />
         </div>
       </div>
