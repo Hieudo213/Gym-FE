@@ -42,57 +42,58 @@ function Login() {
                       </div>
                     </div>
 
-                    <div className="form-group">
-                      <label htmlFor="yourPassword" className="form-label">
+                     <div className="form-group">
+                       <label htmlFor="yourPassword" className="form-label">
                         Mật khẩu
                       </label>
                       <input
-                        type="password"
+                         type="password"
                         name="password"
-                        className="form-input"
-                        id="yourPassword"
-                        required
-                      />
-                      <div className="error-message">
-                        Vui lòng nhập mật khẩu của bạn!
+                      className="form-input"
+                       id="yourPassword"
+                         required
+                       />
+                       <div className="error-message">
+                         Vui lòng nhập mật khẩu của bạn!
                       </div>
                     </div>
 
                     <div className="form-group">
                       <div className="checkbox-wrapper">
                         <input
-                          className="checkbox-input"
-                          type="checkbox"
-                          name="remember"
-                          value="true"
-                          id="rememberMe"
-                        />
-                        <label className="checkbox-label" htmlFor="rememberMe">
-                          Ghi nhớ đăng nhập
-                        </label>
-                      </div>
-                    </div>
+                           className="checkbox-input"
+                           type="checkbox"
+                           name="remember"
+                           value="true"
+                           id="rememberMe"
+                         />
+                         <label className="checkbox-label" htmlFor="rememberMe">
+                           Ghi nhớ đăng nhập
+                         </label>
+                       </div>
+                     </div>
 
-                    <div className="form-group">
-                      <button className="submit-button" type="submit">
-                        Đăng nhập
-                      </button>
-                    </div>
+                     <div className="form-group">
+                       <button className="submit-button" type="submit">
+                         Đăng nhập
+                       </button>
+                     </div>
 
-                    <div className="form-footer">
-                      <p className="form-text">
-                        Chưa có tài khoản?{" "}
-                        <Link to="/register">Tạo tài khoản</Link>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
+                     <div className="form-footer">
+                       <p className="form-text">
+                         Chưa có tài khoản?{" "}
+                         <Link to="/register">Tạo tài khoản</Link>
+                       </p>
+                     </div>
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </section>
+       </div>
+     </main>
+    
   );
 }
 
