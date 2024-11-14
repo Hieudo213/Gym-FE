@@ -9,11 +9,17 @@ import { GiWeightLiftingUp } from 'react-icons/gi';
 import { CiCreditCard2 } from 'react-icons/ci';
 import { FaMoneyCheckAlt } from 'react-icons/fa';
 import { PiUsersFourBold } from 'react-icons/pi';
-const items = [
+import { useNavigate } from 'react-router-dom';
+
+
+function MenuComponent() {
+  const navigate = useNavigate();
+  const items = [
   {
     key: '1',
     label: 'Home',
-    icon: <IoMdHome />
+    icon: <IoMdHome />,
+    onClick: () => {navigate('/admin')}
   },
   {
     type: 'divider',
@@ -26,27 +32,30 @@ const items = [
       {
         key: 'room',
         label: 'Quản lý phòng tập',
-
         children: [
           {
             key: '2',
             label: 'Phòng tập',
-            icon: <GiWeightLiftingUp />
+            icon: <GiWeightLiftingUp />,
+            onClick: () => {navigate('/admin/room')}
           },
           {
             key: '3',
             label: 'Trang thiết bị',
-            icon: <CgGym />
+            icon: <CgGym />,
+            onClick: () => {navigate('/admin/equipment')}
           },
           {
             key: '4',
             label: 'Nhân viên',
-            icon: <FaUsers />
+            icon: <FaUsers />,
+            onClick: () => {navigate('/admin/employee')}
           },
           {
             key: '5',
             label: 'Phản hồi của hội viên',
-            icon: <IoNotificationsSharp />
+            icon: <IoNotificationsSharp />,
+            onClick: () => {navigate('/admin/respond/member')}
           },
         ],
       },
@@ -58,17 +67,20 @@ const items = [
           {
             key: '6',
             label: 'Hội viên',
-            icon: <PiUsersFourBold />
+            icon: <PiUsersFourBold />,
+            onClick: () => {navigate('/admin/member')}
           },
           {
             key: '7',
             label: 'Lịch sử giao dịch',
-            icon: <FaMoneyCheckAlt />
+            icon: <FaMoneyCheckAlt />,
+            onClick: () => {navigate('/admin/transaction')}
           },
           {
             key: '8',
             label: 'Phản hồi',
-            icon: <FaRegCommentDots />
+            icon: <FaRegCommentDots />,
+            onClick: () => {navigate('/admin/response/all')}
           }
         ],
       },
@@ -80,7 +92,8 @@ const items = [
           {
             key: '9',
             label: 'Các gói tập',
-            icon: <CiCreditCard2 />
+            icon: <CiCreditCard2 />,
+            onClick: () => {navigate('/admin/packages')}
           },
         ],
       },
@@ -88,8 +101,6 @@ const items = [
   },
 
 ];
-
-function MenuComponent() {
   const onClick = (e) => {
     console.log('click ', e);
   };
