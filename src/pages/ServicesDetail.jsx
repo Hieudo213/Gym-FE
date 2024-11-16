@@ -93,7 +93,7 @@ const ServicesDetail = () => {
         </section>
       </div>
       <section className="w-full py-5 h-[60rem]  img_bg   relative" >
-        <div class="absolute inset-0 bg-white bg-opacity-80"></div>
+        <div className="absolute inset-0 bg-white bg-opacity-80"></div>
         <div className="relative z-10 text-center my-10 ">
           <h2 className="text-center  font-bold text-3xl">Lợi ích của khóa học</h2>
           <p className="w-[40%] mx-auto my-5">Với chuỗi hoạt động liên tục, Kickfit  đem lại vẻ săn chắc đặc biệt là phần bụng; giúp vóc dáng thon gọn nhanh nhất; giảm căng thẳng, tốt cho thể chất và tinh thần; nâng cao khả năng tự vệ; rèn luyện phản xạ và tính kỷ luật.</p>

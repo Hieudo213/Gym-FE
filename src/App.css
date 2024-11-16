@@ -6,3 +6,31 @@
 .header {
   width: 100%;
 }
+
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+  width: 2px;
+  /* Độ rộng của thanh cuộn */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  /* Màu của thanh cuộn */
+  border-radius: 10px;
+  /* Bo góc thanh cuộn */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  /* Màu nền của thanh cuộn */
+}
+
+.scrollbar-left {
+  direction: rtl;
+  /* Đảo hướng thanh cuộn sang bên trái */
+}
+
+.scrollbar-left>* {
+  direction: ltr;
+  /* Đặt lại hướng của nội dung */
+}

@@ -82,11 +82,11 @@ const Header = () => {
             </button>
             {isDropdown && (
               <div className="w-[180px] absolute top-[63px] left-3 z-10 bg-white divide-y divide-gray-100 shadow">
-                <div class="px-4 py-3 text-sm ">
+                <div className="px-4 py-3 text-sm ">
                   <div className="font-medium ">Nguyễn Văn A</div>
                   <div className="truncate">A@flowbite.com</div>
                 </div>
-                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownAvatarButton">
+                <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownAvatarButton">
                   <li>
                     <Link onClick={() => setIsDropdown(false)} to='/admin' href="#" className="block px-4 py-2 hover:bg-gray-100">Quản lý hệ thống</Link>
                   </li>
@@ -97,7 +97,7 @@ const Header = () => {
                     <Link onClick={() => setIsDropdown(false)} to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 hover:bg-gray-100">Gói Tập</Link>
                   </li>
                 </ul>
-                <div class="py-2">
+                <div className="py-2">
                   <Link onClick={() => setIsDropdown(false)} to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đăng xuất</Link>
                 </div>
               </div>

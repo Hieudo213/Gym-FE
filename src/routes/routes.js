@@ -20,6 +20,7 @@ import Subcription from "../components/Subcription";
 import ChangePassword from "../components/ChangePassword";
 import Admin from "../admin/Admin";
 import Home from "../admin/Home";
+import { Room } from "../admin/Room";
 
 export const router = createBrowserRouter([
   {
@@ -106,6 +107,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "room",
+        element: <Room />,
       },
     ]
   },

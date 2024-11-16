@@ -9,10 +9,15 @@ import { GiWeightLiftingUp } from 'react-icons/gi';
 import { CiCreditCard2 } from 'react-icons/ci';
 import { FaMoneyCheckAlt } from 'react-icons/fa';
 import { PiUsersFourBold } from 'react-icons/pi';
+
+import { Link } from 'react-router-dom';
 const items = [
   {
     key: '1',
-    label: 'Home',
+    label: <Link to="/admin" className='flex alignItems-center' >
+      <span>Home</span>
+    </Link>
+    ,
     icon: <IoMdHome />
   },
   {
@@ -30,7 +35,11 @@ const items = [
         children: [
           {
             key: '2',
-            label: 'Phòng tập',
+            label: (
+              <Link to="room" className='flex alignItems-center' >
+                <span>Phòng tập</span>
+              </Link>
+            ),
             icon: <GiWeightLiftingUp />
           },
           {
@@ -90,9 +99,7 @@ const items = [
 ];
 
 function MenuComponent() {
-  const onClick = (e) => {
-    console.log('click ', e);
-  };
+
   return (
     <div className='w-full h-full '>
       <div className='w-full'>
@@ -102,7 +109,7 @@ function MenuComponent() {
       </div>
       <div className='w-full'>
         <Menu
-          onClick={onClick}
+
           style={{
             width: '100%',
             border: 'none'
