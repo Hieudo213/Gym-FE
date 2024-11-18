@@ -5,8 +5,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Button } from 'antd';
 function Myservices() {
     return (
-        <div className="w-full overflow-y-auto my-[3rem] h-[65vh] mt-[8rem]">
-            <div className='  p-3    max-w-[1180px] mx-auto'>
+        <div className="w-[95vw] mx-auto ">
+            <div className=' my-[3rem]  mt-[8rem]  p-3 overflow-y-auto h-[65vh]  max-w-[1180px] mx-auto'>
                 <div className="row mb-2 relative p-5 w-full h-[10rem] flex border border-gray-200 rounded-[5px]">
                     <div className="w-1/4 h-full ">
                         <img src={Platinum} className='w-auto h-full' alt="" />
