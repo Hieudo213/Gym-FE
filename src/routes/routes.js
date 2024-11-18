@@ -20,7 +20,14 @@ import Subcription from "../components/Subcription";
 import ChangePassword from "../components/ChangePassword";
 import Admin from "../admin/Admin";
 import Home from "../admin/Home";
-import { Room } from "../admin/Room";
+import Equipment from "../admin/Equipment";
+import Employee from "../admin/Employee";
+import RespondFromMember from "../admin/RespondFromMember";
+import Member from "../admin/Member";
+import Transaction from "../admin/Transaction";
+import Responses from "../admin/Responses";
+import Package from "../admin/Package";
+import Room from "../admin/Room";
 
 export const router = createBrowserRouter([
   {
@@ -109,37 +116,37 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'room',
-        element: <Room/>,
+        path: "room",
+        element: <Room />,
       },
       {
-        path: 'equipment',
+        path: "equipment",
         element: <Equipment />,
       },
       {
-        path: 'employee',
+        path: "employee",
         element: <Employee />,
       },
       {
-        path: 'respond/member',
+        path: "respond/member",
         element: <RespondFromMember />,
       },
       {
-        path: 'member',
+        path: "member",
         element: <Member />,
       },
       {
-        path: 'transaction',
+        path: "transaction",
         element: <Transaction />,
       },
       {
-        path: 'response/all',
+        path: "response/all",
         element: <Responses />,
       },
       {
-        path: 'packages',
+        path: "packages",
         element: <Package />,
       },
-    ]
+    ],
   },
 ]);
