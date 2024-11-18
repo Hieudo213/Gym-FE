@@ -94,7 +94,7 @@ const Header = () => {
                     <Link onClick={() => setIsDropdown(false)} to="/my-account" href="#" className="block px-4 py-2 hover:bg-gray-100">Thông tin cá nhân</Link>
                   </li>
                   <li>
-                    <Link onClick={() => setIsDropdown(false)} to="/chung-toi-dang-hoan-thien" href="#" className="block px-4 py-2 hover:bg-gray-100">Gói Tập</Link>
+                    <Link onClick={() => setIsDropdown(false)} to="/My-services" href="#" className="block px-4 py-2 hover:bg-gray-100">Gói Tập</Link>
                   </li>
                 </ul>
                 <div className="py-2">

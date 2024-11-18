@@ -21,6 +21,7 @@ import ChangePassword from "../components/ChangePassword";
 import Admin from "../admin/Admin";
 import Home from "../admin/Home";
 import { Room } from "../admin/Room";
+import Myservices from "../pages/Myservices";
 
 export const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ export const router = createBrowserRouter([
       {
         path: "/tin-tuc",
         element: <News />,
+      },
+      {
+        path: "/My-services",
+        element: <Myservices />,
       },
       {
         path: "/khuyen-mai",
