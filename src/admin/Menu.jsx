@@ -113,7 +113,7 @@ function MenuComponent() {
       </div>
       <div className='w-full'>
         <Menu
-          onClick={onClick}
+
           style={{
             width: '100%',
             border: 'none'

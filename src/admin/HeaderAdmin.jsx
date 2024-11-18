@@ -11,8 +11,8 @@ function HeaderAdmin() {
         <div className="w-full  text-blue-500 text-base ">
           <span>&lt;</span> <Link className='hover:text-[#3c82f6] hover:underline text-[15px]' to="/">Trang chủ</Link>
         </div>
-        <form class="flex items-center  ">
-          <div class="relative w-[22rem] ">
+        <form className="flex items-center  ">
+          <div className="relative w-[22rem] ">
             <Search placeholder="Tìm kiếm thông tin" allowClear style={{ width: 450 }} />
           </div>
         </form>

@@ -30,11 +30,11 @@ const Club = () => {
               <option selected="selected" value>
                 Chọn quận gần bạn
               </option>
-              <option value="hai-ba-trung">Quận Hai Bà Trưng</option>
-              <option value="thanh-xuan">Quận Thanh Xuân</option>
-              <option value="tay-ho">Quận Tây Hồ</option>
-              <option value="nam-tu-liem">Quận Nam Từ Liêm</option>
-              <option value="bac-tu-liem">Quận Bắc Từ Liêm</option>
+              <option defaultValue="hai-ba-trung">Quận Hai Bà Trưng</option>
+              <option defaultValue="thanh-xuan">Quận Thanh Xuân</option>
+              <option defaultValue="tay-ho">Quận Tây Hồ</option>
+              <option defaultValue="nam-tu-liem">Quận Nam Từ Liêm</option>
+              <option defaultValue="bac-tu-liem">Quận Bắc Từ Liêm</option>
             </select>
 
             <FaChevronDown className="absolute right-3 top-4 text-[#454545]" />

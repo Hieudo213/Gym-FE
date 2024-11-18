@@ -46,13 +46,13 @@ function Footer() {
             <div className="row  mt-5 justify-center">Chính sách giá </div>
             <div className="row  mt-5 justify-center">Chính sách bảo mật</div>
           </div>
-          <div class="w-[20%]  mt-5 mx-auto pt-2  h-full">
+          <div className="w-[20%]  mt-5 mx-auto pt-2  h-full">
             <div className="row  mt-5 justify-center"> Tuyển dụng </div>
             <div className="row  mt-5 justify-center">Tin tức </div>
             <div className="row  mt-5 justify-center">Liên hệ</div>
             <div className="row  mt-5 justify-center">Câu lạc bộ</div>
           </div>
-          <div class="w-[30%]   h-full">
+          <div className="w-[30%]   h-full">
             <div className="text_logo fix6">Thành viên </div>
             <div className="Designed">
               <Link

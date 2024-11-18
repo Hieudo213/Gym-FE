@@ -1,7 +1,6 @@
 import React from "react";
-import { CiCamera } from "react-icons/ci";
-import { FaRegUser } from "react-icons/fa";
-import { MdOutlineWorkHistory } from "react-icons/md";
+
+
 import CalendarComponent from "../components/calendar";
 import { Table } from "antd";
 

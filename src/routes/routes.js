@@ -20,15 +20,7 @@ import Subcription from "../components/Subcription";
 import ChangePassword from "../components/ChangePassword";
 import Admin from "../admin/Admin";
 import Home from "../admin/Home";
-import Room from "../admin/Room";
-import Equipment from "../admin/Equipment";
-import Member from "../admin/Member";
-import Package from "../admin/Package";
-import Responses from "../admin/Responses";
-import Transaction from "../admin/Transaction";
-import RespondFromMember from "../admin/RespondFromMember";
-import Employee from "../admin/Employee";
-
+import { Room } from "../admin/Room";
 
 export const router = createBrowserRouter([
   {
