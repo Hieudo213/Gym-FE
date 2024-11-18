@@ -20,8 +20,15 @@ import Subcription from "../components/Subcription";
 import ChangePassword from "../components/ChangePassword";
 import Admin from "../admin/Admin";
 import Home from "../admin/Home";
-import { Room } from "../admin/Room";
-import Myservices from "../pages/Myservices";
+import Equipment from "../admin/Equipment";
+import Employee from "../admin/Employee";
+import RespondFromMember from "../admin/RespondFromMember";
+import Member from "../admin/Member";
+import Transaction from "../admin/Transaction";
+import Responses from "../admin/Responses";
+import Package from "../admin/Package";
+import Room from "../admin/Room";
+import Myservices from "../pages/Myservices"
 
 export const router = createBrowserRouter([
   {
@@ -117,6 +124,34 @@ export const router = createBrowserRouter([
         path: "room",
         element: <Room />,
       },
-    ]
+      {
+        path: "equipment",
+        element: <Equipment />,
+      },
+      {
+        path: "employee",
+        element: <Employee />,
+      },
+      {
+        path: "respond/member",
+        element: <RespondFromMember />,
+      },
+      {
+        path: "member",
+        element: <Member />,
+      },
+      {
+        path: "transaction",
+        element: <Transaction />,
+      },
+      {
+        path: "response/all",
+        element: <Responses />,
+      },
+      {
+        path: "packages",
+        element: <Package />,
+      },
+    ],
   },
 ]);

@@ -9,7 +9,7 @@
 
 /* Tùy chỉnh thanh cuộn */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   /* Độ rộng của thanh cuộn */
 }
 

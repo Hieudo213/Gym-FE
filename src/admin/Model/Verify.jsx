@@ -1,8 +1,6 @@
+import { Avatar, Button, Divider, Image, List, Modal, Skeleton } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { Avatar, Button, Divider, List, Modal, Skeleton, Image } from 'antd';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { MdFileUpload } from 'react-icons/md';
-import { FaRegTrashCan } from 'react-icons/fa6';
 const Verify = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [loading, setLoading] = useState(false);
