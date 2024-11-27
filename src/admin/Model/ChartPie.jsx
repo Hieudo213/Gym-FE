@@ -7,7 +7,7 @@ const ChartPie = () => {
     // Function to get the chart options
     const getChartOptions = () => {
         return {
-            series: [10, 25, 15, 25],
+            series: [50, 25, 15, 25],
             colors: ["#C0C0C0", "#FFFF00", "#0000FF", "silver"],
             chart: {
                 height: 320,

@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Flex, Splitter, Typography, Spin } from 'antd';
+
+import axios from 'axios';
+import { LoadingOutlined } from '@ant-design/icons';
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,8 +32,76 @@ import blog5 from "../assets/img/blog-5.jpg";
 import blog6 from "../assets/img/blog-6.jpg";
 import blog7 from "../assets/img/blog-7.jpg";
 import afterImage from "../assets/img/s-after.jpg";
+import Cart_user from '../components/Cart_user';
 
+const Desc = ({ imageSrc }) => (
+  <Flex
+    justify="center"
+    align="center"
+    direction="column"
+    style={{
+      height: '100%',
+      width: '100%',
+    }}
+  >
+    <img
+      src={imageSrc}
+
+      style={{
+        width: 'auto',  // Image takes up the full width of the panel
+        height: '100%', // Maintain the aspect ratio
+      }}
+    />
+    <Typography.Title
+      type="secondary"
+      level={5}
+      style={{
+        whiteSpace: 'nowrap',
+        marginTop: '10px',
+      }}
+    >
+
+    </Typography.Title>
+  </Flex>
+);
 function HomePage() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.get('https://randomuser.me/api/?results=10&inc=name,gender,email,nat,picture&noinfo');
+        setUsers(response.data.results);
+
+
+
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+  if (loading) return (<Flex align="center" gap="middle">
+
+    <Spin className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+      indicator={
+        <LoadingOutlined
+          style={{
+            fontSize: 48,
+          }}
+          spin
+        />
+      }
+    />
+  </Flex>);
+  if (error) return <p className='mx-5 text-red-500'>Error: {error} .Please check again!!!</p>;
+
   return (
     <>
       <section className="w-full mt-[72px]">
@@ -218,7 +291,7 @@ function HomePage() {
         </div>
       </section>
       <section className="flex max-w-[1170px] m-auto gap-8 py-16 justify-center items-center">
-        <div>
+        <div className="w-1/2">
           <h3 className="font-bold text-3xl uppercase text-[#4c4141] mb-8">
             Before & After
           </h3>
@@ -235,6 +308,30 @@ function HomePage() {
           </p>
         </div>
         <img src={afterImage} alt="" className="w-[555px]" />
+
+      </section>
+      <section className='max-w-[1170px] m-auto p-3  my-5'>
+        <div className="flex flex-col justify-center items-center ">
+          <h2 className="font-bold uppercase text-[28px] mb-4">
+            Huấn luyện viên chuyên nghiệp
+          </h2>
+          <p className="max-w-[420px] mb-12 text-center text-base text-[212529]">
+            Đề xuất cho bạn
+          </p>
+        </div>
+        <Swiper
+          slidesPerView={3}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Navigation, Pagination]}
+        >
+          {users.map((user, index) => (
+            <SwiperSlide className="border-r border-gray-200">
+              <Cart_user key={index} image={user.picture.large} name={`${user.name.first} ${user.name.last}`} gender={user.gender} email={user.email} nat={user.nat} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </>
   );

@@ -1,177 +1,133 @@
 import React from "react";
 import "../styles/PricingPolicy.css";
+import logo from "../assets/img/logo/favicon.png"
+
+import { FaCrown, FaFire, FaStar } from "react-icons/fa";
+import { IoDiamond, IoDiamondOutline } from "react-icons/io5";
+import gold1 from "../assets/cart/Member Card - Gold/1.png"
+import gold2 from "../assets/cart/Member Card - Gold/2.png"
+
+import platium1 from "../assets/cart/Member Card - Platinum/1.png"
+import platium2 from "../assets/cart/Member Card - Platinum/2.png"
+
+import selver1 from "../assets/cart/Member Card - Silver/1.png"
+import selver2 from "../assets/cart/Member Card - Silver/2.png"
+import { AiFillGolden } from "react-icons/ai";
+import { TbCarouselVerticalFilled } from "react-icons/tb";
 
 const PricingPolicy = () => {
   return (
-    <div className="body">
-      {/* Hero Section */}
-      <section className="hero h">
-        <div className="hero-image">
-          <img
-            src="https://cali.vn/storage/app/media/phong-tap-gym-ha-noi-thumb.jpg"
-            alt="Hero Image"
-          />
+    <>
+      <div className="m-0 mt-[5rem]  w-full h-[73vh] bg-white relative ">
+        <div className="absolute right-[1rem] top-[-2rem] w-[15rem] h-[15rem] ">
+          <img src={logo} className="w-full h-full  " alt="" />
         </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="pricing">
-        <div className="plans">
-          <div className="plan">
-            <h2>CLASSIC</h2>
-            <p>15 Tháng</p>
-            <p>Tổng Chi phí: 11,880,000 VNĐ</p>
-            <p>Chi phí / tháng: 792,000 VNĐ</p>
-            <p>Chi phí / ngày: 26,400 VNĐ</p>
-            <a href="#" className="btn">
-              Đăng ký ngay
-            </a>
-          </div>
-          <div className="plan">
-            <h2>PLUS</h2>
-            <p>22 Tháng</p>
-            <p>Tổng Chi phí: 17,930,000 VNĐ</p>
-            <p>Chi phí / tháng: 815,000 VNĐ</p>
-            <p>Chi phí / ngày: 27,167 VNĐ</p>
-            <a href="#" className="btn">
-              Đăng ký ngay
-            </a>
-          </div>
-          <div className="plan">
-            <h2>Citipassport</h2>
-            <p>36 Tháng</p>
-            <p>Tổng Chi phí: 29,810,000 VNĐ</p>
-            <p>Chi phí / tháng: 828,056 VNĐ</p>
-            <p>Chi phí / ngày: 27,602 VNĐ</p>
-            <a href="#" className="btn">
-              Đăng ký ngay
-            </a>
-          </div>
-          <div className="plan">
-            <h2>Royal</h2>
-            <p>48 Tháng</p>
-            <p>Tổng Chi phí: 39,745,000 VNĐ</p>
-            <p>Chi phí / tháng: 828,021 VNĐ</p>
-            <p>Chi phí / ngày: 27,601 VNĐ</p>
-            <a href="#" className="btn">
-              Đăng ký ngay
-            </a>
-          </div>
-          <div className="plan">
-            <h2>Signature</h2>
-            <p>60 Tháng</p>
-            <p>Tổng Chi phí: 156,865,000 VNĐ</p>
-            <p>Chi phí / tháng: 2,614,417 VNĐ</p>
-            <p>Chi phí / ngày: 87,147 VNĐ</p>
-            <a href="#" className="btn">
-              Đăng ký ngay
-            </a>
-          </div>
+        <div class="absolute transitiont  left-0 bottom-0 border-none h-[55vh] w-[90vw] bg-red-600  pt-[10vh] [clip-path:polygon(0%_100%,0%_0%,80%_0%,100%_100%)] ">
+          <h1 className="text-[3rem] text-white font-black mx-[10vw] ">GYM <span className="text-black mx-[-10px]">PRO</span></h1>
+          <h1 className="  text-[6rem] text-white font-black mx-[15vw] text-shadow-md">PRICE LIST</h1>
         </div>
-      </section>
-
-      {/* Comparison Table */}
-      <div className="comparison-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Dịch vụ</th>
-              <th>Classic</th>
-              <th>Plus</th>
-              <th>CitiPassport</th>
-              <th>Royal</th>
-              <th>Signature</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tập luyện tại 01 CLB đã chọn</td>
-              <td className="checkmark"></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Tham gia Yoga và Group X tại 01 CLB đã chọn</td>
-              <td className="checkmark"></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Tự do tập luyện tại tất cả CLB hệ thống</td>
-              <td></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-            <tr>
-              <td>Không giới hạn thời gian tập luyện</td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-            <tr className="highlight-row">
-              <td>
-                Tham gia tất cả các lớp Yoga và Group X tại tất cả các CLB
-              </td>
-              <td></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-            <tr>
-              <td>
-                1 buổi định hướng luyện tập riêng biệt với huấn luyện viên
-              </td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-            <tr>
-              <td>Dịch vụ sử dụng phòng tắm hơi và xông hơi</td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-            <tr>
-              <td>Nước uống miễn phí</td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-            <tr className="highlight-row">
-              <td>Dịch vụ khăn tập hạng cao cấp</td>
-              <td></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-            <tr>
-              <td>Hệ thống khóa từ thông minh tại CLB</td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-              <td className="checkmark"></td>
-            </tr>
-          </tbody>
-        </table>
       </div>
-    </div>
+      <div className="w-full  h-[20vh] bg-black  flex justify-between items-center text-[1rem] p-7 text-white font-black  [clip-path:polygon(0%_90%,0%_0%,100%_0%,100%_100%)] mb-2">
+        <div className="h-full aspect-[1/1] bg-white flex justify-center items-center rounded-[50%] text-red-600">
+          <FaFire size={40} />
+        </div>
+        <div className=" mx-5">
+          PERSONAL TRAINER COST
+        </div>
+        <div className=" mx-5 border border-l-white px-[5rem] py-2">500.000 VND</div>
+        <div className=" mx-5">SESSION</div>
+        <div className="h-full  aspect-[1/1] bg-white flex justify-center items-center rounded-[50%] text-red-600">
+          <FaStar size={40} />
+        </div>
+      </div>
+      <div className=" max-w-[1180px] mx-auto p-5">
+        <div className="w-full p-4 border border-gray-300 rounded-[10px] flex shadow-custom my-5 bg-gray-50">
+          <div className="w-1/3 ] ">
+            <img src={platium1} className="w-full h-[12rem] rounded-[10px] mb-2" alt="" />
+            <img src={platium2} className="w-full h-[12rem] rounded-[10px]" alt="" />
+          </div>
+          <div className="w-2/3   p-5  ">
+            <h1 className="font-black text-[1.5rem] flex my-5">
+              <div className="w-[2.5rem] h-[2.5rem] rounded-[50%] border border-gray-300 flex justify-center items-center bg-[#CCCCCC] mx-2">
+                <FaCrown color="white" />
+              </div>
+              <span>PLATIUM</span>
+              <div className="w-[5px] h-[1.5rem] mt-2 mx-2 border-[3px] border-black"></div>
+              <span >31.000.000 - 33.000.000 VND </span>
+              <div className="w-[5px] h-[1.5rem] mt-2 mx-2 border-[3px] border-black"></div>
+              <span >YEAR</span>
+            </h1>
+            <hr />
+            <div className="w-full p-3">
+              <ul className="list-disc list-inside">
+                <li className="my-2">Tập luyện toàn thời gian. </li>
+                <li className="my-2">Có hiệu lực tại tất cả cơ sở Club GymPro trên toàn quốc .</li>
+                <li className="my-2">Rủ bạn đi theo có hiệu lực 4-5 tháng (1 người / 1 lượt)</li>
+                <li className="my-2">Phù hợp với người có lịch trình bận rộn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full p-4 border border-gray-300 rounded-[10px] flex shadow-custom my-5 bg-gray-50">
+          <div className="w-1/3 ] ">
+            <img src={gold1} className="w-full h-[12rem] rounded-[10px] mb-2" alt="" />
+            <img src={gold2} className="w-full h-[12rem] rounded-[10px]" alt="" />
+          </div>
+          <div className="w-2/3   p-5  ">
+            <h1 className="font-black text-[1.5rem] flex my-5">
+              <div className="w-[2.5rem] h-[2.5rem] rounded-[50%] border border-gray-300 flex justify-center items-center bg-[#CCCCCC] mx-2">
+
+                < IoDiamond color="yellow" />
+
+              </div>
+              <span>GOLD</span>
+              <div className="w-[5px] h-[1.5rem] mt-2 mx-2 border-[3px] border-black"></div>
+              <span >10.000.000 - 12.000.000 VND </span>
+              <div className="w-[5px] h-[1.5rem] mt-2 mx-2 border-[3px] border-black"></div>
+              <span >YEAR</span>
+            </h1>
+            <hr />
+            <div className="w-full p-3">
+              <ul className="list-disc list-inside">
+                <li className="my-2">Tập luyện cố định thời gian. </li>
+                <li className="my-2">Có hiệu lực tại 1 cơ sở Club GymPro trên toàn quốc .</li>
+                <li className="my-2">Phù hợp với nhiều người</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full p-4 border border-gray-300 rounded-[10px] flex shadow-custom my-5   bg-gray-50">
+          <div className="w-1/3 ] ">
+            <img src={selver1} className="w-full h-[12rem] rounded-[10px] mb-2" alt="" />
+            <img src={selver2} className="w-full h-[12rem] rounded-[10px]" alt="" />
+          </div>
+          <div className="w-2/3   p-5  ">
+            <h1 className="font-black text-[1.5rem] flex my-5">
+              <div className="w-[2.5rem] h-[2.5rem] rounded-[50%]  flex justify-center items-center bg-[#CCCCCC] mx-2">
+
+                <FaStar color="#d7c7a2" />
+              </div>
+              <span>SELVER</span>
+              <div className="w-[5px] h-[1.5rem] mt-2 mx-2 border-[3px] border-black"></div>
+              <span >3.000.000 - 5.000.000 VND </span>
+              <div className="w-[5px] h-[1.5rem] mt-2 mx-2 border-[3px] border-black"></div>
+              <span >YEAR</span>
+            </h1>
+            <hr />
+            <div className="w-full p-3">
+              <ul className="list-disc list-inside">
+                <li className="my-2">Tập luyện cố định thời gian. </li>
+                <li className="my-2">Có hiệu lực tại 1 cơ sở Club GymPro trên toàn quốc .</li>
+                <li className="my-2">Phù hợp với mọi người</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+
   );
 };
 

@@ -20,6 +20,7 @@ function Toolbar() {
     };
     return (
         <>
+
             <div className="w-full h-[3rem] px-2 flex justify-between items-center bg-gray-30 border-b border-gray-100" >
                 <div className='flex justify-center items-center'>
                     <Button onClick={showLoading} icon={<BiPlus size={20} />} type="primary">
