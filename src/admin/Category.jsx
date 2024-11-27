@@ -1,9 +1,9 @@
 import { Checkbox } from 'antd';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Table_list from './Model/Table_list';
 import Toolbar from './Model/Toolbar';
 
-function Equipment() {
+function Category() {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = React.useState(true);
   const [open, setOpen] = React.useState(false);
@@ -88,4 +88,4 @@ function Equipment() {
   )
 }
 
-export default Equipment
+export default Category
