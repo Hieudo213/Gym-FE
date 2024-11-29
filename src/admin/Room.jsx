@@ -84,6 +84,7 @@ export const Room = () => {
             <div className='w-full flex p-3'  >
                 <Table_list columns={columns} dataSource={dataSource} />
             </div>
+
         </>
     );
 };

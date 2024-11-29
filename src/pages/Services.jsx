@@ -79,13 +79,13 @@ const listgym = [
 const Services = () => {
     return (
         <>
-            <div className="image_full mt-[72px]">
-                <div className="content">DỊCH VỤ</div>
+            <div className="w-full h-[calc(100vh-4.5rem)] relative mt-[72px] ">
+                <div className="absolute left-[6rem] bottom-[8rem] text-white text-[3rem] text-6xl ">DỊCH VỤ</div>
                 <div className="title-bg">FIND A CLASS</div>
                 <img
                     src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg"
                     alt="Description"
-                    className="w-full h-[30rem]"
+                    className="w-full h-full"
                 />
             </div>
             <section className=" pt-16 ">
