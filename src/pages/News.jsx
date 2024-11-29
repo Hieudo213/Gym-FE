@@ -17,7 +17,7 @@ const News = () => {
         <img
           src="https://citigym.com.vn/storage/uploads/vietdh/citygym1159.jpg"
           alt="Description"
-          className="w-full h-full "
+          className="w-full h-full object-cover"
         />
       </div>
 

@@ -85,7 +85,7 @@ const Services = () => {
                 <img
                     src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg"
                     alt="Description"
-                    className="w-full h-full"
+                    className="w-full h-full object-cover"
                 />
             </div>
             <section className=" pt-16 ">
