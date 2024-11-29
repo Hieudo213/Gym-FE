@@ -38,8 +38,8 @@ const listgym = [
 const Club = () => {
   return (
     <>
-      <div className="image_full">
-        <div className="content">CÂU LẠC BỘ</div>
+      <div className="w-full h-[calc(100vh-4.5rem)] relative mt-[4.5rem]">
+        <div className="absolute left-[10vw] bottom-[20vh] font-bold  text-white text-4xl">CÂU LẠC BỘ</div>
         <img
           src="https://citigym.com.vn/storage/uploads/untitled-5-9.jpg"
           alt="Description"

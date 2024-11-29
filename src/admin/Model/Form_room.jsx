@@ -39,9 +39,7 @@ const Form_room = () => {
                 }}
                 layout="horizontal"
 
-                style={{
-                    maxWidth: 600,
-                }}
+                className='w-full'
             >
                 <Form.Item label="Checkbox" name="disabled" valuePropName="checked">
                     <Checkbox>Checkbox</Checkbox>
@@ -52,8 +50,8 @@ const Form_room = () => {
                         <Radio value="pear"> Pear </Radio>
                     </Radio.Group>
                 </Form.Item>
-                <Form.Item label="Input">
-                    <Input />
+                <Form.Item label="Input" className='w-full'>
+                    <Input className='w-full' />
                 </Form.Item>
                 <Form.Item label="Select">
                     <Select>
@@ -130,6 +128,26 @@ const Form_room = () => {
                 <Form.Item label="Button">
                     <Button>Button</Button>
                 </Form.Item>
+                <Form.Item
+                    name="year"
+                    label="Tên"
+
+
+                    style={{ display: 'inline-block', width: '50%', padding: 0 }}
+                >
+                    <Input placeholder="Last name" style={{ width: '100%' }} />
+                </Form.Item>
+                <Form.Item
+                    name="month"
+
+                    rules={[{ required: true }]}
+                    style={{ display: 'inline-block', width: '50%', padding: 0 }}
+                >
+                    <Input placeholder="Full name" style={{ width: '100%' }} />
+                </Form.Item>
+
+
+
                 <Form.Item label="Slider">
                     <Slider />
                 </Form.Item>

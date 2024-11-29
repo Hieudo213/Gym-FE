@@ -3,7 +3,7 @@ import "../styles/PricingPolicy.css";
 import logo from "../assets/img/logo/favicon.png"
 
 import { FaCrown, FaFire, FaStar } from "react-icons/fa";
-import { IoDiamond, IoDiamondOutline } from "react-icons/io5";
+import { IoDiamond } from "react-icons/io5";
 import gold1 from "../assets/cart/Member Card - Gold/1.png"
 import gold2 from "../assets/cart/Member Card - Gold/2.png"
 
@@ -12,8 +12,7 @@ import platium2 from "../assets/cart/Member Card - Platinum/2.png"
 
 import selver1 from "../assets/cart/Member Card - Silver/1.png"
 import selver2 from "../assets/cart/Member Card - Silver/2.png"
-import { AiFillGolden } from "react-icons/ai";
-import { TbCarouselVerticalFilled } from "react-icons/tb";
+
 
 const PricingPolicy = () => {
   return (
@@ -27,7 +26,7 @@ const PricingPolicy = () => {
           <h1 className="  text-[6rem] text-white font-black mx-[15vw] text-shadow-md">PRICE LIST</h1>
         </div>
       </div>
-      <div className="w-full  h-[20vh] bg-black  flex justify-between items-center text-[1rem] p-7 text-white font-black  [clip-path:polygon(0%_90%,0%_0%,100%_0%,100%_100%)] mb-2">
+      <div className="w-full  h-[20vh] bg-black  flex justify-between items-center text-[1rem] p-7 text-white font-black  mb-2">
         <div className="h-full aspect-[1/1] bg-white flex justify-center items-center rounded-[50%] text-red-600">
           <FaFire size={40} />
         </div>
@@ -68,7 +67,6 @@ const PricingPolicy = () => {
             </div>
           </div>
         </div>
-
         <div className="w-full p-4 border border-gray-300 rounded-[10px] flex shadow-custom my-5 bg-gray-50">
           <div className="w-1/3 ] ">
             <img src={gold1} className="w-full h-[12rem] rounded-[10px] mb-2" alt="" />
@@ -77,9 +75,7 @@ const PricingPolicy = () => {
           <div className="w-2/3   p-5  ">
             <h1 className="font-black text-[1.5rem] flex my-5">
               <div className="w-[2.5rem] h-[2.5rem] rounded-[50%] border border-gray-300 flex justify-center items-center bg-[#CCCCCC] mx-2">
-
                 < IoDiamond color="yellow" />
-
               </div>
               <span>GOLD</span>
               <div className="w-[5px] h-[1.5rem] mt-2 mx-2 border-[3px] border-black"></div>
@@ -106,7 +102,6 @@ const PricingPolicy = () => {
           <div className="w-2/3   p-5  ">
             <h1 className="font-black text-[1.5rem] flex my-5">
               <div className="w-[2.5rem] h-[2.5rem] rounded-[50%]  flex justify-center items-center bg-[#CCCCCC] mx-2">
-
                 <FaStar color="#d7c7a2" />
               </div>
               <span>SELVER</span>
@@ -130,5 +125,6 @@ const PricingPolicy = () => {
 
   );
 };
+
 
 export default PricingPolicy;
