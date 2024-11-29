@@ -8,16 +8,17 @@ import { Avatar, Popconfirm, Popover } from "antd";
 import { CiUser } from "react-icons/ci";
 
 const navItems = [
-  { title: "CLB", path: "/clb" },
-  { title: "DỊCH VỤ", path: "/dich-vu" },
-  { title: "LỊCH TẬP", path: "/lich-hoc" },
-  { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia" },
-  { title: "TIN TỨC", path: "/tin-tuc" },
+  { title: "CLB", path: "/clb", id: 'club' },
+  { title: "DỊCH VỤ", path: "/dich-vu", id: 'service' },
+  { title: "LỊCH TẬP", path: "/lich-hoc", id: 'schedule' },
+  { title: "CHÍNH SÁCH GIÁ", path: "/chinh-sach-gia", id: 'price' },
+  { title: "TIN TỨC", path: "/tin-tuc", id: 'news' },
 ];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdown, setIsDropdown] = useState(false);
+  const [nav,setNav] = useState('');
   const dropdownRef = useRef(null);
   const userName = "Nguyễn Văn A";
   const handleOutsideClick = (event) => {
@@ -36,6 +37,10 @@ const Header = () => {
       document.removeEventListener('click', handleOutsideClick);
     };
   }, [isDropdown]);
+
+  const handleNav = (id) => {
+    setNav(id);
+  }
 
   return (
     <header>
@@ -64,9 +69,11 @@ const Header = () => {
                 <Link
                   to={item.path}
                   className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block py-2"
-                  onClick={() => setIsOpen(false)} // Close menu after clicking link
+                  onClick={() => handleNav(item.id)}
                 >
-                  {item.title}
+                  <span style={nav===item.id ? {color:'#a50000'} : {}}>
+                     {item.title}
+                  </span>
                 </Link>
               </li>
             ))}

@@ -85,14 +85,14 @@ const RevenueCard = () => {
     }, []);
 
     return (
-        <div className=" w-full bg-white rounded-lg shadow dark:bg-gray-800  p-4">
-            <div className="flex justify-between border-gray-200 border-b dark:border-gray-700 pb-3">
+        <div className=" w-full bg-white rounded-lg shadow p-4">
+            <div className="flex justify-between border-gray-200 border-b pb-3">
                 <dl>
-                    <dt className="text-base font-normal text-gray-500 dark:text-gray-400 pb-1">Doanh thu</dt>
-                    <dd className="leading-none text-3xl font-bold text-gray-900 dark:text-white">5.426.000 VNĐ</dd>
+                    <dt className="text-base font-normal text-gray-500 pb-1">Doanh thu</dt>
+                    <dd className="leading-none text-3xl font-bold text-gray-900">5.426.000 VNĐ</dd>
                 </dl>
                 <div>
-                    <span className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md dark:bg-green-900 dark:text-green-300">
+                    <span className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md">
                         <ArrowUpOutlined className="w-2.5 h-2.5 me-1.5" />
                         23.5%
                     </span>
