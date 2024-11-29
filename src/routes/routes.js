@@ -30,6 +30,8 @@ import Package from "../admin/Package";
 import Room from "../admin/Room";
 import Myservices from "../pages/Myservices"
 import Club_Detail from "../pages/Club_Detail";
+import Category from "../admin/Category";
+import Gym from "../admin/Gym";
 
 export const router = createBrowserRouter([
   {
@@ -156,6 +158,14 @@ export const router = createBrowserRouter([
       {
         path: "packages",
         element: <Package />,
+      },
+      {
+        path: "category",
+        element: <Category />,
+      },
+      {
+        path: "gym",
+        element: <Gym />,
       },
     ],
   },

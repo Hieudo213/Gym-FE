@@ -106,12 +106,12 @@ const LeadsCard = () => {
     }, []);
 
     return (
-        <div className="mx-1 w-2/3 bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
-            <div className="flex justify-between pb-4 mb-4 border-b border-gray-200 dark:border-gray-700">
+        <div className="mx-1 w-2/3 bg-white rounded-lg shadow p-4 md:p-6">
+            <div className="flex justify-between pb-4 mb-4 border-b border-gray-200 ">
                 <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center me-3">
+                    <div className="w-12 h-12 rounded-lg bg-gray-100  flex items-center justify-center me-3">
                         <svg
-                            className="w-6 h-6 text-gray-500 dark:text-gray-400"
+                            className="w-6 h-6 text-gray-500 "
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -122,8 +122,8 @@ const LeadsCard = () => {
                         </svg>
                     </div>
                     <div>
-                        <h5 className="leading-none text-2xl font-bold text-gray-900 dark:text-white pb-1">Loại hình</h5>
-                        <p className="text-sm font-normal text-gray-500 dark:text-gray-400">Thống kê dữ liệu</p>
+                        <h5 className="leading-none text-2xl font-bold text-gray-900  pb-1">Loại hình</h5>
+                        <p className="text-sm font-normal text-gray-500 ">Thống kê dữ liệu</p>
                     </div>
                 </div>
 

@@ -11,13 +11,13 @@ const News = () => {
   return (
     <>
 
-      <div className="image_full mt-[72px]">
+      <div className="w-full relative h-[calc(100vh-4.5rem)] mt-[72px]">
         <div className="content">Tin tức</div>
         <div className="title-bg">NEWS</div>
         <img
           src="https://citigym.com.vn/storage/uploads/vietdh/citygym1159.jpg"
           alt="Description"
-          className="w-full h-[30rem] "
+          className="w-full h-full "
         />
       </div>
 

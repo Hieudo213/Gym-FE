@@ -1,11 +1,12 @@
 import React from "react";
-import { FaChevronDown } from "react-icons/fa";
-import { FaClock } from "react-icons/fa6";
+import { FaChevronDown, FaPhone } from "react-icons/fa";
+import { FaClock, FaLocationDot } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Club = () => {
   return (
     <>
-      <div className="image_full">
-        <div className="content">CÂU LẠC BỘ</div>
+      <div className="w-full h-[calc(100vh-4.5rem)] relative mt-[4.5rem]">
+        <div className="absolute left-[10vw] bottom-[20vh] font-bold  text-white text-4xl">CÂU LẠC BỘ</div>
         <img
           src="https://citigym.com.vn/storage/uploads/untitled-5-9.jpg"
           alt="Description"
@@ -42,97 +43,149 @@ const Club = () => {
         </div>
         <div className="max-w-[1170px] m-auto">
           <div className="grid grid-cols-3 gap-8">
-            <div className="group cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
-                alt=""
-                className="w-full h-64"
-              />
-              <div className="bg-opacity-60 border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  PERSONAL TRAINER
+            <div className="group cursor-pointer ">
+              <Link to="/clb/2" style={{ color: '#333' }}>
+                <img
+                  src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
+                  alt=""
+                  className="w-full h-64 transition-opacity duration-500 group-hover:opacity-50"
+                />
+                <div className="bg-opacity-60 border border-gray bg-white rounded p-5 ">
+
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    GYM HÀ NỘI
+                  </div>
+                  <div className="my-5 mx-0">
+                    <FaLocationDot className="float-left my-[4px]" />
+                    <span className="my-0 mx-2"> 52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
+                  </div>
+
+                  <div className="my-5 mx-0">
+                    <FaPhone className="float-left mt-[4px]" />
+                    <span className="my-0 mx-2 text-red-500">012 3456 7890</span>
+                  </div>
                 </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  KICKFIT
-                </div>
-                <div className="my-2 mx-0">
-                  <FaClock className="float-left mt-[4px]" />
-                  <span className="my-0 mx-2">60 Phút</span>
-                </div>
-                <p>
-                  KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
-                  thống với trường phái Muay Thai ...
-                </p>
-              </div>
+              </Link>
             </div>
-            <div className="group cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
-                alt=""
-                className="w-full h-64"
-              />
-              <div className="bg-opacity-60 border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  PERSONAL TRAINER
+            <div className="group cursor-pointer ">
+              <Link to="/clb/2" style={{ color: '#333' }}>
+                <img
+                  src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
+                  alt=""
+                  className="w-full h-64 transition-opacity duration-500 group-hover:opacity-50"
+                />
+                <div className="bg-opacity-60 border border-gray bg-white rounded p-5 ">
+
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    GYM HÀ NỘI
+                  </div>
+                  <div className="my-5 mx-0">
+                    <FaLocationDot className="float-left my-[4px]" />
+                    <span className="my-0 mx-2"> 52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
+                  </div>
+
+                  <div className="my-5 mx-0">
+                    <FaPhone className="float-left mt-[4px]" />
+                    <span className="my-0 mx-2 text-red-500">012 3456 7890</span>
+                  </div>
                 </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  KICKFIT
-                </div>
-                <div className="my-2 mx-0">
-                  <FaClock className="float-left mt-[4px]" />
-                  <span className="my-0 mx-2">60 Phút</span>
-                </div>
-                <p>
-                  KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
-                  thống với trường phái Muay Thai ...
-                </p>
-              </div>
+              </Link>
             </div>
-            <div className="group cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
-                alt=""
-                className="w-full h-64"
-              />
-              <div className="bg-opacity-60 border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  PERSONAL TRAINER
+            <div className="group cursor-pointer ">
+              <Link to="/clb/2" style={{ color: '#333' }}>
+                <img
+                  src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
+                  alt=""
+                  className="w-full h-64 transition-opacity duration-500 group-hover:opacity-50"
+                />
+                <div className="bg-opacity-60 border border-gray bg-white rounded p-5 ">
+
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    GYM HÀ NỘI
+                  </div>
+                  <div className="my-5 mx-0">
+                    <FaLocationDot className="float-left my-[4px]" />
+                    <span className="my-0 mx-2"> 52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
+                  </div>
+
+                  <div className="my-5 mx-0">
+                    <FaPhone className="float-left mt-[4px]" />
+                    <span className="my-0 mx-2 text-red-500">012 3456 7890</span>
+                  </div>
                 </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  KICKFIT
-                </div>
-                <div className="my-2 mx-0">
-                  <FaClock className="float-left mt-[4px]" />
-                  <span className="my-0 mx-2">60 Phút</span>
-                </div>
-                <p>
-                  KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
-                  thống với trường phái Muay Thai ...
-                </p>
-              </div>
+              </Link>
             </div>
-            <div className="group cursor-pointer">
-              <img
-                src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
-                alt=""
-                className="w-full h-64"
-              />
-              <div className="bg-opacity-60 border border-gray bg-white rounded p-5 fix7">
-                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                  PERSONAL TRAINER
+            <div className="group cursor-pointer ">
+              <Link to="/clb/2" style={{ color: '#333' }}>
+                <img
+                  src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
+                  alt=""
+                  className="w-full h-64 transition-opacity duration-500 group-hover:opacity-50"
+                />
+                <div className="bg-opacity-60 border border-gray bg-white rounded p-5 ">
+
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    GYM HÀ NỘI
+                  </div>
+                  <div className="my-5 mx-0">
+                    <FaLocationDot className="float-left my-[4px]" />
+                    <span className="my-0 mx-2"> 52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
+                  </div>
+
+                  <div className="my-5 mx-0">
+                    <FaPhone className="float-left mt-[4px]" />
+                    <span className="my-0 mx-2 text-red-500">012 3456 7890</span>
+                  </div>
                 </div>
-                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                  KICKFIT
+              </Link>
+            </div>
+            <div className="group cursor-pointer ">
+              <Link to="/clb/2" style={{ color: '#333' }}>
+                <img
+                  src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
+                  alt=""
+                  className="w-full h-64 transition-opacity duration-500 group-hover:opacity-50"
+                />
+                <div className="bg-opacity-60 border border-gray bg-white rounded p-5 ">
+
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    GYM HÀ NỘI
+                  </div>
+                  <div className="my-5 mx-0">
+                    <FaLocationDot className="float-left my-[4px]" />
+                    <span className="my-0 mx-2"> 52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
+                  </div>
+
+                  <div className="my-5 mx-0">
+                    <FaPhone className="float-left mt-[4px]" />
+                    <span className="my-0 mx-2 text-red-500">012 3456 7890</span>
+                  </div>
                 </div>
-                <div className="my-2 mx-0">
-                  <FaClock className="float-left mt-[4px]" />
-                  <span className="my-0 mx-2">60 Phút</span>
+              </Link>
+            </div>
+            <div className="group cursor-pointer ">
+              <Link to="/clb/2" style={{ color: '#333' }}>
+                <img
+                  src="https://citigym.com.vn/storage/uploads/screenshot-2020-10-14-180443-375x440.jpg"
+                  alt=""
+                  className="w-full h-64 transition-opacity duration-500 group-hover:opacity-50"
+                />
+                <div className="bg-opacity-60 border border-gray bg-white rounded p-2 ">
+
+                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                    GYM HÀ NỘI
+                  </div>
+                  <div className="my-3 mx-0">
+                    <FaLocationDot className="float-left my-[4px]" />
+                    <span className="my-0 mx-2"> 52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
+                  </div>
+
+                  <div className="my-3 mx-0">
+                    <FaPhone className="float-left mt-[4px]" />
+                    <span className="my-0 mx-2 text-red-500">012 3456 7890</span>
+                  </div>
                 </div>
-                <p>
-                  KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền
-                  thống với trường phái Muay Thai ...
-                </p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

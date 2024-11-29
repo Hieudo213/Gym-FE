@@ -10,6 +10,8 @@ import { CiCreditCard2 } from 'react-icons/ci';
 import { FaMoneyCheckAlt } from 'react-icons/fa';
 import { PiUsersFourBold } from 'react-icons/pi';
 import { useNavigate } from 'react-router-dom';
+import { MdOutlineSportsGymnastics } from 'react-icons/md';
+import { BiSolidCategoryAlt } from 'react-icons/bi';
 
 
 function MenuComponent() {
@@ -57,6 +59,18 @@ function MenuComponent() {
             icon: <IoNotificationsSharp />,
             onClick: () => {navigate('/admin/respond/member')}
           },
+          {
+            key: '6',
+            label: 'Thể loại',
+            icon: <BiSolidCategoryAlt />,
+            onClick: () => {navigate('/admin/category')}
+          },
+          {
+            key: '7',
+            label: 'Môn học',
+            icon: <MdOutlineSportsGymnastics />,
+            onClick: () => {navigate('/admin/gym')}
+          },
         ],
       },
       {
@@ -65,19 +79,19 @@ function MenuComponent() {
 
         children: [
           {
-            key: '6',
+            key: '8',
             label: 'Hội viên',
             icon: <PiUsersFourBold />,
             onClick: () => {navigate('/admin/member')}
           },
           {
-            key: '7',
+            key: '9',
             label: 'Lịch sử giao dịch',
             icon: <FaMoneyCheckAlt />,
             onClick: () => {navigate('/admin/transaction')}
           },
           {
-            key: '8',
+            key: '10',
             label: 'Phản hồi',
             icon: <FaRegCommentDots />,
             onClick: () => {navigate('/admin/response/all')}
@@ -90,7 +104,7 @@ function MenuComponent() {
 
         children: [
           {
-            key: '9',
+            key: '11',
             label: 'Các gói tập',
             icon: <CiCreditCard2 />,
             onClick: () => {navigate('/admin/packages')}

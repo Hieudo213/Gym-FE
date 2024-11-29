@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
-import home1 from "../assets/img/home/home-1.png";
-import home2 from "../assets/img/home/home-2.png";
+import home1 from "../assets/img/banner/1.png";
+import home2 from "../assets/img/banner/2.png";
 
 // image section course gym
 import services1 from "../assets/img/1.jpg";
@@ -104,7 +104,7 @@ function HomePage() {
 
   return (
     <>
-      <section className="w-full mt-[72px]">
+      <section className="w-full mt-[72px] h-[calc(100vh-4.5rem)] ">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -114,20 +114,20 @@ function HomePage() {
           }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className="mySwiper h-full"
         >
           <SwiperSlide>
             <img
               src={home1}
               alt=""
-              className="w-full max-h-[665px] object-cover"
+              className="w-full h-full "
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src={home2}
               alt=""
-              className="w-full max-h-[665px] object-cover"
+              className="w-full h-full  "
             />
           </SwiperSlide>
         </Swiper>
@@ -327,8 +327,9 @@ function HomePage() {
           modules={[Navigation, Pagination]}
         >
           {users.map((user, index) => (
-            <SwiperSlide className="border-r border-gray-200">
-              <Cart_user key={index} image={user.picture.large} name={`${user.name.first} ${user.name.last}`} gender={user.gender} email={user.email} nat={user.nat} />
+            <SwiperSlide key={index} className="border-r border-gray-200">
+
+              <Cart_user image={user.picture.large} name={`${user.name.first} ${user.name.last}`} gender={user.gender} email={user.email} nat={user.nat} />
             </SwiperSlide>
           ))}
         </Swiper>

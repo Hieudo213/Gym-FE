@@ -126,4 +126,5 @@ const PricingPolicy = () => {
   );
 };
 
+
 export default PricingPolicy;

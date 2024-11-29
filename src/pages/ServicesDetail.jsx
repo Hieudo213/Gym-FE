@@ -9,7 +9,7 @@ import { GiBodyBalance } from "react-icons/gi";
 const ServicesDetail = () => {
   return (
     <>
-      <div className="w-3/5  mt-[5rem] mx-auto py-5">
+      <div className="max-w-[1180px] mx-auto  mt-[5rem]  py-5">
         <div className="  font-bold  mt-7   text-xl">
           KICKFIT
         </div>
@@ -23,7 +23,7 @@ const ServicesDetail = () => {
           KICKFIT
         </div>
       </div>
-      <section className="w-4/5 mx-auto grid grid-cols-2 gap-8 mt-10 ">
+      <section className="max-w-[1180px] mx-auto grid grid-cols-2 gap-8 mt-10 ">
         <div className="  group w-full  cursor-pointer  h-full flex items-center ">
           <div className="w-full p-5 ">
             <h1 className="font-bold text-5xl text-[#A9A9A9] my-5">
@@ -39,7 +39,7 @@ const ServicesDetail = () => {
       </section>
       <div className="mt-[15rem]">
         <h3 className=" text-center font-bold text-2xl">    KICKFIT</h3>
-        <section className="w-4/5 mx-auto grid grid-cols-4 gap-8 mt-10 pb-5">
+        <section className="max-w-[1180px] mx-auto grid grid-cols-4 gap-8 mt-10 pb-5">
 
           <div className="relative w-full  group  cursor-pointer">
             <img src="https://citigym.com.vn/themes/citigym/images/features/feature-2.jpg" alt="" className="w-full h-20rem transition-opacity duration-500 group-hover:opacity-50" />

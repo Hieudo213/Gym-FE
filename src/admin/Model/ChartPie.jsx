@@ -69,10 +69,10 @@ const ChartPie = () => {
     }, []);
 
     return (
-        <div className=" mx-1 max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 ">
+        <div className=" mx-1 max-w-sm w-full bg-white rounded-lg shadow  p-4 ">
             <div className="flex justify-between mb-3">
                 <div className="flex justify-center items-center">
-                    <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white pe-1">
+                    <h5 className="text-xl font-bold leading-none text-gray-900  pe-1">
                         Gói dịch vụ
                     </h5>
 
