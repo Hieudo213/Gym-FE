@@ -21,175 +21,175 @@ const News = () => {
         />
       </div>
 
-      <section className="  py-16 ">
-        <div className="w-3/4 mx-auto">
-          <div className="flex flex-col justify-center items-center">
-            <h2 className="font-bold uppercase text-[28px] text-[#454545] mb-4">
-              Các thông tin hữu ích khi tập GYM
-            </h2>
-            <p className="max-w-[420px] mb-12 text-center text-base text-[212529]">
-              Có thể bạn chưa biết
-            </p>
+      <section className="  py-16 max-w-[1180px] mx-auto">
+
+        <div className="flex flex-col justify-center items-center">
+          <h2 className="font-bold uppercase text-[28px] text-[#454545] mb-4">
+            Các thông tin hữu ích khi tập GYM
+          </h2>
+          <p className="max-w-[420px] mb-12 text-center text-base text-[212529]">
+            Có thể bạn chưa biết
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-8 px-5  mb-8 items-center  ">
+
+          <div className="relative  group   cursor-pointer">
+            <Link to="/dich-vu/2" style={{ color: '#333' }}>
+              <img
+                src="https://citigym.com.vn/storage/uploads/citigym-ntmk/tiet-lo-khung-gio-uong-nuoc-giam-can-cho-chi-em-phu-nu-00.jpg"
+                alt=""
+                className="w-full transition-opacity duration-500 group-hover:opacity-50"
+              />
+
+              <div className=" inset-0      border border-gray bg-white rounded p-5 ">
+                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                  Blog
+                </div>
+                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                  Tiết lộ khung giờ uống nước cho chị em ..
+                </div>
+                <div className="my-2 mx-0">
+                  <FaClock className="float-left mt-[4px]" />
+
+                  <span className="my-0  mx-2">07-08-2024</span>
+                </div>
+                <p>
+                  Bạn có biết ngoài việc đóng vai trò quan trọng trong cơ thể, nước còn có tác dụng hỗ trợ cho quá trình giảm cân không?
+                </p>
+              </div>
+            </Link>
           </div>
-          <div className="grid grid-cols-3 gap-8 px-5  mb-8 items-center  ">
-
-            <div className="relative  group   cursor-pointer">
-              <Link to="/dich-vu/2" style={{ color: '#333' }}>
-                <img
-                  src="https://citigym.com.vn/storage/uploads/citigym-ntmk/tiet-lo-khung-gio-uong-nuoc-giam-can-cho-chi-em-phu-nu-00.jpg"
-                  alt=""
-                  className="w-full transition-opacity duration-500 group-hover:opacity-50"
-                />
-
-                <div className=" inset-0      border border-gray bg-white rounded p-5 ">
-                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                    Blog
-                  </div>
-                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                    Tiết lộ khung giờ uống nước cho chị em ..
-                  </div>
-                  <div className="my-2 mx-0">
-                    <FaClock className="float-left mt-[4px]" />
-
-                    <span className="my-0  mx-2">07-08-2024</span>
-                  </div>
-                  <p>
-                    Bạn có biết ngoài việc đóng vai trò quan trọng trong cơ thể, nước còn có tác dụng hỗ trợ cho quá trình giảm cân không?
-                  </p>
+          <div className="relative group  cursor-pointer">
+            <Link to="/dich-vu/3" style={{ color: '#333' }}>
+              <img
+                src="https://citigym.com.vn/storage/uploads/citigym-ntmk/day-ta-bao-nhieu-ky-phu-hop-voi-co-the-cho-ca-nam-lan-nu-00.jpg"
+                alt=""
+                className="w-full transition-opacity duration-500 group-hover:opacity-50"
+              />
+              <div className=" inset-0       border border-gray bg-white rounded p-5 ">
+                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                  Blog
                 </div>
-              </Link>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/3" style={{ color: '#333' }}>
-                <img
-                  src="https://citigym.com.vn/storage/uploads/citigym-ntmk/day-ta-bao-nhieu-ky-phu-hop-voi-co-the-cho-ca-nam-lan-nu-00.jpg"
-                  alt=""
-                  className="w-full transition-opacity duration-500 group-hover:opacity-50"
-                />
-                <div className=" inset-0       border border-gray bg-white rounded p-5 ">
-                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                    Blog
-                  </div>
-                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                    Đẩy tạ bao nhiêu ký phù hợp với cơ thể cho nam ...
-                  </div>
-                  <div className="my-2 mx-0 ">
-                    <FaClock className="float-left mt-[4px]" />
-
-                    <span className="my-0  mx-2">26-11-2024</span>
-                  </div>
-                  <p>
-                    Đẩy tạ với số ký phù hợp với cơ thể sẽ giúp bạn phát triển cơ bắp hiệu quả, tránh được những chấn thương trong quá trình tập
-                  </p>
+                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                  Đẩy tạ bao nhiêu ký phù hợp với cơ thể cho nam ...
                 </div>
-              </Link>
-            </div>
-            <div className="relative group cursor-pointer">
-              <Link to="/dich-vu/4" style={{ color: '#333' }}>
-                <img
-                  src="https://citigym.com.vn/storage/uploads/citigym-ntmk/ly-do-buon-ngu-sau-khi-tap-gym-cach-khac-phuc-tinh-trang-tren-001.jpg"
-                  alt=""
-                  className="w-full transition-opacity duration-500 group-hover:opacity-50"
-                />
-                <div className=" inset-0       border border-gray bg-white rounded p-5 ">
-                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                    Blog
-                  </div>
-                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                    Lý do buồn ngủ sau khi tập gym
-                  </div>
-                  <div className="my-2 mx-0">
-                    <FaClock className="float-left mt-[4px]" />
+                <div className="my-2 mx-0 ">
+                  <FaClock className="float-left mt-[4px]" />
 
-                    <span className="my-0  mx-2">30-05-2024</span>
-                  </div>
-                  <p>
-                    Buồn ngủ sau khi tập gym là hiện tượng khá phổ biến, khiến nhiều người lo lắng. Thực chất đây là tình trạng bình thường khi cơ
-                    ...
-                  </p>
+                  <span className="my-0  mx-2">26-11-2024</span>
                 </div>
-              </Link>
-            </div>
-
-            <div className="relative  group   cursor-pointer">
-              <Link to="/dich-vu/2" style={{ color: '#333' }}>
-                <img
-                  src="https://citigym.com.vn/storage/uploads/citigym-ntmk/tiet-lo-khung-gio-uong-nuoc-giam-can-cho-chi-em-phu-nu-00.jpg"
-                  alt=""
-                  className="w-full transition-opacity duration-500 group-hover:opacity-50"
-                />
-
-                <div className=" inset-0      border border-gray bg-white rounded p-5 ">
-                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                    Blog
-                  </div>
-                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                    Tiết lộ khung giờ uống nước cho chị em ..
-                  </div>
-                  <div className="my-2 mx-0">
-                    <FaClock className="float-left mt-[4px]" />
-
-                    <span className="my-0  mx-2">07-08-2024</span>
-                  </div>
-                  <p>
-                    Bạn có biết ngoài việc đóng vai trò quan trọng trong cơ thể, nước còn có tác dụng hỗ trợ cho quá trình giảm cân không?
-                  </p>
+                <p>
+                  Đẩy tạ với số ký phù hợp với cơ thể sẽ giúp bạn phát triển cơ bắp hiệu quả, tránh được những chấn thương trong quá trình tập
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div className="relative group cursor-pointer">
+            <Link to="/dich-vu/4" style={{ color: '#333' }}>
+              <img
+                src="https://citigym.com.vn/storage/uploads/citigym-ntmk/ly-do-buon-ngu-sau-khi-tap-gym-cach-khac-phuc-tinh-trang-tren-001.jpg"
+                alt=""
+                className="w-full transition-opacity duration-500 group-hover:opacity-50"
+              />
+              <div className=" inset-0       border border-gray bg-white rounded p-5 ">
+                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                  Blog
                 </div>
-              </Link>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <Link to="/dich-vu/3" style={{ color: '#333' }}>
-                <img
-                  src="https://citigym.com.vn/storage/uploads/citigym-ntmk/day-ta-bao-nhieu-ky-phu-hop-voi-co-the-cho-ca-nam-lan-nu-00.jpg"
-                  alt=""
-                  className="w-full transition-opacity duration-500 group-hover:opacity-50"
-                />
-                <div className=" inset-0       border border-gray bg-white rounded p-5 ">
-                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                    Blog
-                  </div>
-                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                    Đẩy tạ bao nhiêu ký phù hợp với cơ thể cho nam ...
-                  </div>
-                  <div className="my-2 mx-0 ">
-                    <FaClock className="float-left mt-[4px]" />
-
-                    <span className="my-0  mx-2">26-11-2024</span>
-                  </div>
-                  <p>
-                    Đẩy tạ với số ký phù hợp với cơ thể sẽ giúp bạn phát triển cơ bắp hiệu quả, tránh được những chấn thương trong quá trình tập
-                  </p>
+                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                  Lý do buồn ngủ sau khi tập gym
                 </div>
-              </Link>
-            </div>
-            <div className="relative group cursor-pointer">
-              <Link to="/dich-vu/4" style={{ color: '#333' }}>
-                <img
-                  src="https://citigym.com.vn/storage/uploads/citigym-ntmk/ly-do-buon-ngu-sau-khi-tap-gym-cach-khac-phuc-tinh-trang-tren-001.jpg"
-                  alt=""
-                  className="w-full transition-opacity duration-500 group-hover:opacity-50"
-                />
-                <div className=" inset-0       border border-gray bg-white rounded p-5 ">
-                  <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
-                    Blog
-                  </div>
-                  <div className="text-red-700 font-bold text-xl  my-2 mx-0">
-                    Lý do buồn ngủ sau khi tập gym
-                  </div>
-                  <div className="my-2 mx-0">
-                    <FaClock className="float-left mt-[4px]" />
+                <div className="my-2 mx-0">
+                  <FaClock className="float-left mt-[4px]" />
 
-                    <span className="my-0  mx-2">30-05-2024</span>
-                  </div>
-                  <p>
-                    Buồn ngủ sau khi tập gym là hiện tượng khá phổ biến, khiến nhiều người lo lắng. Thực chất đây là tình trạng bình thường khi cơ
-                    ...
-                  </p>
+                  <span className="my-0  mx-2">30-05-2024</span>
                 </div>
-              </Link>
-            </div>
+                <p>
+                  Buồn ngủ sau khi tập gym là hiện tượng khá phổ biến, khiến nhiều người lo lắng. Thực chất đây là tình trạng bình thường khi cơ
+                  ...
+                </p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="relative  group   cursor-pointer">
+            <Link to="/dich-vu/2" style={{ color: '#333' }}>
+              <img
+                src="https://citigym.com.vn/storage/uploads/citigym-ntmk/tiet-lo-khung-gio-uong-nuoc-giam-can-cho-chi-em-phu-nu-00.jpg"
+                alt=""
+                className="w-full transition-opacity duration-500 group-hover:opacity-50"
+              />
+
+              <div className=" inset-0      border border-gray bg-white rounded p-5 ">
+                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                  Blog
+                </div>
+                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                  Tiết lộ khung giờ uống nước cho chị em ..
+                </div>
+                <div className="my-2 mx-0">
+                  <FaClock className="float-left mt-[4px]" />
+
+                  <span className="my-0  mx-2">07-08-2024</span>
+                </div>
+                <p>
+                  Bạn có biết ngoài việc đóng vai trò quan trọng trong cơ thể, nước còn có tác dụng hỗ trợ cho quá trình giảm cân không?
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div className="relative group  cursor-pointer">
+            <Link to="/dich-vu/3" style={{ color: '#333' }}>
+              <img
+                src="https://citigym.com.vn/storage/uploads/citigym-ntmk/day-ta-bao-nhieu-ky-phu-hop-voi-co-the-cho-ca-nam-lan-nu-00.jpg"
+                alt=""
+                className="w-full transition-opacity duration-500 group-hover:opacity-50"
+              />
+              <div className=" inset-0       border border-gray bg-white rounded p-5 ">
+                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                  Blog
+                </div>
+                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                  Đẩy tạ bao nhiêu ký phù hợp với cơ thể cho nam ...
+                </div>
+                <div className="my-2 mx-0 ">
+                  <FaClock className="float-left mt-[4px]" />
+
+                  <span className="my-0  mx-2">26-11-2024</span>
+                </div>
+                <p>
+                  Đẩy tạ với số ký phù hợp với cơ thể sẽ giúp bạn phát triển cơ bắp hiệu quả, tránh được những chấn thương trong quá trình tập
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div className="relative group cursor-pointer">
+            <Link to="/dich-vu/4" style={{ color: '#333' }}>
+              <img
+                src="https://citigym.com.vn/storage/uploads/citigym-ntmk/ly-do-buon-ngu-sau-khi-tap-gym-cach-khac-phuc-tinh-trang-tren-001.jpg"
+                alt=""
+                className="w-full transition-opacity duration-500 group-hover:opacity-50"
+              />
+              <div className=" inset-0       border border-gray bg-white rounded p-5 ">
+                <div className="text-blue-800 font-bold text-sm  my-2 mx-0">
+                  Blog
+                </div>
+                <div className="text-red-700 font-bold text-xl  my-2 mx-0">
+                  Lý do buồn ngủ sau khi tập gym
+                </div>
+                <div className="my-2 mx-0">
+                  <FaClock className="float-left mt-[4px]" />
+
+                  <span className="my-0  mx-2">30-05-2024</span>
+                </div>
+                <p>
+                  Buồn ngủ sau khi tập gym là hiện tượng khá phổ biến, khiến nhiều người lo lắng. Thực chất đây là tình trạng bình thường khi cơ
+                  ...
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
+
       </section>
       <section className="w-full py-5 h-[60rem]  img_bg   relative" >
         <div className="absolute inset-0 bg-white bg-opacity-80"></div>

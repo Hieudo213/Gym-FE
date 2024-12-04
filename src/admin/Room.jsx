@@ -89,46 +89,7 @@ export const Room = () => {
             <div className='w-full flex p-3'  >
                 <Table_list columns={columns} dataSource={dataSource} />
             </div>
-            <Modal title="them moi" open={false} >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-            </Modal>
-            <Modal title="Cập nhật Thể loại" open={true} >
-                <Form
-                    layout={formLayout}
-                    form={form}
-                    initialValues={{
-                        layout: formLayout,
-                    }}
-                    onValuesChange={onFormLayoutChange}
-                    style={{
-                        maxWidth: formLayout === 'inline' ? 'none' : 600,
-                    }}
-                >
-                    <Form.Item label="Form Layout" name="layout">
-                        <Radio.Group value={formLayout}>
-                            <Radio.Button value="horizontal">Horizontal</Radio.Button>
-                            <Radio.Button value="vertical">Vertical</Radio.Button>
-                            <Radio.Button value="inline">Inline</Radio.Button>
-                        </Radio.Group>
-                    </Form.Item>
-                    <Form.Item label="Field A">
-                        <Input placeholder="input placeholder" />
-                    </Form.Item>
-                    <Form.Item label="Field B">
-                        <Input placeholder="input placeholder" />
-                    </Form.Item>
-                    <Form.Item>
-                        <Button type="primary">Submit</Button>
-                    </Form.Item>
-                </Form>
-            </Modal>
-            <Modal title="Cập các môn của thể loại" open={false} >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-            </Modal>
+
         </>
     );
 };

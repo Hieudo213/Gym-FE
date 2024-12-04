@@ -2,6 +2,7 @@ import React from "react";
 import { FaChevronDown, FaPhoneAlt } from "react-icons/fa";
 import { FaClock, FaLocationDot } from "react-icons/fa6";
 import CardComponent from "../components/CardComponent";
+import { Link } from "react-router-dom";
 const listgym = [
   {
     id: 1,
@@ -77,21 +78,26 @@ const Club = () => {
         <div className="w-full flex justify-center items-center">
           <div className=" w-[1140px] h-[1169px] grid grid-cols-3 gap-[30px] ">
             {listgym.map((item, index) => (
-              <CardComponent key={index} url={item.image}>
-                <div className=" inset-0 border border-gray bg-white rounded p-5 fix7">
-                  <div className="text-red-700 font-bold text-xl my-2 mx-0 uppercase hover:text-[#720000]">
-                    {item.title}
+              <Link key={index} to={`/clb/${index}`}>
+                <CardComponent url={item.image}>
+
+                  <div className=" inset-0 border border-gray bg-white rounded p-5 fix7">
+                    <div className="text-red-700 font-bold text-xl my-2 mx-0 uppercase hover:text-[#720000]">
+                      {item.title}
+                    </div>
+                    <div className="my-2 mx-0">
+                      <FaLocationDot className="float-left mt-[4px]" />
+                      <span className="my-0  mx-2">52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
+                    </div>
+                    <div className="my-2 mx-0">
+                      <FaPhoneAlt className="float-left mt-[4px]" />
+                      <span className="my-0  mx-2 text-[#a50000]">012345678</span>
+                    </div>
                   </div>
-                  <div className="my-2 mx-0">
-                    <FaLocationDot className="float-left mt-[4px]" />
-                    <span className="my-0  mx-2">52 Thành Thái, Phường 12, Quận 10, Thành phố Hồ Chí Minh</span>
-                  </div>
-                  <div className="my-2 mx-0">
-                    <FaPhoneAlt className="float-left mt-[4px]" />
-                    <span className="my-0  mx-2 text-[#a50000]">012345678</span>
-                  </div>
-                </div>
-              </CardComponent>
+
+
+                </CardComponent>
+              </Link>
             ))}
           </div>
         </div>
