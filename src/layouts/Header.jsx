@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useRef, useState} from "react";
+import {Link, useLocation} from "react-router-dom";
 import logo from "../assets/img/logo.png";
-import { HiMenu, HiX } from "react-icons/hi";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleRight, faArrowRight, faUser } from "@fortawesome/free-solid-svg-icons";
-import { Avatar, Popconfirm, Popover } from "antd";
-import { CiUser } from "react-icons/ci";
+import {HiMenu, HiX} from "react-icons/hi";
+import {Avatar} from "antd";
+import {CiUser} from "react-icons/ci";
 
 const navItems = [
   { title: "CLB", path: "/clb", id: 'club' },
@@ -21,11 +19,16 @@ const Header = () => {
   const [nav,setNav] = useState('');
   const dropdownRef = useRef(null);
   const userName = "Nguyễn Văn A";
+  const currentLocation = useLocation();
   const handleOutsideClick = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsDropdown(false);
     }
   };
+
+  const handleNav = (path) => {
+    setNav(path);
+  }
 
   useEffect(() => {
     if (isDropdown) {
@@ -38,9 +41,15 @@ const Header = () => {
     };
   }, [isDropdown]);
 
-  const handleNav = (id) => {
-    setNav(id);
-  }
+
+
+  useEffect(() => {
+    setNav(currentLocation.pathname);
+    if (currentLocation.pathname === "/") {
+      setNav('');
+    }
+
+  }, [nav, currentLocation.pathname]);
 
   return (
     <header>
@@ -69,9 +78,9 @@ const Header = () => {
                 <Link
                   to={item.path}
                   className="text-black font-bold hover:text-[#a50000] transition-all duration-500 block py-2"
-                  onClick={() => handleNav(item.id)}
+                  onClick={() => handleNav(item.path)}
                 >
-                  <span style={nav===item.id ? {color:'#a50000'} : {}}>
+                  <span style={nav===item.path ? {color:'#a50000'} : {}}>
                      {item.title}
                   </span>
                 </Link>
