@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { FaFire } from "react-icons/fa";
 import { FaDumbbell } from "react-icons/fa";
@@ -6,30 +6,52 @@ import { FaHandFist } from "react-icons/fa6";
 import { LuBone } from "react-icons/lu";
 import { FaHeartPulse } from "react-icons/fa6";
 import { GiBodyBalance } from "react-icons/gi";
+import { useNavigate, useParams } from "react-router-dom";
+import { getGymById } from "../services/publicApi";
 const ServicesDetail = () => {
+  const [data, setData] = useState({});
+      const navigate = useNavigate()
+      const { id } = useParams();
+      useEffect(() => {
+          const fetchData = async () => {
+              try {
+                  const result = await getGymById(id);
+                  setData(result);
+              } catch (err) {
+                  console.log(err);
+              }
+          };
+          fetchData();
+      }, []);
+
   return (
     <>
       <div className="max-w-[1180px] mx-auto  mt-[5rem]  py-5">
         <div className="  font-bold  mt-7   text-xl">
-          KICKFIT
+          {data?.result?.name}
         </div>
-
         <div>Đánh thức cơ thể bạn</div>
-
       </div >
-      <div className="w-full  relative  ">
-        <img src="https://citigym.com.vn/storage/uploads/vietdh/kickfit-1905x834.jpg" alt="" className="w-full" />
+      <div className="w-full relative">
+        <div className="w-full h-[600px] overflow-hidden">
+          <div
+            style={{
+              backgroundImage: `url(http://localhost:8080/api/v1/images/${data?.result?.thumbnail.id})`,
+            }}
+            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+          ></div>
+        </div>
         <div className="absolute bottom-[5rem] left-[10rem] text-white font-bold  text-4xl">
-          KICKFIT
+          {data?.result?.name}
         </div>
       </div>
       <section className="max-w-[1180px] mx-auto grid grid-cols-2 gap-8 mt-10 ">
         <div className="  group w-full  cursor-pointer  h-full flex items-center ">
           <div className="w-full p-5 ">
             <h1 className="font-bold text-5xl text-[#A9A9A9] my-5">
-              KICKFIT
+              {data?.result?.name}
             </h1>
-            <p className="text-[#454545]">KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền thống với trường phái Muay Thai quốc tế nổi tiếng. Đây là cách nhanh nhất để bạn lấy lại năng lượng, mang lại hiệu quả rõ ràng trong thời gian rất ngắn. Bộ môn này phù hợp với cả nam lẫn nữ. Để nhận được hiệu quả thật sự từ bộ môn này, bạn nên tập với HLV để được hướng dẫn kỹ thuật.</p>
+            <p className="text-[#454545]">{data?.result?.description} </p>
           </div>
 
         </div>
@@ -38,7 +60,7 @@ const ServicesDetail = () => {
         </div>
       </section>
       <div className="mt-[15rem]">
-        <h3 className=" text-center font-bold text-2xl">    KICKFIT</h3>
+        <h3 className=" text-center font-bold text-2xl">   {data?.result?.name}</h3>
         <section className="max-w-[1180px] mx-auto grid grid-cols-4 gap-8 mt-10 pb-5">
 
           <div className="relative w-full  group  cursor-pointer">
@@ -96,7 +118,7 @@ const ServicesDetail = () => {
         <div className="absolute inset-0 bg-white bg-opacity-80"></div>
         <div className="relative z-10 text-center my-10 ">
           <h2 className="text-center  font-bold text-3xl">Lợi ích của khóa học</h2>
-          <p className="w-[40%] mx-auto my-5">Với chuỗi hoạt động liên tục, Kickfit  đem lại vẻ săn chắc đặc biệt là phần bụng; giúp vóc dáng thon gọn nhanh nhất; giảm căng thẳng, tốt cho thể chất và tinh thần; nâng cao khả năng tự vệ; rèn luyện phản xạ và tính kỷ luật.</p>
+          <p className="w-[40%] mx-auto my-5">Với chuỗi hoạt động liên tục, môn học này sẽ đem lại vẻ săn chắc đặc biệt là phần bụng; giúp vóc dáng thon gọn nhanh nhất; giảm căng thẳng, tốt cho thể chất và tinh thần; nâng cao khả năng tự vệ; rèn luyện phản xạ và tính kỷ luật.</p>
         </div>
         <div className="grid grid-cols-4 gap-8 px-8  mb-8 items-center container ">
           <div className="relative group  cursor-pointer">

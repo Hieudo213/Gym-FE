@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CardComponent from "../components/CardComponent";
 import CategoryCard from "../components/CategoryCard";
 import "../styles/Services.css";
 import { FaClock } from "react-icons/fa6";
+import { getAllGym } from "../services/publicApi";
+import { Link } from "react-router-dom";
 
 const categoryItem = [
     {
@@ -37,51 +39,23 @@ const categoryItem = [
     },
 ];
 
-const listgym = [
-    {
-        id: 1,
-        title: "Kickfit",
-        image: 'https://citigym.com.vn/storage/uploads/vietdh/kickfit.jpg',
-        category: 'Personal Trainer',
-    },
-    {
-        id: 2,
-        title: "Fitness PT",
-        image: 'https://citigym.com.vn/storage/uploads/thumbnail-2-3.jpg',
-        category: 'Personal Trainer',
-    },
-    {
-        id: 3,
-        title: "BodyPump",
-        image: 'https://citigym.com.vn/storage/uploads/vietdh/bodypump.JPG',
-        category: 'Group X',
-    },
-    {
-        id: 4,
-        title: "Body Combat",
-        image: 'https://citigym.com.vn/storage/uploads/body-combat.jpg',
-        category: 'Group X',
-    },
-    {
-        id: 5,
-        title: "Body Balance",
-        image: 'https://citigym.com.vn/storage/uploads/body-balance.jpg',
-        category: 'Group X',
-    },
-    {
-        id: 6,
-        title: "RPM",
-        image: 'https://citigym.com.vn/storage/uploads/vietdh/dichvu-mb.jpg',
-        category: 'Group X',
-    },
-]
-
 const Services = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const result = await getAllGym();
+                setData(result);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+        fetchData();
+    }, []);
     return (
         <>
-            <div className="w-full h-[calc(100vh-4.5rem)] relative mt-[72px] ">
-                <div className="absolute left-[6rem] bottom-[8rem] text-white text-[3rem] text-6xl ">DỊCH VỤ</div>
-                <div className="title-bg">FIND A CLASS</div>
+            <div className="w-full h-[calc(100vh-4.5rem)] relative mt-[72px]">
+                <div className="absolute left-[6rem] bottom-[8rem] text-white text-[3rem] text-6xl font-[600]">DỊCH VỤ</div>
                 <img
                     src="https://citigym.com.vn/storage/uploads/vietdh/dichvu-dt.jpg"
                     alt="Description"
@@ -110,27 +84,35 @@ const Services = () => {
             </div>
 
             <div className="w-full flex justify-center items-center mt-[110px]">
-                <div className=" w-[1140px] h-[1169px] grid grid-cols-3 gap-[30px] ">
-                    {listgym.map((item, index) => (
-                        <CardComponent key={index} url={item.image}>
-                            <div className=" inset-0 border border-gray bg-white rounded p-5 fix7">
-                                <div className="text-blue-800 font-bold text-sm my-2 mx-0 uppercase">
-                                    {item.category}
-                                </div>
-                                <div className="text-red-700 font-bold text-xl my-2 mx-0 uppercase hover:text-[#720000]">
-                                    {item.title}
-                                </div>
-                                <div className="my-2 mx-0">
-                                    <FaClock className="float-left mt-[4px]" />
+                <div className=" w-[1140px] grid grid-cols-3 gap-[30px] mb-8">
+                    {data?.result?.map((item, index) => (
+                        <Link key={index} to={`/dich-vu/${item.id}`}>
+                            <CardComponent key={index} url={`http://localhost:8080/api/v1/images/${item.thumbnail.id}`}>
+                                <div className=" inset-0 border border-gray bg-white rounded p-5 fix7">
+                                    <div className="text-blue-800 font-bold text-sm my-2 mx-0 uppercase">
+                                        {item.category}
+                                    </div>
+                                    <div className="text-red-700 font-bold text-xl my-2 mx-0 uppercase hover:text-[#720000]">
+                                        {item.name}
+                                    </div>
+                                    <div className="my-2 mx-0">
+                                        <FaClock className="float-left mt-[4px]" />
 
-                                    <span className="my-0  mx-2">60 Phút</span>
+                                        <span className="my-0  mx-2">60 Phút</span>
+                                    </div>
+                                    <div style={{
+                                        display: '-webkit-box',
+                                        WebkitBoxOrient: 'vertical',
+                                        overflow: 'hidden',
+                                        WebkitLineClamp: 4, // Giới hạn số dòng (thay đổi thành 2 nếu cần)
+                                        textOverflow: 'ellipsis',
+                                    }}>
+                                        Phòng tập GymMaster Hoàn Kiếm với thiết kế sang trọng kết hợp ánh sáng tự nhiên, mang lại không gian tập luyện tràn đầy cảm hứng với diện tích 3500m2.
+                                        Hội viên sẽ được trải nghiệm
+                                    </div>
                                 </div>
-                                <p>
-                                    KickFit là môn thể thao kết hợp đặc biệt giữa đấm bốc truyền*
-                                    thống với trường phái Muay Thai ...
-                                </p>
-                            </div>
-                        </CardComponent>
+                            </CardComponent>
+                        </Link>
                     ))}
                 </div>
             </div>
