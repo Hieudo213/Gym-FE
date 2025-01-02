@@ -105,37 +105,40 @@ function Category() {
       <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'>Thêm mới thể loại </div>} open={false} width={"50vw"}>
         <FormCategory />
       </Modal>
-      <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'>Cập nhật Thể loại</div>} open={true} width={"50vw"} >
+      <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'>Cập nhật Thể loại</div>} open={false} width={"70vw"}  >
         <FormCategory />
       </Modal >
-      <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'> Cập nhật các môn của thể loại</div>} open={false} >
-        <Form className='w-full' >
-          <Form.Item label="Các môn hiện có">
-            <TreeSelect
-              treeData={[
-                {
-                  title: 'Việt Nam',
-                  value: 'vietnam',
-                },
-                {
-                  title: 'Anh',
-                  value: 'england',
-                },
-                {
-                  title: 'Pháp',
-                  value: 'france',
-                },
-                {
-                  title: 'Mỹ',
-                  value: 'usa',
-                },
-              ]}
-            />
-          </Form.Item>
-          <Empty />
-        </Form>
+      <div className='w-[70vw]'>
+        <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'> Cập nhật các môn của thể loại</div>} open={true} >
+          <Form className='w-full' >
+            <Form.Item label="Các môn hiện có">
+              <TreeSelect
+                treeData={[
+                  {
+                    title: 'Việt Nam',
+                    value: 'vietnam',
+                  },
+                  {
+                    title: 'Anh',
+                    value: 'england',
+                  },
+                  {
+                    title: 'Pháp',
+                    value: 'france',
+                  },
+                  {
+                    title: 'Mỹ',
+                    value: 'usa',
+                  },
+                ]}
+              />
+            </Form.Item>
+            <Empty />
+          </Form>
 
-      </Modal>
+        </Modal>
+      </div>
+
     </>
 
 
