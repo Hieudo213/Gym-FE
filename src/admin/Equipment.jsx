@@ -1,7 +1,8 @@
-import { Checkbox } from 'antd';
+import { Checkbox, Form, Modal } from 'antd';
 import React, { useState } from 'react'
 import Table_list from './Model/Table_list';
 import Toolbar from './Model/Toolbar';
+import AddingEquipmentForm from './Forms/AddingEquipmentForm';
 
 function Equipment() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,13 +79,27 @@ function Equipment() {
     },
   ];
 
+  const [addingForm, setAddingForm] = useState(false);
+  const handleOk = () => {
+    setAddingForm(false);
+  };
+  const handleCancel = () => {
+    setAddingForm(false);
+  };
+
   return (
-    <div>
-      <Toolbar />
-      <div className='w-full flex p-3'  >
-        <Table_list columns={columns} dataSource={dataSource} />
+    <>
+      <div>
+        <Toolbar setAddingForm={setAddingForm} />
+        <div className='w-full flex p-3'  >
+          <Table_list columns={columns} dataSource={dataSource} />
+        </div>
       </div>
-    </div>
+      <Modal width={650} title="Thêm mới phòng tập" open={addingForm} onOk={handleOk} onCancel={handleCancel}>
+        <AddingEquipmentForm />
+      </Modal>
+    </>
+
   )
 }
 

@@ -81,7 +81,7 @@ const PricingPolicy = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [Serviceid, setServiceid] = useState(null);
-  console.log(Serviceid);
+
   const object = (index) => {
     const service = listservices.find((item) => item.id === index);
     setServiceid(service);

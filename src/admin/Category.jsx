@@ -3,7 +3,8 @@ import { Checkbox, Form, Modal, Button, TreeSelect, Empty, Image as AntImage } f
 import React, { useState } from 'react';
 import Table_list from './Model/Table_list';
 import Toolbar from './Model/Toolbar';
-import FormCategory from './Model/FormCategory';
+
+import AddingCategoryForm from './Forms/AddingCategoryForm';
 
 
 
@@ -88,28 +89,28 @@ function Category() {
     },
   ];
 
-  const normFile = (e) => {
-    if (Array.isArray(e)) {
-      return e;
-    }
-    return e?.fileList;
+  const [addingForm, setAddingForm] = useState(false);
+  const handleOk = () => {
+    setAddingForm(false);
   };
-
+  const handleCancel = () => {
+    setAddingForm(false);
+  }
   return (
 
     <>
-      <Toolbar />
+      <Toolbar setAddingForm={setAddingForm} />
       <div className='w-full flex p-3 '  >
         <Table_list columns={columns} dataSource={dataSource} />
       </div>
-      <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'>Thêm mới thể loại </div>} open={false} width={"50vw"}>
-        <FormCategory />
+      <Modal onOk={handleOk} onCancel={handleCancel} title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'>Thêm mới thể loại </div>} open={addingForm} width={"50vw"}>
+        <AddingCategoryForm />
       </Modal>
       <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'>Cập nhật Thể loại</div>} open={false} width={"70vw"}  >
-        <FormCategory />
+        <AddingCategoryForm />
       </Modal >
       <div className='w-[70vw]'>
-        <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'> Cập nhật các môn của thể loại</div>} open={true} >
+        <Modal title={<div className='w-full text-black font-bold text-2xl border-b border-b-gray-300 pb-1'> Cập nhật các môn của thể loại</div>} open={false} >
           <Form className='w-full' >
             <Form.Item label="Các môn hiện có">
               <TreeSelect

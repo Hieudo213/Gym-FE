@@ -1,7 +1,8 @@
-import { Checkbox } from 'antd';
+import { Checkbox, Modal } from 'antd';
 import React, { useState } from 'react'
 import Table_list from './Model/Table_list';
 import Toolbar from './Model/Toolbar';
+import AddingEmployeeForm from './Forms/AddingEmployeeForm';
 function Employee() {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = React.useState(true);
@@ -76,15 +77,24 @@ function Employee() {
       key: 'capacity',
     },
   ];
-
+  const [addingForm, setAddingForm] = useState(false);
+  const handleOk = () => {
+    setAddingForm(false);
+  };
+  const handleCancel = () => {
+    setAddingForm(false);
+  }
   return (
     <div>
-      <Toolbar />
+      <Toolbar setAddingForm={setAddingForm} />
       <div className='w-full flex p-3'  >
         <Table_list columns={columns} dataSource={dataSource} />
       </div>
+      <Modal width={650} title="Thêm mới nhân viên" open={addingForm} onOk={handleOk} onCancel={handleCancel}>
+        <AddingEmployeeForm />
+      </Modal>
     </div>
   )
 }
 
-export default Employee
+export default Employee;

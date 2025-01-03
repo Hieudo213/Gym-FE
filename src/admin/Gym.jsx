@@ -1,7 +1,8 @@
-import { Checkbox } from 'antd';
+import { Checkbox, Modal } from 'antd';
 import React, { useState } from 'react';
 import Table_list from './Model/Table_list';
 import Toolbar from './Model/Toolbar';
+import AddingGymForm from './Forms/AddingGymForm';
 
 function Gym() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,12 +78,23 @@ function Gym() {
       key: 'capacity',
     },
   ];
+
+  const [addingForm, setAddingForm] = useState(false);
+  const handleOk = () => {
+    setAddingForm(false);
+  };
+  const handleCancel = () => {
+    setAddingForm(false);
+  }
   return (
     <div>
-      <Toolbar />
+      <Toolbar setAddingForm={setAddingForm} />
       <div className='w-full flex p-3'  >
         <Table_list columns={columns} dataSource={dataSource} />
       </div>
+      <Modal width={650} title="Thêm mới môn học" open={addingForm} onOk={handleOk} onCancel={handleCancel}>
+        <AddingGymForm />
+      </Modal>
     </div>
   )
 }

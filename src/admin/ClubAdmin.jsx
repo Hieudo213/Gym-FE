@@ -97,21 +97,22 @@ function ClubAdmin() {
         },
     ];
 
+
     const handleOk = () => {
         setAddingForm(false);
-      };
-      const handleCancel = () => {
+    };
+    const handleCancel = () => {
         setAddingForm(false);
-      };
+    };
 
     return (
         <div className='w-full h-full overflow-y-auto'>
-            <Toolbar setAddingForm={setAddingForm}/>
+            <Toolbar setAddingForm={setAddingForm} />
             <div className='w-full flex p-3 overflow-scroll'  >
                 <Table_list columns={columns} dataSource={dataSource} scroll={{ x: 1200 }} />
             </div>
             <Modal width={650} title="Thêm mới câu lạc bộ" open={addingForm} onOk={handleOk} onCancel={handleCancel}>
-                <AddingClubForm/>
+                <AddingClubForm />
             </Modal>
         </div>
     )
