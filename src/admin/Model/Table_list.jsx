@@ -1,18 +1,20 @@
-import { Button, Image, Modal, Table } from 'antd';
+import { Table } from 'antd';
 import React from 'react';
 
-
-
-function Table_list({ dataSource, columns }) { // Destructure props
- 
-    const [loading, setLoading] = React.useState(true);
-    
-
+function Table_list({ dataSource, columns, scroll }) {
     return (
-
         <>
-            <div className='mt-2 w-full h-[70vh] overflow-scroll overflow-x-scroll'>
-                <Table className='w-full' dataSource={dataSource} columns={columns} pagination={false} />
+            <div className='mt-2 w-full'>
+                <Table
+                    className='h-[600px]'
+                    dataSource={dataSource}
+                    columns={columns}
+                    pagination={{
+                        position: ['bottomRight'],
+                        pageSize: 5,
+                    }}
+                    scroll={scroll}
+                />
             </div>
         </>
     );

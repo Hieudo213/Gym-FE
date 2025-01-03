@@ -5,7 +5,7 @@ import {IoMdHome} from 'react-icons/io';
 import {CgGym} from 'react-icons/cg';
 import {FaRegCommentDots, FaUsers} from 'react-icons/fa6';
 import {IoNotificationsSharp} from 'react-icons/io5';
-import {GiWeightLiftingUp} from 'react-icons/gi';
+import {GiGreenhouse, GiWeightLiftingUp} from 'react-icons/gi';
 import {CiCreditCard2} from 'react-icons/ci';
 import {FaMoneyCheckAlt} from 'react-icons/fa';
 import {PiUsersFourBold} from 'react-icons/pi';
@@ -85,6 +85,14 @@ function MenuComponent() {
                                 navigate('/admin/gym')
                             }
                         },
+                        {
+                            key: '8',
+                            label: 'Câu lạc bộ',
+                            icon: <GiGreenhouse />,
+                            onClick: () => {
+                                navigate('/admin/club')
+                            }
+                        },
                     ],
                 },
                 {
@@ -93,7 +101,7 @@ function MenuComponent() {
 
                     children: [
                         {
-                            key: '8',
+                            key: '9',
                             label: 'Hội viên',
                             icon: <PiUsersFourBold/>,
                             onClick: () => {
@@ -101,7 +109,7 @@ function MenuComponent() {
                             }
                         },
                         {
-                            key: '9',
+                            key: '10',
                             label: 'Lịch sử giao dịch',
                             icon: <FaMoneyCheckAlt/>,
                             onClick: () => {
@@ -109,7 +117,7 @@ function MenuComponent() {
                             }
                         },
                         {
-                            key: '10',
+                            key: '11',
                             label: 'Phản hồi',
                             icon: <FaRegCommentDots/>,
                             onClick: () => {
@@ -124,7 +132,7 @@ function MenuComponent() {
 
                     children: [
                         {
-                            key: '11',
+                            key: '12',
                             label: 'Các gói tập',
                             icon: <CiCreditCard2/>,
                             onClick: () => {
@@ -137,11 +145,8 @@ function MenuComponent() {
         },
 
     ];
-    const onClick = (e) => {
-        console.log('click ', e);
-    };
     return (
-        <div className='w-full h-full '>
+        <div className='w-full h-full overflow-scroll '>
             <div className='w-full'>
                 <h1 className="text-xl mb-2 font-bold ">
                     Hệ Thống
@@ -149,10 +154,9 @@ function MenuComponent() {
             </div>
             <div className='w-full'>
                 <Menu
-
                     style={{
                         width: '100%',
-                        border: 'none'
+                        border: 'none',
                     }}
                     defaultSelectedKeys={['home']}
                     defaultOpenKeys={[

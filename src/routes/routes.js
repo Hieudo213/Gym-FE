@@ -32,6 +32,7 @@ import Myservices from "../pages/Myservices"
 import Club_Detail from "../pages/Club_Detail";
 import Category from "../admin/Category";
 import Gym from "../admin/Gym";
+import ClubAdmin from "../admin/ClubAdmin";
 
 export const router = createBrowserRouter([
   {
@@ -167,6 +168,10 @@ export const router = createBrowserRouter([
         path: "gym",
         element: <Gym />,
       },
+      {
+        path: "club",
+        element: <ClubAdmin/>
+      }
     ],
   },
 ]);
