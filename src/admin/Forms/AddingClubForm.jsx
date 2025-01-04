@@ -72,7 +72,7 @@ function AddingClubForm({ setAddingForm }) {
             return;
         }
 
-        const file = fileList[0].originFileObj; // Lấy tệp đầu tiên trong danh sách
+        const file = fileList[0].originFileObj;
         try {
             const response = await createClub(file, formData);
             if (response) {

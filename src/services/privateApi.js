@@ -22,3 +22,15 @@ export const createClub = async (file, data) => {
     console.error("Error:", error);
   }
 };
+
+export const deleteClubById = async (id) => {
+    try {
+        const response = await axios.delete(`http://localhost:8080/api/v1/club/${id}`);
+        if (response) {
+          return response.data;
+        }
+      } catch (error) {
+        console.log(error);
+      }
+      return undefined;
+}
