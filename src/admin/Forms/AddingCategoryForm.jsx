@@ -5,6 +5,8 @@ import TextArea from 'antd/es/input/TextArea';
 import { Link } from 'react-router-dom';
 
 const AddingCategoryForm = () => {
+
+
     const [imageSrc, setImageSrc] = useState("");
 
     const handleFileChange = (event) => {
@@ -29,6 +31,7 @@ const AddingCategoryForm = () => {
                     name="Title"
                 >
                     <Input />
+
                 </Form.Item>
                 <Form.Item
                     label="Mô tả"

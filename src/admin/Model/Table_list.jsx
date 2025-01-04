@@ -1,4 +1,4 @@
-import { Table } from 'antd';
+import { Table, Image as AntImage } from 'antd';
 import React from 'react';
 
 function Table_list({ dataSource, columns, scroll }) {

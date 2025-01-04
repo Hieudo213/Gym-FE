@@ -33,13 +33,36 @@ function Employee() {
       capacity: 1,
     },
   ];
+  const [checkboxMain, setCheckboxMain] = useState(false);
+  const [checkedRows, setCheckedRows] = useState([]);
+  console.log(checkedRows);
 
+  const handleMainCheckboxChange = (e) => {
+    const isChecked = e.target.checked;
+    setCheckboxMain(isChecked);
+    if (isChecked) {
+
+      setCheckedRows(dataSource.map((row) => row.key));
+    } else {
+
+      setCheckedRows([]);
+    }
+  };
+
+  const handleRowCheckboxChange = (key) => {
+    if (checkedRows.includes(key)) {
+      setCheckedRows(checkedRows.filter((item) => item !== key));
+    } else {
+      setCheckedRows([...checkedRows, key]);
+    }
+  };
   const columns = [
     {
-      title: (<Checkbox />),
+      title: (<Checkbox checked={checkboxMain} indeterminate={checkedRows.length > 0 && checkedRows.length < dataSource.length} onChange={handleMainCheckboxChange} />),
       key: 'id',
-      render: () => (
-        <Checkbox />
+      render: (text, record) => (
+        <Checkbox checked={checkedRows.includes(record.key)}
+          onChange={() => handleRowCheckboxChange(record.key)} />
       ),
     },
     {
