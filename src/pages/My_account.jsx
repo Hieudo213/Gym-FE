@@ -1,12 +1,11 @@
 import { Button, Modal, Image } from "antd";
 import React, { useState } from "react";
-import { CiCamera } from "react-icons/ci";
+
 import { FaRegUser } from "react-icons/fa";
 import { IoIosKey } from "react-icons/io";
 import { MdOutlineWorkHistory } from "react-icons/md";
 import { Link, Outlet } from "react-router-dom";
-import { MdFileUpload } from "react-icons/md";
-import { FaRegTrashCan } from "react-icons/fa6";
+
 
 const My_account = () => {
 
