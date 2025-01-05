@@ -74,13 +74,13 @@ const Schedule = () => {
           <div className=" w-1/6 aspect-square  ">
             <Image src="https://cdn-i.vtcnews.vn/files/huongntt/2019/08/24/giaovien2-7-0650272.jpg" className="rounded-[50%] p-6 " alt="" />
           </div>
-          <div className="w-4/5 pt-6 ">
+          <div className="w-4/5 pt-7 ">
             <h1 className="text-[2rem] text-bold">Vũ Tiến Đạt</h1>
             <h4>Vai trò : <span>Giảng viên Yoga</span></h4>
           </div>
 
         </div>
-        <div className="w-full h-[40vh] mt-[-20px] overflow-y-scroll ">
+        <div className="w-full h-[44vh]  overflow-y-scroll ">
           <Collapse items={items} defaultActiveKey={['1']} onChange={onChange} />
         </div>
 

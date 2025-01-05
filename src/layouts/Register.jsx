@@ -1,110 +1,87 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/login/style.css"; // File chứa các quy tắc CSS tùy chỉnh cho trang đăng ký
-import { IoArrowBackCircleSharp } from "react-icons/io5";
+import "../styles/login/style.css";
+import { Button, Checkbox, Form, Input, Flex } from 'antd';
+import logo from "../assets/img/logo/favicon.png"
+
+import { MdEmail } from "react-icons/md";
+import { FaLock } from "react-icons/fa";
+
+
+
 function Register() {
-    return (
-        <main className="main-container">
-            <div className="login-container">
-                <section className="register-section">
-                    <div className="form-container">
-                        <div className="form-wrapper">
-                            <div className="form-card">
-                                <div className="form-card-body">
-                                    <div className="form-header my-3 ">
-                                        <span className="icon float-left mt-1  w-5 h-5 text-xl hover:text-green-300  transition duration-200 cursor-pointer" >
-                                            <Link to="/">
-                                                <IoArrowBackCircleSharp size={25} />
-                                            </Link>
-                                        </span>
-                                        <span className="form-title">Đăng ký</span>
-                                    </div>
-                  <form className="login-form" noValidate>
-                    <div className="form-group">
-                      <label htmlFor="yourUsername" className="form-label">
-                        Tên người dùng
-                      </label>
-                      <div className="input-wrapper">
-                        <input
-                          type="text"
-                          name="username"
-                          className="form-input"
-                          id="yourUsername"
-                          required
-                        />
-                        <div className="error-message">
-                          Vui lòng nhập tên người dùng của bạn.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="yourEmail" className="form-label">
-                        Email
-                      </label>
-                      <div className="input-wrapper">
-                        <input
-                          type="email"
-                          name="email"
-                          className="form-input"
-                          id="yourEmail"
-                          required
-                        />
-                        <div className="error-message">
-                          Vui lòng nhập email hợp lệ.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="yourPassword" className="form-label">
-                        Mật khẩu
-                      </label>
-                      <input
-                        type="password"
-                        name="password"
-                        className="form-input"
-                        id="yourPassword"
-                        required
-                      />
-                      <div className="error-message">
-                        Vui lòng nhập mật khẩu của bạn!
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="confirmPassword" className="form-label">
-                        Xác nhận mật khẩu
-                      </label>
-                      <input
-                        type="password"
-                        name="confirmPassword"
-                        className="form-input"
-                        id="confirmPassword"
-                        required
-                      />
-                      <div className="error-message">Mật khẩu không khớp!</div>
-                    </div>
-
-                    <div className="form-group">
-                      <button className="submit-button" type="submit">
-                        Đăng ký
-                      </button>
-                    </div>
-
-                    <div className="form-footer">
-                      <p className="form-text">
-                        Đã có tài khoản? <Link to="/login">Đăng nhập</Link>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  const onFinish = (values) => {
+    console.log('Received values of form: ', values);
+  };
+  return (
+    <div className="w-full h-[100vh]  reletive">
+      <div className="absolute left-[1rem] top-[-2rem] z-2 w-[15rem] h-[15rem] ">
+        <img src={logo} className="w-full h-full  " alt="" />
       </div>
-    </main>
+      <div className="float-right  w-4/5 [clip-path:polygon(60%_100%,0%_0%,100%_0%,100%_100%)]  z-0  h-[100vh] bg-red-600 "></div>
+      <div className=" w-2/3  bg-gray-200  rounded-[10px]   flex z-9 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ boxShadow: '1px 2px 5px black' }}>
+        <div className="w-1/2    rounded-tl-lg rounded-bl-lg ">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zWkpSNAlnszt6MVHID3A2tfe91X8HPP3qA&s" className="rounded-tl-lg rounded-bl-lg w-full h-full" alt="" /> </div>
+        <div className="w-1/2 h-full p-2">
+          <h1 className="font-bold text-2xl  text-center mb-[2rem]">Đăng Ký</h1>
+          <Form
+            name="login"
+            initialValues={{
+              remember: true,
+            }}
+            style={{
+              maxWidth: 360,
+              margin: 'auto'
+            }}
+            onFinish={onFinish}
+          >
+
+            <Form.Item
+              name="username"
+              rules={[
+                {
+                  required: true,
+                  message: 'Please input your Username!',
+                },
+              ]}
+            >
+              <Input prefix={<MdEmail />} placeholder="Email" />
+            </Form.Item>
+            <Form.Item
+              name="password"
+              rules={[
+                {
+                  required: true,
+                  message: 'Please input your Password!',
+                },
+              ]}
+            >
+              <Input prefix={<FaLock />} type="password" placeholder="Password" />
+            </Form.Item>
+            <Form.Item
+              name="confirmpassword "
+              rules={[
+                {
+                  required: true,
+                  message: 'Please input your Password!',
+                },
+              ]}
+            >
+              <Input prefix={<FaLock />} type="password" placeholder="Confirm password" />
+            </Form.Item>
+
+
+            <Form.Item>
+              <Button block type="primary" htmlType="submit">
+                Register
+              </Button>
+              or  <Link to="/login">Login now! </Link>
+
+            </Form.Item>
+          </Form>
+        </div>
+      </div>
+    </div>
   );
 }
 

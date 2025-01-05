@@ -33,6 +33,7 @@ import Club_Detail from "../pages/Club_Detail";
 import Category from "../admin/Category";
 import Gym from "../admin/Gym";
 import ClubAdmin from "../admin/ClubAdmin";
+import PageCategory from "../pages/PageCategory";
 
 export const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ export const router = createBrowserRouter([
       {
         path: "/dich-vu/:id",
         element: <ServicesDetail />,
+      },
+      {
+        path: "/category/:id",
+        element: <PageCategory />,
       },
       {
         path: "/clb/:id",
@@ -170,7 +175,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "club",
-        element: <ClubAdmin/>
+        element: <ClubAdmin />
       }
     ],
   },
