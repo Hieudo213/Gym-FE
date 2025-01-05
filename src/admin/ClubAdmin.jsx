@@ -169,7 +169,7 @@ function ClubAdmin() {
                 />
             </Modal>
             <Modal width={650} title="Cập nhật câu lạc bộ" open={updateForm} onOk={false} onCancel={() => setAddingForm(false)} footer={null}>
-                <UpdateClubForm id={id}/>
+                <UpdateClubForm id={id} setUpdateForm={setUpdateForm}/>
             </Modal>
         </div>
     )

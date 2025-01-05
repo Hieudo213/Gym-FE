@@ -1,8 +1,8 @@
-import { Alert, Button, Form, Input, message, Select, Upload } from 'antd'
-import TextArea from 'antd/es/input/TextArea'
-import { Option } from 'antd/es/mentions'
-import React, { useEffect, useState } from 'react'
+import { Alert, Button, Form, Input, Select, Upload } from 'antd';
 import ImgCrop from 'antd-img-crop';
+import TextArea from 'antd/es/input/TextArea';
+import { Option } from 'antd/es/mentions';
+import React, { useEffect, useState } from 'react';
 import { createClub } from '../../services/privateApi';
 const locationEnum = [
     { id: 1, name: "Ba Đình", value: 'BA_DINH' },
@@ -58,10 +58,6 @@ function AddingClubForm({ setAddingForm }) {
         const imgWindow = window.open(src);
         imgWindow?.document.write(image.outerHTML);
     };
-
-    useEffect(() => {
-
-    }, [])
 
     const handleSubmit = async () => {
         if (fileList.length !== 1) {
@@ -172,7 +168,7 @@ function AddingClubForm({ setAddingForm }) {
                         <label className="custom-label">Chọn ảnh</label>
                         <ImgCrop rotationSlider>
                             <Upload
-                                action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
+                                action="http://localhost:8080/api/v1/images/create"
                                 listType="picture-card"
                                 fileList={fileList}
                                 onChange={onChange}
